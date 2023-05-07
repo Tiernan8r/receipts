@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:596: Starting Simple Scan 3.12.1, PID=4049
+[+0.00s] DEBUG: receipts.vala:596: Starting Simple Scan 3.12.1, PID=4049
 [+0.04s] DEBUG: scanner.vala:1443: sane_init () -> SANE_STATUS_GOOD
 [+0.04s] DEBUG: scanner.vala:1449: SANE version 1.0.23
 [+0.04s] DEBUG: scanner.vala:1510: Requesting redetection of scan devices
@@ -6,7 +6,7 @@
 [+0.12s] DEBUG: autosave-manager.vala:280: Autosaving book information
 [+3.63s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+3.63s] DEBUG: scanner.vala:350: Device: name="plustek:libusb:003:005" vendor="Canon" model="CanoScan LiDE25" type="flatbed scanner"
-[+10.61s] DEBUG: simple-scan.vala:310: Requesting scan at 300 dpi from device 'plustek:libusb:003:005'
+[+10.61s] DEBUG: receipts.vala:310: Requesting scan at 300 dpi from device 'plustek:libusb:003:005'
 [+10.61s] DEBUG: scanner.vala:1556: Scanner.scan ("plustek:libusb:003:005", dpi=300, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0)
 [+10.61s] DEBUG: scanner.vala:802: Processing request
 [+70.62s] DEBUG: scanner.vala:863: sane_open ("plustek:libusb:003:005") -> SANE_STATUS_GOOD

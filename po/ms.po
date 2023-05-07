@@ -1,12 +1,12 @@
-# Malay translation for simple-scan
+# Malay translation for receipts
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2020-01-13 15:53+0000\n"
 "PO-Revision-Date: 2020-01-24 20:38+0800\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "Peranti untuk diimbas dari"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "Peranti SANE untuk memperoleh imej."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Jenis dokumen yang diimbas"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -39,11 +39,11 @@ msgstr ""
 "Jenis dokumen sedang diimbas. Tetapan ini menentukan resolusi, warna dan "
 "pasca-pemprosesan imbasan."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Lebar kertas dalam persepuluh mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -51,11 +51,11 @@ msgstr ""
 "Lebar kertas dalam persepuluh mm (atau 0 untuk pengesanan kertas secara "
 "automatik)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Tinggi kertas dalam persepuluh mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -63,72 +63,72 @@ msgstr ""
 "Tinggi kertas dalam persepuluh mm (atau 0 untuk pengesanan kertas secara "
 "automatik)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Kecerahan imbasan"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "Pelarasan kecerahan dari -100 hingga 100 (0 tiada perubahan)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Beza jelas imbasan"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "Pelarasan beza jelas dari -100 hingga 100 (0 tiada perubahan)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Resolusi untuk imbasan teks"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "Resolusi dalam bintik-se-inci yang digunakan semasa mengimbas teks."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 #| msgid "Resolution for text scans"
 msgid "Resolution for image scans"
 msgstr "Resolusi untuk imbasan imej"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 #| msgid "The resolution in dots-per-inch to use when scanning text."
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "Resolusi dalam titik-se-inci yang digunakan semasa mengimbas imej."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Sisi halaman untuk diimbaskan"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "Sisi halaman untuk diimbas."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Direktori untuk menyimpan fail ke"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "Direktori untuk menyimpan fail. Nilai lalai direktori dokumen jika tidak "
 "ditetapkan."
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid "Quality value to use for JPEG compression"
 msgstr "Nilai kualiti yang digunakan untuk pemampatan JPEG"
 
-#: data/org.gnome.SimpleScan.gschema.xml:67
+#: data/me.tiernan8r.Receipts.gschema.xml:67
 msgid "Quality value to use for JPEG compression."
 msgstr "Nilai kualiti yang digunakan untuk pemampatan JPEG."
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Delay in millisecond between pages"
 msgstr "Lengah dalam milisaat di antara muka surat"
 
-#: data/org.gnome.SimpleScan.gschema.xml:73
+#: data/me.tiernan8r.Receipts.gschema.xml:73
 msgid "Delay in millisecond between pages."
 msgstr "Kelewatan dalam milisaat di antara halaman."
 
@@ -136,16 +136,16 @@ msgstr "Kelewatan dalam milisaat di antara halaman."
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: src/app-window.ui:498 src/app-window.vala:1475 src/app-window.vala:1729
 msgid "Document Scanner"
 msgstr "Pengimbas dokumen"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Scan Documents"
 msgstr "Imbas Dokumen"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 #| msgid ""
 #| "A really easy way to scan both documents and photos. You can crop out the "
 #| "bad parts of a photo and rotate it if it is the wrong way round. You can "
@@ -161,7 +161,7 @@ msgstr ""
 "kedudukan yang salah. Anda boleh mencetak imbasan anda, eksport ia ke pdf, "
 "atau simpan ia dengan sejumlah besar format imej."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 #| msgid ""
 #| "Simple Scan uses the SANE framework to support most existing scanners."
 msgid "This app uses the SANE framework to support most existing scanners."
@@ -169,12 +169,12 @@ msgstr ""
 "Aplikasi ini memakai framework SANE untuk menyokong kebanyakan pengimbas "
 "sedia ada."
 
-#: data/simple-scan.appdata.xml.in:24
+#: data/receipts.appdata.xml.in:24
 msgid "The GNOME Project"
 msgstr "Projek GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "imbas;pengimbas;rata;adf;"
 
@@ -424,7 +424,7 @@ msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr ""
 "Satu fail bernama \"%s\" sudah wujud.  Adakah anda mahu menggantikannya?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:621
 msgid "_Replace"
 msgstr "_Ganti"
@@ -1029,39 +1029,39 @@ msgid "Error communicating with scanner"
 msgstr "Ralat berkomunikasi dengan pengimbas"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Papar versi keluaran"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Papar mesej penyahpepijatan"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 #| msgid "Fix PDF files generated with older versions of Simple Scan"
 msgid "Fix PDF files generated with older versions of this app"
 msgstr ""
 "Baiki fail PDF yang dijana dengan versi lebih lama daripada aplikasi ini"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:393
+#: src/receipts.vala:393
 msgid "Failed to scan"
 msgstr "Gagal mengimbas"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:408
+#: src/receipts.vala:408
 msgid "Scan in progress"
 msgstr "Imbasan masih berlangsungerjalan"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:585
+#: src/receipts.vala:585
 #| msgid "[DEVICE...] - Scanning utility"
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DEVICE...] — Utiliti Mengimbas"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:596
+#: src/receipts.vala:596
 #, c-format
 #| msgid ""
 #| "Run '%s --help' to see a full list of available command line options."

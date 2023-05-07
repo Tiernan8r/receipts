@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>simple-scan.desktop</id>
+  <id>receipts.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name>Document Scanner</name>
+  <name>Receipts Scanner</name>
   <summary>Make a digital copy of your photos and documents</summary>
   <description>
     <p>
@@ -17,13 +17,13 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-1.png</image>
+      <image type="source">https://github.com/tiernan8r/receipts/raw/HEAD/data/screenshots/receipts-1.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://gitlab.gnome.org/GNOME/simple-scan</url>
-  <url type="bugtracker">https://gitlab.gnome.org/GNOME/simple-scan/issues</url>
-  <url type="donation">https://www.gnome.org/friends/</url>
-  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/simple-scan</url>
+  <url type="homepage">https://github.com/tiernan8r/receipts</url>
+  <url type="bugtracker">https://github.com/tiernan8r/receipts/issues</url>
+  <url type="donation">https://www.github.com/tiernan8r/</url>
+  <url type="vcs-browser">https://github.com/tiernan8r/receipts</url>
   <developer_name>The GNOME Project</developer_name>
   <releases>
     <release date="2023-03-19" version="44.0">
@@ -140,7 +140,7 @@
           with the following improvements:
         </p>
         <ul>
-          <li>Display error message if simple-scan is unable to open simple-scan.log</li>
+          <li>Display error message if receipts is unable to open receipts.log</li>
           <li>Fix scanning on Epson devices, when Automatic Page Size is enabled</li>
         </ul>
         <p>This release also updates translations.</p>
@@ -152,5 +152,5 @@
   </releases>
   <content_rating type="oars-1.1" />
   <update_contact>robert.ancell_AT_canonical.com</update_contact>
-  <translation type="gettext">simple-scan</translation>
+  <translation type="gettext">receipts</translation>
 </component>

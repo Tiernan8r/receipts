@@ -1,11 +1,11 @@
-[+0.00s] DEBUG: simple-scan.vala:596: Starting Simple Scan 3.12.3, PID=11322
+[+0.00s] DEBUG: receipts.vala:596: Starting Simple Scan 3.12.3, PID=11322
 [+0.31s] DEBUG: scanner.vala:1446: sane_init () -> SANE_STATUS_GOOD
 [+0.31s] DEBUG: scanner.vala:1452: SANE version 1.0.23
 [+0.31s] DEBUG: scanner.vala:1513: Requesting redetection of scan devices
 [+0.31s] DEBUG: scanner.vala:802: Processing request
 [+4.01s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+4.01s] DEBUG: scanner.vala:350: Device: name="epson2:net:10.1.10.200" vendor="Epson" model="PID 111C" type="flatbed scanner"
-[+7.63s] DEBUG: simple-scan.vala:310: Requesting scan at 300 dpi from device 'epson2:net:10.1.10.200'
+[+7.63s] DEBUG: receipts.vala:310: Requesting scan at 300 dpi from device 'epson2:net:10.1.10.200'
 [+7.63s] DEBUG: scanner.vala:1559: Scanner.scan ("epson2:net:10.1.10.200", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+7.63s] DEBUG: scanner.vala:802: Processing request
 [+8.71s] DEBUG: scanner.vala:863: sane_open ("epson2:net:10.1.10.200") -> SANE_STATUS_GOOD
@@ -129,5 +129,5 @@
 [+11.64s] DEBUG: scanner.vala:1212: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+11.64s] DEBUG: scanner.vala:1229: sane_get_parameters () -> SANE_STATUS_GOOD
 [+11.64s] DEBUG: scanner.vala:1241: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7632 pixels_per_line=2544 lines=3508 depth=8
-[+11.64s] DEBUG: simple-scan.vala:254: Page is 2544 pixels wide, 3508 pixels high, 8 bits per pixel
+[+11.64s] DEBUG: receipts.vala:254: Page is 2544 pixels wide, 3508 pixels high, 8 bits per pixel
 [+11.71s] DEBUG: scanner.vala:1313: sane_read (7633) -> (SANE_STATUS_GOOD, 7633)

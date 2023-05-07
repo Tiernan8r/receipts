@@ -1,14 +1,14 @@
-# Japanese translation for simple-scan
+# Japanese translation for receipts
 # Copyright (C) 2009-2010, 2013-2017 Rosetta Contributors and Canonical Ltd
-# Copyright (C) 2019-2020, 2022 simple-scan's COPYRIGHT HOLDER
-# This file is distributed under the same license as the simple-scan package.
+# Copyright (C) 2019-2020, 2022 receipts's COPYRIGHT HOLDER
+# This file is distributed under the same license as the receipts package.
 # sicklylife <translation@sicklylife.jp>, 2019-2020, 2022.
 # Ryo Nakano <ryonakaknock3@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2022-02-05 10:47+0000\n"
 "PO-Revision-Date: 2022-02-05 19:40+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "スキャンするデバイス"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "画像を取得する SANE デバイスです。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "スキャンするドキュメントの種類"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -39,82 +39,82 @@ msgstr ""
 "スキャンされる文書の種類。この設定により、画像の解像度、色の深度、事後処理が"
 "決定されます。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "10mm 単位での紙の幅"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr "10mm 単位の用紙の幅 (または自動用紙検知の場合は 0)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "10mm 単位の用紙の高さ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr "10mm 単位の紙の高さ (または 0 で自動紙検知)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "スキャンの明るさ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "-100 から 100 までの範囲で明るさを調節します (0 は無調整)。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "スキャンのコントラスト"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "-100 から 100 までの範囲でコントラストを調節します (0 は無調整)。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "テキストスキャンの解像度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "テキストをスキャンするときの解像度 (DPI) です。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "画像スキャンの解像度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "画像をスキャンするときの解像度 (DPI) です。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "スキャンする面"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "スキャンされる面です。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "ファイルを保存するディレクトリ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "ファイルを保存するディレクトリです。設定されていない場合、標準でドキュメント"
 "ディレクトリに保存します。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "画像ファイルの保存に使用するファイル形式"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -122,51 +122,51 @@ msgstr ""
 "画像ファイルの保存に使用する MIME タイプです。サポートしている MIME タイプの"
 "例: image/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "JPEG の圧縮に使用する品質の値"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "JPEG の圧縮に使用する品質の値です。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "ページ間におけるミリ秒単位の遅延時間"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "ページ間におけるミリ秒単位の遅延時間です。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "後処理を有効にするかどうか"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "後処理を有効にするかどうかです。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "後処理スクリプトのパス"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "後処理スクリプトのパスです。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "後処理スクリプトの追加の引数"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "後処理スクリプトの追加の引数です。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "処理する前の元のファイルを保持するかどうか"
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" "
 "filename will be added to the filename immediately before the file extension."
@@ -178,16 +178,16 @@ msgstr ""
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:454 src/app-window.vala:1558 src/app-window.vala:1832
 msgid "Document Scanner"
 msgstr "ドキュメントスキャナー"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "写真と文書のデジタルコピーを作成します"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -197,18 +197,18 @@ msgstr ""
 "り、間違った方向に向いている場合は回転できます。スキャンしたものを印刷、PDF "
 "へのエクスポート、多くの画像フォーマットに保存することができます。"
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "このアプリは多数の既存スキャナーをサポートするために SANE フレームワークを使"
 "用しています。"
 
-#: data/simple-scan.appdata.xml.in:26
+#: data/receipts.appdata.xml.in:26
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr ""
 "scan;scanner;flatbed;adf;スキャン;スキャナー;フラットベッド;オートドキュメン"
@@ -693,7 +693,7 @@ msgstr "完全な詳細"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "“%s”はすでに存在します。上書きしますか?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "上書き(_R)"
@@ -1099,36 +1099,36 @@ msgid "Error communicating with scanner"
 msgstr "スキャナーとの通信に失敗しました"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "リリースバージョンを表示する"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "デバッグメッセージを表示する"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "このアプリの古いバージョンによって生成された PDF ファイルを修復する"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1758
+#: src/receipts.vala:1758
 msgid "Failed to scan"
 msgstr "スキャンに失敗しました"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1773
+#: src/receipts.vala:1773
 msgid "Scan in progress"
 msgstr "スキャン実行中"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1957
+#: src/receipts.vala:1957
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[デバイス…] — スキャンユーティリティ"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1968
+#: src/receipts.vala:1968
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

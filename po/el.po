@@ -1,13 +1,13 @@
-# Greek translation for simple-scan
+# Greek translation for receipts
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 # Efstathios Iosifidis <iosifidis@opensuse.org>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan:el\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts:el\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2021-02-25 11:16+0000\n"
 "PO-Revision-Date: 2021-03-03 20:47+0200\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "Συσκευή που χρησιμοποιείται για σάρωση"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "Συσκευή SANE που χρησιμοποιείται για την λήψη εικόνων."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Ο τύπος του εγγράφου που σαρώνεται"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -40,11 +40,11 @@ msgstr ""
 "Ο τύπος του έγγραφου που σαρώνεται.  Αυτή η ρύθμιση καθορίζει την ανάλυση, "
 "το χρώμα και την μετα-επεξεργασία της σάρωσης."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Πλάτος του χαρτιού σε δέκατα του χιλιοστού (mm)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -52,11 +52,11 @@ msgstr ""
 "Πλάτος του χαρτιού σε δέκατα του χιλιοστού (mm) (ή 0 για την αυτόματη "
 "ανίχνευση χαρτιού)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Ύψος σελίδας σε δέκατα του χιλιοστού (mm)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -64,64 +64,64 @@ msgstr ""
 "Ύψος του χαρτιού σε δέκατα του χιλιοστού (mm) (ή 0 για την αυτόματη "
 "ανίχνευση χαρτιού)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Φωτεινότητα σάρωσης"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "Προσαρμογή της φωτεινότητας από -100 έως 100 (0 χωρίς προσαρμογή)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Αντίθεση σάρωσης"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "Προσαρμογή της αντίθεσης από -100 έως 100 (0 χωρίς προσαρμογή)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Ανάλυση για σάρωση κειμένου"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr ""
 "Η ανάλυση σε κουκκίδες ανά ίντσα που θα χρησιμοποιηθεί στην σάρωση κειμένων."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "Ανάλυση για σαρώσεις εικόνας"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr ""
 "Η ανάλυση σε κουκκίδες ανά ίντσα που θα χρησιμοποιηθεί στην σάρωση εικόνων."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Πλευρά σελίδας για σάρωση"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "Η πλευρά της σελίδας για σάρωση."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Κατάλογος στον οποίο θα αποθηκευτούν τα αρχεία"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "Ο κατάλογος στον οποίο θα αποθηκευτούν τα αρχεία. Αν δεν ορισθεί, προεπιλογή "
 "είναι ο κατάλογος εγγράφων."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "Μορφή αρχείου που χρησιμοποιείται για την αποθήκευση αρχείων εικόνας"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -130,19 +130,19 @@ msgstr ""
 "Παραδείγματα υποστηριζόμενων τύπων MIME: image/jpeg, image/png, application/"
 "pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "Τιμή της ποιότητας που θα χρησιμοποιηθεί για τη συμπίεση JPEG"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "Τιμή της ποιότητας που θα χρησιμοποιηθεί για τη συμπίεση JPEG."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "Καθυστέρηση ανάμεσα στις σελίδες, σε χιλιοστά του δευτερολέπτου"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "Καθυστέρηση ανάμεσα στις σελίδες, σε χιλιοστά του δευτερολέπτου."
 
@@ -150,17 +150,17 @@ msgstr "Καθυστέρηση ανάμεσα στις σελίδες, σε χι
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:498 src/app-window.vala:1582 src/app-window.vala:1862
 msgid "Document Scanner"
 msgstr "Σαρωτής εγγράφων"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr ""
 "Δημιουργήστε ένα ψηφιακό αντίγραφο των φωτογραφιών και των εγγράφων σας"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -171,18 +171,18 @@ msgstr ""
 "περιστρέψετε εφόσον χρειάζεται. Μπορείτε να εκτυπώσετε τις σαρώσεις σας, να "
 "τις εξάγετε ως pdf, ή να τις αποθηκεύσετε σε μια ποικιλία μορφών εικόνας."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "Αυτή η εφαρμογή χρησιμοποιεί το πλαίσιο SANE ώστε να υποστηρίζει τους "
 "περισσότερους σαρωτές."
 
-#: data/simple-scan.appdata.xml.in:26
+#: data/receipts.appdata.xml.in:26
 msgid "The GNOME Project"
 msgstr "Το έργο GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;scanner;flatbed;adf;σάρωση;σαρωτής;"
 
@@ -653,7 +653,7 @@ msgstr "Πλήρης λεπτομέρεια"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "Υπάρχει ήδη αρχείο με το όνομα «%s». Θέλετε να αντικατασταθεί;"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "_Αντικατάσταση"
@@ -1088,38 +1088,38 @@ msgid "Error communicating with scanner"
 msgstr "Σφάλμα κατά την επικοινωνία με τον σαρωτή"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Προβολή αριθμού έκδοσης"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Εμφάνιση μηνυμάτων εντοπισμού σφαλμάτων"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr ""
 "Διόρθωση αρχείων PDF που δημιουργήθηκαν με παλαιότερες εκδόσεις του "
 "λογισμικού της εφαρμογής"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1757
+#: src/receipts.vala:1757
 msgid "Failed to scan"
 msgstr "Η σάρωση απέτυχε"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1772
+#: src/receipts.vala:1772
 msgid "Scan in progress"
 msgstr "Γίνεται σάρωση"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1956
+#: src/receipts.vala:1956
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[ΣΥΣΚΕΥΗ…] — Εργαλείο σάρωσης"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1967
+#: src/receipts.vala:1967
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

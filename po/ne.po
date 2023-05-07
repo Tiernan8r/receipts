@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnome Nepali Translation Project\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2021-02-12 14:16+0000\n"
 "PO-Revision-Date: 2021-04-08 21:34+0545\n"
 "Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
@@ -18,120 +18,120 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 #, fuzzy
 msgid "Device to scan from"
 msgstr "समतल गरिएको स्क्यानरबाट निरन्तर स्क्यान गर्नुहोस्"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 #, fuzzy
 msgid "SANE device to acquire images from."
 msgstr "तपाईँको क्यामेरा यन्त्रबाट छविहरू प्रदर्शन गर्नुहोस्"
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "स्क्यान गरिँदै कागजातको प्रकार"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid "Type of document being scanned. This setting decides on the scan resolution, colors and post-processing."
 msgstr "कागजात स्क्यान गरिँदैछ। यो सेटिङ स्क्यान रिजोल्युसन, रङ र पोष्ट प्रसोधनमा निर्णय गर्दछ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "कागजको चौडाइ मिमी को दसौं भाग"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid "The width of the paper in tenths of a mm (or 0 for automatic paper detection)."
 msgstr "एक मिमी को दसौं पानामा कागजको चौडाई (वा स्वचालित कागज अन्वेषणको लागि ०)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "कागजको उचाइ मिमी को दसौं भाग"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid "The height of the paper in tenths of a mm (or 0 for automatic paper detection)."
 msgstr "एक मिमी को दसौं पानामा कागजको उचाई (वा स्वचालित कागज अन्वेषणको लागि ०)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 #, fuzzy
 msgid "Brightness of scan"
 msgstr "स्क्यान"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "-१०० देखि १०० सम्म चमक समायोजन (० कुनै पनि होइन)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "स्क्यानको व्यतिरेक"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "-१०० देखि १०० सम्मको विषमता समायोजन (० कुनै पनि होइन)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "स्क्या‍न पाठ रिजोल्युसन"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "पाठ स्क्यान गर्दा थोप्लो-प्रति-इन्चमा प्रयोग गर्नुहोस्।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 #, fuzzy
 #| msgid "Resolution for text scans"
 msgid "Resolution for image scans"
 msgstr "स्क्या‍न पाठ रिजोल्युसन"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 #, fuzzy
 #| msgid "The resolution in dots-per-inch to use when scanning text."
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "पाठ स्क्यान गर्दा थोप्लो-प्रति-इन्चमा प्रयोग गर्नुहोस्।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 #, fuzzy
 msgid "Page side to scan"
 msgstr "एकल पृष्ठ स्क्यान"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 #, fuzzy
 msgid "The page side to scan."
 msgstr "एकल पृष्ठ स्क्यान"
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "फाइल बचत गर्ने निर्देशिका"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 #, fuzzy
 msgid "The directory to save files to. Defaults to the documents directory if unset."
 msgstr "फाइलहरू बचत गर्न डाइरेक्टरी। यदि कागजात सेट गर्नुहोस् कागजात डाइरेक्टरीमा पूर्वनिर्धारित।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "छवि फाइल बचत गर्नका लागि प्रयोग गरिने फाइल ढाँचा"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid "MIME type that is used for saving image files. Examples of supported MIME types: image/jpeg, image/png, application/pdf"
 msgstr ""
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 #, fuzzy
 msgid "Quality value to use for JPEG compression"
 msgstr "JPEG सङ्कुचन गुण:"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 #, fuzzy
 msgid "Quality value to use for JPEG compression."
 msgstr "JPEG सङ्कुचन गुण:"
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 #, fuzzy
 msgid "Delay in millisecond between pages"
 msgstr "फोटोहरूको बीचमा समय"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 #, fuzzy
 msgid "Delay in millisecond between pages."
 msgstr "फोटोहरूको बीचमा समय"
@@ -140,15 +140,15 @@ msgstr "फोटोहरूको बीचमा समय"
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3 data/ui/app-window.ui:498 src/app-window.vala:1582 src/app-window.vala:1862
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3 data/ui/app-window.ui:498 src/app-window.vala:1582 src/app-window.vala:1862
 msgid "Document Scanner"
 msgstr "कागजात स्क्यानर"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "तपाईँको फोटो र कागजातको डिजिटल प्रतिलिपि बनाउनुहोस्"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad parts of an image and rotate it if it is the wrong way round. You can print your scans, export them to "
 "pdf, or save them in a range of image formats."
@@ -156,16 +156,16 @@ msgstr ""
 "पाठ र छवि दुबै स्क्यान गर्न एक साँच्चै सजिलो तरिका। यदि यो गलत तरिकाले घुमाइएको छ भने तपाईँले छविको खराब भाग काटछाँट गर्न र घुमाउन सक्नुहुन्छ । तपाईँले आफ्नो स्क्यान मुद्रण गर्न, तिनीहरूलाई pdf मा निर्यात "
 "गर्न, वा तिनीहरूलाई छवि ढाँचाको दायरामा बचत गर्न सक्नुहुन्छ ।"
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr "यो अनुप्रयोगले धेरै अवस्थित स्क्यानर समर्थन गर्न SANE फ्रेमवर्क प्रयोग गर्दछ ।"
 
-#: data/simple-scan.appdata.xml.in:26
+#: data/receipts.appdata.xml.in:26
 msgid "The GNOME Project"
 msgstr "जिनोम परियोजना"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "स्क्यानर;स्क्यानर;समतल;adf;"
 
@@ -654,7 +654,7 @@ msgstr "सम्पुर्ण वर्णन"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "\"%s\" नाम गरिएको फाइल पहिले नै अवस्थित छ ।  तपाईँ यसलाई प्रतिस्थापन गर्न चाहनुहुन्छ?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "प्रतिस्थापन गर्नुहोस्"
@@ -1051,36 +1051,36 @@ msgid "Error communicating with scanner"
 msgstr "स्क्यानर जडानमा त्रुटि"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "रिलिज भर्जन देखाउने"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "डिबग सन्देशहरु प्रिन्ट गर्ने।"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "यो अनुप्रयोगको पुरानो संस्करणहरू संग उत्पन्न पीडीएफ फाइलहरू फिक्स गर्नुहोस्"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1757
+#: src/receipts.vala:1757
 msgid "Failed to scan"
 msgstr "स्क्यान असफल"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1772
+#: src/receipts.vala:1772
 msgid "Scan in progress"
 msgstr "स्क्यान प्रगति"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1956
+#: src/receipts.vala:1956
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[यन्त्र...] — स्क्यानिङ युटिलिटी"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1967
+#: src/receipts.vala:1967
 #, fuzzy, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

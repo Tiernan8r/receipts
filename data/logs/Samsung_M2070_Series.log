@@ -1,9 +1,9 @@
-[+0,00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.28.0, PID=13582
+[+0,00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.28.0, PID=13582
 [+0,16s] DEBUG: scanner.vala:1454: sane_init () -> SANE_STATUS_GOOD
 [+0,16s] DEBUG: scanner.vala:1460: SANE version 1.0.27
 [+0,16s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
 [+0,16s] DEBUG: scanner.vala:806: Processing request
-[+6,05s] DEBUG: simple-scan.vala:454: Requesting scan at 300 dpi from device '(null)'
+[+6,05s] DEBUG: receipts.vala:454: Requesting scan at 300 dpi from device '(null)'
 [+6,05s] DEBUG: scanner.vala:1569: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=10000ms)
 [+7,60s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+7,60s] DEBUG: scanner.vala:353: Device: name="smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ" vendor="Samsung" model="M2070 Series on USB" type="Scanner"
@@ -49,8 +49,8 @@
 [+8,08s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+8,08s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+8,08s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7650 pixels_per_line=2550 lines=3507 depth=8
-[+8,08s] DEBUG: simple-scan.vala:349: Page is 2550 pixels wide, 3507 pixels high, 8 bits per pixel
-[+8,10s] DEBUG: simple-scan.vala:283: Getting color profile for device smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ
-[+8,11s] DEBUG: simple-scan.vala:303: Unable to find colord device smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ: property match 'Serial'='sane:smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ' does not exist
+[+8,08s] DEBUG: receipts.vala:349: Page is 2550 pixels wide, 3507 pixels high, 8 bits per pixel
+[+8,10s] DEBUG: receipts.vala:283: Getting color profile for device smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ
+[+8,11s] DEBUG: receipts.vala:303: Unable to find colord device smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ: property match 'Serial'='sane:smfp:usb;04e8;3469;ZF5RB8KK8D00CFJ' does not exist
 [+9,70s] DEBUG: scanner.vala:1321: sane_read (7651) -> (SANE_STATUS_GOOD, 7651)
 [+9,70s] DEBUG: scanner.vala:1321: sane_read (15300) -> (SANE_STATUS_GOOD, 15300)

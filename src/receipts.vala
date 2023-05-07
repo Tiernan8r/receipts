@@ -9,7 +9,7 @@
  * license.
  */
 
-public class SimpleScan : Adw.Application
+public class Receipts : Adw.Application
 {
     static bool show_version;
     static bool debug_enabled;
@@ -37,10 +37,10 @@ public class SimpleScan : Adw.Application
     private Book book;
     private Page scanned_page;
 
-    public SimpleScan (ScanDevice? device = null)
+    public Receipts (ScanDevice? device = null)
     {
         /* The inhibit () method use this */
-        Object (application_id: "org.gnome.SimpleScan");
+        Object (application_id: "me.tiernan8r.Receipts");
         register_session = true;
 
         default_device = device;
@@ -1787,7 +1787,7 @@ public class SimpleScan : Adw.Application
                 {
                     if ((fdss = FreedesktopScreensaver.get_proxy ()) != null)
                     {
-                        inhibit_cookie = fdss.inhibit ("Simple-Scan", reason);
+                        inhibit_cookie = fdss.inhibit ("receipts", reason);
                     }
                 }
                 catch (Error error) {}
@@ -1973,7 +1973,7 @@ public class SimpleScan : Adw.Application
         if (show_version)
         {
             /* Note, not translated so can be easily parsed */
-            stderr.printf ("simple-scan %s\n", VERSION);
+            stderr.printf ("receipts %s\n", VERSION);
             return Posix.EXIT_SUCCESS;
         }
         if (fix_pdf_filename != null)
@@ -2002,9 +2002,9 @@ public class SimpleScan : Adw.Application
 
         /* Log to a file */
         log_timer = new Timer ();
-        var path = Path.build_filename (Environment.get_user_cache_dir (), "simple-scan", null);
+        var path = Path.build_filename (Environment.get_user_cache_dir (), "receipts", null);
         DirUtils.create_with_parents (path, 0700);
-        path = Path.build_filename (Environment.get_user_cache_dir (), "simple-scan", "simple-scan.log", null);
+        path = Path.build_filename (Environment.get_user_cache_dir (), "receipts", "receipts.log", null);
         log_file = FileStream.open (path, "w");
         if (log_file == null )
         {
@@ -2017,7 +2017,7 @@ public class SimpleScan : Adw.Application
 
         Gtk.init ();
 
-        var app = new SimpleScan (device);
+        var app = new Receipts (device);
         return app.run ();
     }
 }

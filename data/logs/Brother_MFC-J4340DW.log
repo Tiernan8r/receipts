@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:2014: Starting simple-scan 40.1, PID=136048
+[+0.00s] DEBUG: receipts.vala:2014: Starting receipts 40.1, PID=136048
 [+0.00s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
 [+0.08s] DEBUG: app-window.vala:1982: Restoring window to 1350x926 pixels
 [+0.09s] DEBUG: scanner.vala:1590: sane_init () -> SANE_STATUS_GOOD
@@ -8,7 +8,7 @@
 [+0.27s] DEBUG: app-window.vala:2078: Saving state to [...]
 [+2.11s] DEBUG: scanner.vala:348: sane_get_devices () -> SANE_STATUS_GOOD
 [+2.11s] DEBUG: scanner.vala:360: Device: name="brother5:bus1;dev2" vendor="Brother" model="MFC-J4340DW" type="USB scanner"
-[+25.28s] DEBUG: simple-scan.vala:1819: Requesting scan at 300 dpi from device 'brother5:bus1;dev2'
+[+25.28s] DEBUG: receipts.vala:1819: Requesting scan at 300 dpi from device 'brother5:bus1;dev2'
 [+25.28s] DEBUG: scanner.vala:1748: Scanner.scan ("brother5:bus1;dev2", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=adf, side=both, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=0ms)
 [+25.28s] DEBUG: scanner.vala:844: Processing request
 [+25.45s] DEBUG: scanner.vala:905: sane_open ("brother5:bus1;dev2") -> SANE_STATUS_GOOD
@@ -75,4 +75,4 @@
 [+36.37s] DEBUG: scanner.vala:1359: sane_get_parameters () -> SANE_STATUS_GOOD
 [+36.37s] DEBUG: scanner.vala:1371: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7404 pixels_per_line=2468 lines=3496 depth=8
 [+36.37s] DEBUG: scanner.vala:1446: sane_read (7405) -> (SANE_STATUS_GOOD, 7404)
-[+36.37s] DEBUG: simple-scan.vala:1714: Page is 2468 pixels wide, 3496 pixels high, 8 bits per pixel
+[+36.37s] DEBUG: receipts.vala:1714: Page is 2468 pixels wide, 3496 pixels high, 8 bits per pixel

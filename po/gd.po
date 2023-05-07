@@ -1,12 +1,12 @@
-# Gaelic; Scottish translation for simple-scan
+# Gaelic; Scottish translation for receipts
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # GunChleoc <fios@foramnagaidhlig.net>, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2018-01-22 02:21+0000\n"
 "PO-Revision-Date: 2018-02-23 12:27+0100\n"
 "Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-25 06:10+0000\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "An t-uidheam a nì an sganadh"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "An t-uidheam SANE a gheibhear na h-ìomhaighean uaithe."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Seòrsa na sgrìobhainne a tha ’ga sganadh"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -40,11 +40,11 @@ msgstr ""
 "Seòrsa na sgrìobhainne a tha ’ga sganadh. Tha an roghainn seo a’ "
 "suidheachadh dùmhlachd-bhreacaidh, dathan agus iar-ghiullachd an sgana."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Leud a’ phàipeir ann an deicheamhan de mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -52,11 +52,11 @@ msgstr ""
 "Leud a’ phàipeir ann an deicheamhan de mm (no 0 airson mothachadh fèin-"
 "obrachail do leud a’ phàipeir)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Àirde a’ phàipeir ann an deicheamhan de mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -64,78 +64,78 @@ msgstr ""
 "Àirde a’ phàipeir ann an deicheamhan de mm (no 0 airson mothachadh fèin-"
 "obrachail do dh’àirde a’ phàipeir)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Soilleireachd an sgana"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr ""
 "Socrachadh na soilleireachd eadar -100 agus 100 (’s ciall dha 0 nach bi gin "
 "ann)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Iomsgaradh an sgana"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr ""
 "Socrachadh an iomsgaraidh eadar -100 agus 100 (’s ciall dha 0 nach bi gin "
 "ann)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "An dùmhlachd-bhreacaidh airson sganadh teacsa"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr ""
 "Dùmhlachd-bhreacaidh, ann a dotagan gach òirleach, a chleachdar airson "
 "sganadh teacsa."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for photo scans"
 msgstr "An dùmhlachd-bhreacaidh airson sganadh dhealbhan"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning photos."
 msgstr ""
 "Dùmhlachd-bhreacaidh, ann a dotagan gach òirleach, a chleachdar airson "
 "sganadh dhealbhan."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Dè taobh na duilleige a tha ri sganadh"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "Dè taobh na duilleige a tha ri sganadh."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Am pasgan san dèid na faidhlichean a shàbhaladh ann"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "Am pasgan san dèid na faidhlichean a shàbhaladh ann. Thèid an sàbhaladh ann "
 "am pasgan nan sgrìobhainnean a ghnàth mur an deach seo atharrachadh."
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid "Quality value to use for JPEG compression"
 msgstr "Ìre na càileachd a thèid a chleachdadh airson dùmhlachdh JPEG"
 
-#: data/org.gnome.SimpleScan.gschema.xml:67
+#: data/me.tiernan8r.Receipts.gschema.xml:67
 msgid "Quality value to use for JPEG compression."
 msgstr "Ìre na càileachd a thèid a chleachdadh airson dùmhlachdh JPEG."
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Delay in millisecond between pages"
 msgstr "Dàil de mille-dhiog eadar na duilleagan"
 
-#: data/org.gnome.SimpleScan.gschema.xml:73
+#: data/me.tiernan8r.Receipts.gschema.xml:73
 msgid "Delay in millisecond between pages."
 msgstr "Dàil de mille-dhiog eadar na duilleagan."
 
@@ -143,16 +143,16 @@ msgstr "Dàil de mille-dhiog eadar na duilleagan."
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: src/app-window.ui:76 src/app-window.vala:1560
 msgid "Simple Scan"
 msgstr "Sganadh simplidh"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:5
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:5
 msgid "Scan Documents"
 msgstr "Sganaich sgrìobhainnean"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both documents and photos. You can crop out the "
 "bad parts of a photo and rotate it if it is the wrong way round. You can "
@@ -165,23 +165,23 @@ msgstr ""
 "sganaich thu a chlò-bhualadh, às-phortadh gu PDF no a shàbhaladh ann an "
 "taghadh de fhòrmatan deilbh."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "Simple Scan uses the SANE framework to support most existing scanners."
 msgstr ""
 "Cleachdaidh Sganadh simplidh a’ framework SANE gus taic a thoirt dhan "
 "mhòrchuid a sganairean a tha ann."
 
-#: data/simple-scan.desktop.in:4
+#: data/receipts.desktop.in:4
 msgid "Document Scanner"
 msgstr "Sganair sgrìobhainnean"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:7
+#: data/receipts.desktop.in:7
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;scanner;flatbed;adf;sganair;sganaich;sganadh;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/simple-scan.desktop.in:10
+#: data/receipts.desktop.in:10
 msgid "scanner"
 msgstr "scanner"
 
@@ -470,7 +470,7 @@ msgstr ""
 "Tha faidhle air a bheil “%s” ann mu thràth. A bheil thu airson am fear ùr a "
 "chur ’na àite?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:473
 msgid "_Replace"
 msgstr "Cui_r ’na àite"
@@ -1046,39 +1046,39 @@ msgid "Error communicating with scanner"
 msgstr "Thachair mearachd nuair a bha sinn a’ conaltradh ris an sganair"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Seall tionndadh an sgaoilidh"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Clò-bhuail teachdaireachdan dì-bhugachaidh"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of Simple Scan"
 msgstr ""
 "Càirich faidhlichean PDF a chaidh a chruthachadh le seann-tionndaidhean dhe "
 "Sganadh simplidh"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:392
+#: src/receipts.vala:392
 msgid "Failed to scan"
 msgstr "Dh’fhàillig an sganadh"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:407
+#: src/receipts.vala:407
 msgid "Scan in progress"
 msgstr "’Ga sganadh"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:584
+#: src/receipts.vala:584
 #| msgid "[DEVICE...] - Scanning utility"
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DEVICE…] – Goireas sganaidh"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:595
+#: src/receipts.vala:595
 #, c-format
 #| msgid ""
 #| "Run '%s --help' to see a full list of available command line options."

@@ -171,5 +171,5 @@
 [+11.05s] DEBUG: sane_get_parameters () -> SANE_STATUS_GOOD
 [+11.05s] DEBUG: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7632 pixels_per_line=2544 lines=3509 depth=8
 [+11.05s] DEBUG: Page is 2544 pixels wide, 3509 pixels high, 8 bits per pixel
-[+11.16s] DEBUG: The request failed: The name org.gnome.ColorManager was not provided by any .service files
+[+11.16s] DEBUG: The request failed: The name me.tiernan8r.ColorManager was not provided by any .service files
 [+13.63s] DEBUG: sane_read (7633) -> (SANE_STATUS_GOOD, 7633)

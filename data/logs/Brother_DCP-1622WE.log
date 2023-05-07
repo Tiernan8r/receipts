@@ -1,11 +1,11 @@
-[+0.00s] DEBUG: simple-scan.vala:638: Starting simple-scan 3.34.2, PID=2683
+[+0.00s] DEBUG: receipts.vala:638: Starting receipts 3.34.2, PID=2683
 [+0.20s] DEBUG: scanner.vala:1485: sane_init () -> SANE_STATUS_GOOD
 [+0.20s] DEBUG: scanner.vala:1491: SANE version 1.0.28
 [+0.20s] DEBUG: scanner.vala:1552: Requesting redetection of scan devices
 [+0.20s] DEBUG: scanner.vala:806: Processing request
 [+0.23s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+0.23s] DEBUG: scanner.vala:353: Device: name="brother4:net1;dev0" vendor="Brother" model="*Brother" type="DCP-1622WE"
-[+2.70s] DEBUG: simple-scan.vala:455: Requesting scan at 300 dpi from device 'brother4:net1;dev0'
+[+2.70s] DEBUG: receipts.vala:455: Requesting scan at 300 dpi from device 'brother4:net1;dev0'
 [+2.70s] DEBUG: scanner.vala:1600: Scanner.scan ("brother4:net1;dev0", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=3000ms)
 [+2.70s] DEBUG: scanner.vala:806: Processing request
 [+10.70s] DEBUG: scanner.vala:867: sane_open ("brother4:net1;dev0") -> SANE_STATUS_GOOD
@@ -54,7 +54,7 @@
 [+15.87s] DEBUG: scanner.vala:1241: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+15.87s] DEBUG: scanner.vala:1258: sane_get_parameters () -> SANE_STATUS_GOOD
 [+15.87s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7440 pixels_per_line=2480 lines=3437 depth=8
-[+15.87s] DEBUG: simple-scan.vala:350: Page is 2480 pixels wide, 3437 pixels high, 8 bits per pixel
-[+15.89s] DEBUG: simple-scan.vala:284: Getting color profile for device brother4:net1;dev0
-[+15.90s] DEBUG: simple-scan.vala:304: Unable to find colord device brother4:net1;dev0: property match 'Serial'='sane:brother4:net1;dev0' does not exist
+[+15.87s] DEBUG: receipts.vala:350: Page is 2480 pixels wide, 3437 pixels high, 8 bits per pixel
+[+15.89s] DEBUG: receipts.vala:284: Getting color profile for device brother4:net1;dev0
+[+15.90s] DEBUG: receipts.vala:304: Unable to find colord device brother4:net1;dev0: property match 'Serial'='sane:brother4:net1;dev0' does not exist
 [+16.49s] DEBUG: scanner.vala:1345: sane_read (7441) -> (SANE_STATUS_GOOD, 7441)

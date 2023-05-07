@@ -1,11 +1,11 @@
-# Tamil translation for simple-scan
+# Tamil translation for receipts
 # Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
+"Project-Id-Version: receipts\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-04-16 08:54-0400\n"
 "PO-Revision-Date: 2014-03-22 13:36+0000\n"
@@ -19,310 +19,310 @@ msgstr ""
 "X-Generator: Launchpad (build 18361)\n"
 
 #. Button to submit authorization dialog
-#: src/simple-scan.ui:24
+#: src/receipts.ui:24
 msgid "_Authorize"
 msgstr "_அனுமதியளி"
 
 #. Label beside username entry
-#: src/simple-scan.ui:102
+#: src/receipts.ui:102
 msgid "_Username for resource:"
 msgstr ""
 
 #. Label beside password entry
-#: src/simple-scan.ui:117
+#: src/receipts.ui:117
 msgid "_Password:"
 msgstr ""
 
 #. Combo box label for scanning both sides of a page
-#: src/simple-scan.ui:188
+#: src/receipts.ui:188
 msgid "Front and Back"
 msgstr "முன் மற்றும் பின்"
 
 #. Combo box label for scanning the front side of a page
-#: src/simple-scan.ui:192
+#: src/receipts.ui:192
 msgid "Front"
 msgstr "முன்னால்"
 
 #. Combo box label for scanning the back side of a page
-#: src/simple-scan.ui:196
+#: src/receipts.ui:196
 msgid "Back"
 msgstr "பின் செல்க"
 
 #. Title of scan window
-#: src/simple-scan.ui:231 src/simple-scan.ui:815 data/simple-scan.desktop.in:3
-#: data/simple-scan.appdata.xml.in:6
+#: src/receipts.ui:231 src/receipts.ui:815 data/receipts.desktop.in:3
+#: data/receipts.appdata.xml.in:6
 msgid "Simple Scan"
 msgstr ""
 
 #. Label on document menu (contains actions for this document, e.g. save, print)
-#: src/simple-scan.ui:247
+#: src/receipts.ui:247
 msgid "_Document"
 msgstr ""
 
 #. Scan menu item
-#: src/simple-scan.ui:266
+#: src/receipts.ui:266
 msgid "Sc_an"
 msgstr ""
 
 #. Scan menu item to scan a single page from the scanner
 #. Toolbar scan menu item to scan a single page from the scanner
-#: src/simple-scan.ui:279 src/simple-scan.ui:1343 src/simple-scan.ui:1402
+#: src/receipts.ui:279 src/receipts.ui:1343 src/receipts.ui:1402
 msgid "Single _Page"
 msgstr "தனி _பக்கம்"
 
 #. Scan menu item to scan all pages from a document feeder
 #. Toolbar scan menu item to scan all pages from a document feeder
-#: src/simple-scan.ui:289 src/simple-scan.ui:1352 src/simple-scan.ui:1411
+#: src/receipts.ui:289 src/receipts.ui:1352 src/receipts.ui:1411
 msgid "All Pages From _Feeder"
 msgstr "அனைத்து பக்கங்களை பீடர் இருந்து உள்ளன"
 
 #. Scan menu item to scan continuously from the flatbed
 #. Toolbar scan menu item to scan continuously from the flatbed
-#: src/simple-scan.ui:299 src/simple-scan.ui:1361 src/simple-scan.ui:1420
+#: src/receipts.ui:299 src/receipts.ui:1361 src/receipts.ui:1420
 msgid "_Multiple Pages From Flatbed"
 msgstr ""
 
 #. Menu entry to stop current scan
-#: src/simple-scan.ui:310
+#: src/receipts.ui:310
 msgid "_Stop Scan"
 msgstr ""
 
-#: src/simple-scan.ui:326 src/simple-scan.ui:1376 src/simple-scan.ui:1435
+#: src/receipts.ui:326 src/receipts.ui:1376 src/receipts.ui:1435
 msgid "Text"
 msgstr "உரை"
 
-#: src/simple-scan.ui:336 src/simple-scan.ui:1386 src/simple-scan.ui:1445
+#: src/receipts.ui:336 src/receipts.ui:1386 src/receipts.ui:1445
 msgid "Photo"
 msgstr ""
 
 #. Menu item to reorder pages
 #. Title of dialog to reorder pages
-#: src/simple-scan.ui:352 src/ui.vala:1247 src/ui.vala:1891
+#: src/receipts.ui:352 src/ui.vala:1247 src/ui.vala:1891
 msgid "Reorder Pages"
 msgstr ""
 
 #. Label on email menu item
-#: src/simple-scan.ui:371
+#: src/receipts.ui:371
 msgid "_Email"
 msgstr "_மின்னஞ்சல்"
 
 #. Page menu (contains action for each page, e.g. delete, crop)
-#: src/simple-scan.ui:436
+#: src/receipts.ui:436
 msgid "_Page"
 msgstr ""
 
 #. Menu item to rotate page to left (anti-clockwise)
-#: src/simple-scan.ui:446
+#: src/receipts.ui:446
 msgid "Rotate _Left"
 msgstr "இடதுபுறமாக சுழற்று"
 
 #. Menu item to rotate page to right (clockwise)
-#: src/simple-scan.ui:456
+#: src/receipts.ui:456
 msgid "Rotate _Right"
 msgstr ""
 
 #. Label for page crop submenu
-#: src/simple-scan.ui:466
+#: src/receipts.ui:466
 msgid "_Crop"
 msgstr "_ வெட்டு"
 
 #. Radio button for no crop
-#: src/simple-scan.ui:476
+#: src/receipts.ui:476
 msgid "_None"
 msgstr ""
 
 #. Radio button for cropping page to A4 size
-#: src/simple-scan.ui:487
+#: src/receipts.ui:487
 msgid "A_4"
 msgstr ""
 
 #. Radio button for cropping page to A5 size
-#: src/simple-scan.ui:498
+#: src/receipts.ui:498
 msgid "A_5"
 msgstr ""
 
 #. Radio button for cropping page to A6 size
-#: src/simple-scan.ui:509
+#: src/receipts.ui:509
 msgid "A_6"
 msgstr ""
 
 #. Radio button for cropping page to US letter size
-#: src/simple-scan.ui:520
+#: src/receipts.ui:520
 msgid "_Letter"
 msgstr ""
 
 #. Radio button for cropping to page to US legal size
-#: src/simple-scan.ui:531
+#: src/receipts.ui:531
 msgid "Le_gal"
 msgstr ""
 
 #. Radio button for cropping page to 4x6 inch
-#: src/simple-scan.ui:542
+#: src/receipts.ui:542
 msgid "4×6"
 msgstr ""
 
 #. Radio button for cropping to custom page size
-#: src/simple-scan.ui:553
+#: src/receipts.ui:553
 msgid "_Custom"
 msgstr "(_C) தனிப்பயன்"
 
 #. Menu item to rotate the crop area
-#: src/simple-scan.ui:571
+#: src/receipts.ui:571
 msgid "_Rotate Crop"
 msgstr ""
 
 #. Menu item to move the selected page to the left
-#: src/simple-scan.ui:584
+#: src/receipts.ui:584
 msgid "Move Left"
 msgstr ""
 
 #. Menu item to move the selected page to the right
-#: src/simple-scan.ui:593
+#: src/receipts.ui:593
 msgid "Move Right"
 msgstr "வலப்பக்கம் நகர்"
 
 #. Label on help menu
-#: src/simple-scan.ui:630
+#: src/receipts.ui:630
 msgid "_Help"
 msgstr "_உதவி"
 
 #. Help|Contents menu
-#: src/simple-scan.ui:638
+#: src/receipts.ui:638
 msgid "_Contents"
 msgstr "_உள்ளடக்கங்கள்"
 
 #. Tooltip for new document button
-#: src/simple-scan.ui:680 src/simple-scan.ui:891
+#: src/receipts.ui:680 src/receipts.ui:891
 msgid "Start a new document"
 msgstr ""
 
-#: src/simple-scan.ui:681
+#: src/receipts.ui:681
 msgid "New"
 msgstr ""
 
 #. Tooltip for scan toolbar button
-#: src/simple-scan.ui:695 src/simple-scan.ui:842
+#: src/receipts.ui:695 src/receipts.ui:842
 msgid "Scan a single page from the scanner"
 msgstr ""
 
 #. Label on scan toolbar item
-#: src/simple-scan.ui:697 src/simple-scan.ui:843
+#: src/receipts.ui:697 src/receipts.ui:843
 msgid "Scan"
 msgstr ""
 
 #. Tooltip for save toolbar button
-#: src/simple-scan.ui:713 src/simple-scan.ui:870
+#: src/receipts.ui:713 src/receipts.ui:870
 msgid "Save document to a file"
 msgstr ""
 
-#: src/simple-scan.ui:715 src/ui.vala:1892
+#: src/receipts.ui:715 src/ui.vala:1892
 msgid "Save"
 msgstr ""
 
 #. Tooltip for stop button
-#: src/simple-scan.ui:730 src/simple-scan.ui:830
+#: src/receipts.ui:730 src/receipts.ui:830
 msgid "Stop the current scan"
 msgstr ""
 
-#: src/simple-scan.ui:731 src/simple-scan.ui:831
+#: src/receipts.ui:731 src/receipts.ui:831
 msgid "Stop"
 msgstr ""
 
 #. Tooltip for rotate left (counter-clockwise) button
-#: src/simple-scan.ui:755 src/simple-scan.ui:942
+#: src/receipts.ui:755 src/receipts.ui:942
 msgid "Rotate the page to the left (counter-clockwise)"
 msgstr ""
 
 #. Label on rotate page left (anti-clockwise) item
-#: src/simple-scan.ui:756
+#: src/receipts.ui:756
 msgid "Rotate Left"
 msgstr ""
 
 #. Tooltip for rotate right (clockwise) button
-#: src/simple-scan.ui:770 src/simple-scan.ui:920
+#: src/receipts.ui:770 src/receipts.ui:920
 msgid "Rotate the page to the right (clockwise)"
 msgstr ""
 
 #. Label on rotate page right (clockwise) item
-#: src/simple-scan.ui:771
+#: src/receipts.ui:771
 msgid "Rotate Right"
 msgstr "வலப்பக்கம் சுழற்று"
 
-#: src/simple-scan.ui:785 src/simple-scan.ui:969
+#: src/receipts.ui:785 src/receipts.ui:969
 msgid "Crop the selected page"
 msgstr "தேர்வு செய்த பக்கத்தை வெட்டு"
 
-#: src/simple-scan.ui:787
+#: src/receipts.ui:787
 msgid "Crop"
 msgstr ""
 
 #. Title of preferences dialog
-#: src/simple-scan.ui:1003 src/ui.vala:1898
+#: src/receipts.ui:1003 src/ui.vala:1898
 msgid "Preferences"
 msgstr ""
 
 #. Label beside scan source combo box
-#: src/simple-scan.ui:1054
+#: src/receipts.ui:1054
 msgid "Scan S_ource:"
 msgstr ""
 
 #. Label beside scan source combo box
-#: src/simple-scan.ui:1085
+#: src/receipts.ui:1085
 msgid "_Text Resolution:"
 msgstr ""
 
 #. Label beside scan source combo box
-#: src/simple-scan.ui:1101
+#: src/receipts.ui:1101
 msgid "_Photo Resolution:"
 msgstr ""
 
 #. Label beside scan side combo box
-#: src/simple-scan.ui:1145
+#: src/receipts.ui:1145
 msgid "Scan Side:"
 msgstr ""
 
 #. Label beside page size combo box
-#: src/simple-scan.ui:1175
+#: src/receipts.ui:1175
 msgid "Page Size:"
 msgstr "பக்க அளவு:"
 
 #. Label beside brightness scale
-#: src/simple-scan.ui:1205
+#: src/receipts.ui:1205
 msgid "Brightness:"
 msgstr ""
 
 #. Label beside contrast scale
-#: src/simple-scan.ui:1235
+#: src/receipts.ui:1235
 msgid "Contrast:"
 msgstr ""
 
 #. Label beside quality scale
-#: src/simple-scan.ui:1266
+#: src/receipts.ui:1266
 msgid "Quality:"
 msgstr ""
 
 #. Label beside page delay scale
-#: src/simple-scan.ui:1297
+#: src/receipts.ui:1297
 msgid "Delay between pages:"
 msgstr ""
 
-#: data/simple-scan.desktop.in:4
+#: data/receipts.desktop.in:4
 msgid "Document Scanner"
 msgstr ""
 
-#: data/simple-scan.desktop.in:5 data/simple-scan.appdata.xml.in:7
+#: data/receipts.desktop.in:5 data/receipts.appdata.xml.in:7
 msgid "Scan Documents"
 msgstr ""
 
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr ""
 
-#: data/simple-scan.desktop.in:8
+#: data/receipts.desktop.in:8
 msgid "scanner"
 msgstr ""
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both documents and photos. You can crop out the "
 "bad parts of a photo and rotate it if it is the wrong way round. You can "
@@ -330,7 +330,7 @@ msgid ""
 "formats."
 msgstr ""
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid ""
 "Simple Scan uses the SANE framework to support most existing scanners."
 msgstr ""
@@ -356,31 +356,31 @@ msgid "Error communicating with scanner"
 msgstr ""
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr ""
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr ""
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of Simple Scan"
 msgstr ""
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:389
+#: src/receipts.vala:389
 msgid "Failed to scan"
 msgstr ""
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:619
+#: src/receipts.vala:619
 msgid "[DEVICE...] - Scanning utility"
 msgstr ""
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:630
+#: src/receipts.vala:630
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options."
 msgstr ""
@@ -469,7 +469,7 @@ msgstr ""
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr ""
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/ui.vala:650
 msgid "_Replace"
 msgstr ""

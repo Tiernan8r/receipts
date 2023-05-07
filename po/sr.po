@@ -1,13 +1,13 @@
-# Serbian translation for simple-scan
+# Serbian translation for receipts
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # Борисав Живановић <borisavzivanovic@gmail.com>, 2017.
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2023-02-14 17:17+0000\n"
 "PO-Revision-Date: 2023-02-17 07:39+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 3.1.1\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "Уређај за скенирање"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "Са ког САНЕ уређаја ће се узимати слике."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Врста скенираног документа"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -40,11 +40,11 @@ msgstr ""
 "Врста документа који се скенира. Ово подешавање утиче на резолуцију, боје и "
 "накнадну обраду."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Ширина папира у десетим деловима милиметра"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -52,11 +52,11 @@ msgstr ""
 "Ширина папира у десетим деловима милиметра (унети 0 за аутоматско "
 "препознавање папира)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Висина папира у десетим деловима милиметра"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -64,62 +64,62 @@ msgstr ""
 "Висина папира у десетим деловима милиметра (унети 0 за аутоматско "
 "препознавање папира)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Осветљеност приликом скенирања"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "Подешавање осветљености од -100 до 100 (0 за никакво осветљење)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Контраст приликом скенирања"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "Подешавање контраста од -100 до 100 (0 за без контраста)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Резолуција скенирања текста"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "Резолуција у тачкама по инчу за коришћење приликом скенирања текста."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "Резолуција скенирања слика"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "Резолуција у тачкама по инчу за коришћење приликом скенирања слика."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Страна папира за скенирање"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "Страна папира за скенирање."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Директоријум за чување датотека"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "Директоријум за чување датотека. Ако није постављено подразумева се "
 "директоријум за документе."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "Формат датотеке који се користи за чување слика"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -127,51 +127,51 @@ msgstr ""
 "МИМЕ врста која се користи за чување слика. Примери подржаних МИМЕ врста: "
 "image/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "Квалитет ЈПЕГ компресије"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "Вредност квалитета за коришћење приликом ЈПЕГ компресије."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "Размак у милисекундама између страница"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "Размак у милисекундама између страница."
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "Да ли је накнадна обрада омогућена"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "Да ли је накнадна обрада омогућена."
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "Путања до скрипте за накнадну обраду"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "Путања до скрипте за накнадну обраду."
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "Додатни аргументи за скрипту накнадне обраде"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "Додатни аргументи за скрипту накнадне обраде."
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "Да ли треба задржати изворну, необрађену датотеку"
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" "
 "filename will be added to the filename immediately before the file extension."
@@ -183,16 +183,16 @@ msgstr ""
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:454 src/app-window.vala:1584 src/app-window.vala:1858
 msgid "Document Scanner"
 msgstr "Скенер за документе"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "Направите дигиталне копије ваших фотографија и докумената"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -203,17 +203,17 @@ msgstr ""
 "штампати скениране датотеке, сачувати их у формату ПДФ или у великом избору "
 "осталих формата."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "Овај програм користи САНЕ радни оквир као подршку за велики број скенера."
 
-#: data/simple-scan.appdata.xml.in:27
+#: data/receipts.appdata.xml.in:27
 msgid "The GNOME Project"
 msgstr "Гномов пројекат"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr ""
 "scan;scanner;flatbed;adf;скенирање;скенер;копирање;skeniranje;skener;"
@@ -703,7 +703,7 @@ msgstr "Све појединости"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "Датотека са називом „%s“ већ постоји.  Да ли желите да је замените?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "_Замени"
@@ -1115,36 +1115,36 @@ msgid "Error communicating with scanner"
 msgstr "Грешка у комуникацији са скенером"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Прикажи верзију"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Испиши поруке за дебаговање"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "Поправи ПДФ датотеке које су направиле старија издања овог програма"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1758
+#: src/receipts.vala:1758
 msgid "Failed to scan"
 msgstr "Скенирање није успело"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1773
+#: src/receipts.vala:1773
 msgid "Scan in progress"
 msgstr "Скенирање у току"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1957
+#: src/receipts.vala:1957
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[УРЕЂАЈ…] — Алат за скенирање"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1968
+#: src/receipts.vala:1968
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

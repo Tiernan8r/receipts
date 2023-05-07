@@ -1,10 +1,10 @@
-[+0,00s] DEBUG: simple-scan.vala:674: Starting Simple Scan 3.20.0, PID=4280
+[+0,00s] DEBUG: receipts.vala:674: Starting Simple Scan 3.20.0, PID=4280
 [+0,12s] DEBUG: scanner.vala:1447: sane_init () -> SANE_STATUS_GOOD
 [+0,12s] DEBUG: scanner.vala:1453: SANE version 1.0.25
 [+0,12s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
 [+0,12s] DEBUG: scanner.vala:803: Processing request
 [+0,17s] DEBUG: autosave-manager.vala:281: Autosaving book information
-[+1,90s] DEBUG: simple-scan.vala:404: Requesting scan at 300 dpi from device '(null)'
+[+1,90s] DEBUG: receipts.vala:404: Requesting scan at 300 dpi from device '(null)'
 [+1,90s] DEBUG: scanner.vala:1560: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+11,95s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+11,95s] DEBUG: scanner.vala:350: Device: name="pixma:04A9176D_1B4C43" vendor="CANON" model="Canon PIXMA MG2500 Series" type="multi-function peripheral"
@@ -94,6 +94,6 @@
 [+12,48s] DEBUG: scanner.vala:1213: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+12,48s] DEBUG: scanner.vala:1230: sane_get_parameters () -> SANE_STATUS_GOOD
 [+12,48s] DEBUG: scanner.vala:1242: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7656 pixels_per_line=2552 lines=3508 depth=8
-[+12,48s] DEBUG: simple-scan.vala:348: Page is 2552 pixels wide, 3508 pixels high, 8 bits per pixel
+[+12,48s] DEBUG: receipts.vala:348: Page is 2552 pixels wide, 3508 pixels high, 8 bits per pixel
 [+12,48s] DEBUG: scanner.vala:1314: sane_read (7657) -> (SANE_STATUS_IO_ERROR, 0)
 [

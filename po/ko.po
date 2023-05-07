@@ -1,13 +1,13 @@
-# Korean translation for simple-scan
+# Korean translation for receipts
 # Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 # DaeHyun Sung <sungdh86+git@gmail.com>, 2018-2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2023-01-30 20:25+0000\n"
 "PO-Revision-Date: 2023-03-07 01:59+0900\n"
 "Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
@@ -20,153 +20,153 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-25 06:10+0000\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "스캔할 장치"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "SANE 장치에서 이미지를 가져옵니다."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "스캐닝한 문서 형식"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
 msgstr ""
 "스캐닝한 문서 형식. 이 설정은 스캔 해상도, 색 그리고 후처리를 결정합니다."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "종이의 너비(단위: 0.1mm)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "종이의 너비(단위: 0.1mm, 종이 크기를 자동으로 검출하려면 0으로 설정하십시오)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "종이의 높이(단위: 0.1mm)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "종이의 높이(단위: 0.1mm, 종이 크기를 자동으로 검출하려면 0으로 설정하십시오)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "스캔의 밝기"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "-100부터 100 사이에서 밝기를 조절합니다.(0은 조절안함)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "스캔의 명암"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "-100부터 100 사이에서 명암을 조절합니다.(0은 조절안함)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "택스트 스캔용 해상도"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "텍스트를 스캐닝할 때 사용할 해상도(단위: DPI)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "이미지 스캔용 해상도"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "이미지를 스캐닝할 때 사용할 해상도(단위: DPI)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "스캔할 페이지 방향"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "스캔할 페이지 방향."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "파일을 저장할 디렉터리"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "파일을 저장할 디렉터리입니다. 설정하지 않으면 기본 문서 디렉터리에 저장합니"
 "다."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "이미지 저장 파일 형식"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
 msgstr "이미지 파일 저장 MIME형식. 예: image/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "JPEG 압축에 사용할 품질 값"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "JPEG 압축에 사용할 품질 값입니다."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "페이지 간 지연 시간 (밀리초)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "페이지 갼 지연 시간 (밀리초)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "후처리 활성화 여부"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "후처리 활성화 여부."
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "후처리 스크립트 경로"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "후처리 스크립트 경로."
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "후처리 스크립트에 대한 추가 인수"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "후처리 스크립트에 대한 추가 인수."
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "처리되지 않은 원본파일의 유지 여부"
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" "
 "filename will be added to the filename immediately before the file extension."
@@ -178,16 +178,16 @@ msgstr ""
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:454 src/app-window.vala:1584 src/app-window.vala:1858
 msgid "Document Scanner"
 msgstr "문서 스캐너"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "사진과 문서의 디지털 복사본 만들기"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -198,19 +198,19 @@ msgstr ""
 "을 출력하거나, pdf 파일로 내보내거나, 여러 가지 이미지 형식으로 저장할 수 있"
 "습니다."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "이 프로그램은 현존하는 거의 모든 스캐너를 지원하는 SANE 프레임워크를 사용합니"
 "다."
 
-#: data/simple-scan.appdata.xml.in:27
+#: data/receipts.appdata.xml.in:27
 msgid "The GNOME Project"
 msgstr "그놈 프로젝트"
 
 # adf;Automatic document feeder;자동급지장치
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;스캔;scanner;스캐너;flatbed;평판 스캐너;adf;자동급지장치;"
 
@@ -698,7 +698,7 @@ msgstr "전체 상세"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "이미 “%s”(으)로 된 파일 이름이 존재합니다. 파일을 바꾸겠습니까?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "바꾸기(_R)"
@@ -1108,36 +1108,36 @@ msgid "Error communicating with scanner"
 msgstr "스캐너와의 통신 에러"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "릴리스 버전 보이기"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "디버깅 메시지 표시"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "이 프로그램의 이전 버전으로 만든 PDF 파일 고치기"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1758
+#: src/receipts.vala:1758
 msgid "Failed to scan"
 msgstr "스캔 실패"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1773
+#: src/receipts.vala:1773
 msgid "Scan in progress"
 msgstr "스캔 진행 중"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1957
+#: src/receipts.vala:1957
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[장치…] — 스캔 도구"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1968
+#: src/receipts.vala:1968
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr "사용 가능한 모든 선택의 목록을 보려면 “%s --help” 명령을 실행하십시오."

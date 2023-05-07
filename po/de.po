@@ -1,6 +1,6 @@
-# German translation for simple-scan
+# German translation for receipts
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 #
 # Launchpad Contributions:
 # .daniel. https://launchpad.net/~faessje
@@ -52,8 +52,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2023-01-30 20:25+0000\n"
 "PO-Revision-Date: 2023-02-03 18:15+0100\n"
 "Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
@@ -66,19 +66,19 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-25 06:10+0000\n"
 "X-Generator: Poedit 3.1.1\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "Scangerät"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "SANE-Gerät, von dem Bilder angefordert werden."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Typ des zu scannenden Dokuments"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -86,84 +86,84 @@ msgstr ""
 "Typ des zu scannenden Dokuments. Diese Einstellung entscheidet über die "
 "Auflösung, Farben und Nachbearbeitung."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Seitenbreite in Zehntelmillimetern"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "Seitenbreite in Zehntelmillimetern (oder 0 für automatische Papiererkennung)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Papierhöhe in Zehntelmillimetern"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "Papierhöhe in Zehntelmillimetern (oder 0 für automatische Papiererkennung)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Helligkeit des Scans"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "Helligkeitseinstellung von -100 bis 100 (0 keine)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Kontrast des Scans"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "Kontrasteinstellung von -100 bis 100 (0 keine)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Auflösung von Text-Scans"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "Die für Text zu verwendende Auflösung in DPI (Punkte pro Zoll)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "Auflösung von Bild-Scans"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "Die für Bilder zu verwendende Auflösung in DPI (Punkte pro Zoll)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Zu scannende Seite des Blattes"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "Die zu scannende Seite."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Ordner, in dem die Dateien gespeichert werden"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "Der Ordner, in dem die Dateien gespeichert werden. Vorgabe ist der "
 "»Dokumente«-Ordner, wenn nichts eingestellt ist."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "Dateiformat, das zum Speichern von Bilddateien verwendet wird"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -171,51 +171,51 @@ msgstr ""
 "MIME-Typ, der zum Speichern von Bilddateien verwendet wird. Beispiele für "
 "unterstützte MIME-Typen: image/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "Qualitätswert für die JPEG-Komprimierung"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "Qualitätswert, der für die JPEG-Komprimierung verwendet werden soll."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "Verzögerung zwischen Seiten in Millisekunden"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "Verzögerung zwischen Seiten in Millisekunden."
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "Legt fest, ob Nachbearbeitung eingeschaltet ist"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "Legt fest, ob Nachbearbeitung eingeschaltet ist."
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "Der Pfad zum Nachbearbeitungs-Skript"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "Der Pfad zum Nachbearbeitungs-Skript."
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "Zusätzliche Argumente für das Nachbearbeitungs-Skript"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "Zusätzliche Argumente für das Nachbearbeitungs-Skript."
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "Legt fest, ob das unbearbeitete Original beibehalten werden soll."
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" "
 "filename will be added to the filename immediately before the file extension."
@@ -227,16 +227,16 @@ msgstr ""
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:454 src/app-window.vala:1584 src/app-window.vala:1858
 msgid "Document Scanner"
 msgstr "Dokument-Scanner"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "Eine digitale Kopie Ihrer Fotos und Dokumente erstellen"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -248,18 +248,18 @@ msgstr ""
 "Dokument exportiert oder in einer Anzahl verschiedener Bildformate "
 "gespeichert werden."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "Diese Anwendung verwendet das SANE-Framework für die Unterstützung der "
 "meisten verfügbaren Scanner."
 
-#: data/simple-scan.appdata.xml.in:27
+#: data/receipts.appdata.xml.in:27
 msgid "The GNOME Project"
 msgstr "Das GNOME-Projekt"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;einlesen;scanner;Flachbett;flatbed;AVW;Vorlagenwechsler;adf;"
 
@@ -750,7 +750,7 @@ msgstr "Volle Details"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "Eine Datei namens »%s« existiert bereits. Möchten Sie diese ersetzen?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "E_rsetzen"
@@ -1195,38 +1195,38 @@ msgid "Error communicating with scanner"
 msgstr "Fehler bei der Kommunikation mit dem Scanner"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Versionsinformation anzeigen"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Fehlerdiagnosemeldungen anzeigen"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr ""
 "PDF-Dateien reparieren, die mit einer älteren Version dieser Anwendung "
 "erstellt wurden"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1758
+#: src/receipts.vala:1758
 msgid "Failed to scan"
 msgstr "Scannen fehlgeschlagen"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1773
+#: src/receipts.vala:1773
 msgid "Scan in progress"
 msgstr "Scanvorgang läuft"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1957
+#: src/receipts.vala:1957
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[GERÄT …] — Scan-Werkzeug"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1968
+#: src/receipts.vala:1968
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

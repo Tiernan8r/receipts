@@ -1,18 +1,18 @@
-[+0.00s] DEBUG: simple-scan.vala:1720: Starting simple-scan 3.36.3, PID=313755
+[+0.00s] DEBUG: receipts.vala:1720: Starting receipts 3.36.3, PID=313755
 [+0.00s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
 [+0.02s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-[+0.08s] DEBUG: app-window.vala:1906: Loading state from /home/arunasr/.cache/simple-scan/state
+[+0.08s] DEBUG: app-window.vala:1906: Loading state from /home/arunasr/.cache/receipts/state
 [+0.08s] DEBUG: app-window.vala:1885: Restoring window to 2648x1604 pixels
 [+0.15s] DEBUG: scanner.vala:1539: sane_init () -> SANE_STATUS_GOOD
 [+0.15s] DEBUG: scanner.vala:1545: SANE version 1.0.29
 [+0.15s] DEBUG: scanner.vala:1606: Requesting redetection of scan devices
 [+0.15s] DEBUG: scanner.vala:828: Processing request
-[+0.57s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/simple-scan/state
+[+0.57s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/receipts/state
 [+0.97s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+0.97s] DEBUG: scanner.vala:353: Device: name="BrotherADS2200:libusb:002:015" vendor="Brother" model="ADS2200" type="USB scanner"
 [+0.97s] DEBUG: scanner.vala:353: Device: name="epkowa:interpreter:002:010" vendor="Epson" model="GT-1500" type="flatbed scanner"
-[+1.27s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/simple-scan/state
-[+4.80s] DEBUG: simple-scan.vala:1536: Requesting scan at 150 dpi from device 'BrotherADS2200:libusb:002:015'
+[+1.27s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/receipts/state
+[+4.80s] DEBUG: receipts.vala:1536: Requesting scan at 150 dpi from device 'BrotherADS2200:libusb:002:015'
 [+4.80s] DEBUG: scanner.vala:1674: Scanner.scan ("BrotherADS2200:libusb:002:015", dpi=150, scan_mode=ScanMode.COLOR, depth=8, type=adf-front, paper_width=2100, paper_height=2970, brightness=21, contrast=32, delay=10000ms)
 [+4.80s] DEBUG: scanner.vala:828: Processing request
 [+5.12s] DEBUG: scanner.vala:889: sane_open ("BrotherADS2200:libusb:002:015") -> SANE_STATUS_GOOD
@@ -46,8 +46,8 @@
 [+5.12s] DEBUG: scanner.vala:483: sane_control_option (5, SANE_ACTION_SET_VALUE, 150) -> (SANE_STATUS_GOOD, 150)
 [+5.12s] DEBUG: scanner.vala:523: sane_control_option (3, SANE_ACTION_SET_VALUE, 210.000000) -> (SANE_STATUS_GOOD, 210.000000)
 [+5.12s] DEBUG: scanner.vala:523: sane_control_option (4, SANE_ACTION_SET_VALUE, 297.000000) -> (SANE_STATUS_GOOD, 297.000000)
-[+5.13s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/simple-scan/state
+[+5.13s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/receipts/state
 [+9.53s] DEBUG: scanner.vala:1285: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+9.53s] DEBUG: scanner.vala:1312: sane_get_parameters () -> SANE_STATUS_GOOD
 [+9.53s] DEBUG: scanner.vala:1324: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=155 pixels_per_line=1240 lines=1753 depth=1
-[+9.53s] DEBUG: simple-scan.vala:1431: Page is 1240 pixels wide, 1753 pixels high, 1 bits per pixel
+[+9.53s] DEBUG: receipts.vala:1431: Page is 1240 pixels wide, 1753 pixels high, 1 bits per pixel

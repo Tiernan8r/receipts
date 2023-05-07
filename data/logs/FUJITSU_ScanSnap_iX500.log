@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:674: Starting Simple Scan 3.20.0, PID=5543
+[+0.00s] DEBUG: receipts.vala:674: Starting Simple Scan 3.20.0, PID=5543
 [+0.14s] DEBUG: scanner.vala:1447: sane_init () -> SANE_STATUS_GOOD
 [+0.14s] DEBUG: scanner.vala:1453: SANE version 1.0.25
 [+0.14s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
@@ -8,7 +8,7 @@
 
 [+5.78s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+5.78s] DEBUG: scanner.vala:350: Device: name="net:localhost:fujitsu:ScanSnap iX500:1501132" vendor="FUJITSU" model="ScanSnap iX500" type="scanner"
-[+21.13s] DEBUG: simple-scan.vala:404: Requesting scan at 150 dpi from device 'net:localhost:fujitsu:ScanSnap iX500:1501132'
+[+21.13s] DEBUG: receipts.vala:404: Requesting scan at 150 dpi from device 'net:localhost:fujitsu:ScanSnap iX500:1501132'
 [+21.13s] DEBUG: scanner.vala:1560: Scanner.scan ("net:localhost:fujitsu:ScanSnap iX500:1501132", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+21.13s] DEBUG: scanner.vala:803: Processing request
 [+21.21s] DEBUG: scanner.vala:864: sane_open ("net:localhost:fujitsu:ScanSnap iX500:1501132") -> SANE_STATUS_GOOD

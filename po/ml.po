@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2018-10-26 14:22+0000\n"
 "PO-Revision-Date: 2018-10-23 07:32+0530\n"
 "Last-Translator: Athul R T <athul111@gmail.com>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "സ്കാൻ ചെയ്യുന്ന ഉപകരണം"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "ചിത്രങ്ങൾ എടുക്കുന്ന SANE ഉപകരണങ്ങൾ."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "സ്കാൻ ചെയ്യുന്ന ഡോക്യുമെന്റ് തരം"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -37,11 +37,11 @@ msgstr ""
 "സ്കാൻ ചെയ്യേണ്ട ഡോക്യുമെന്റ് തരം. സ്കാൻ റെസൊല്യൂഷൻ, നിറം, പോസ്റ്റ് പ്രോസസിങ് എന്നിവ "
 "തീരുമാനിക്കുന്നത്  ഈ ക്രമീകരണമാണ്."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "പേപ്പറിന്റെ വീതി മില്ലീമീറ്ററിന്റെ പത്തിലൊന്ന് കണക്കിൽ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -49,11 +49,11 @@ msgstr ""
 "പേപ്പറിന്റെ വീതി മില്ലീമീറ്ററിന്റെ പത്തിലൊന്ന് കണക്കിൽ (അല്ലെങ്കിൽ തനിയെ പേപ്പർ "
 "തിരിച്ചറിയുന്നതിനു 0 നൽകുക)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "പേപ്പറിന്റെ നീളം മില്ലീമീറ്ററിന്റെ പത്തിലൊന്ന് കണക്കിൽ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -61,68 +61,68 @@ msgstr ""
 "പേപ്പറിന്റെ നീളം മില്ലീമീറ്ററിന്റെ പത്തിലൊന്ന് കണക്കിൽ (അല്ലെങ്കിൽ തനിയെ പേപ്പർ "
 "തിരിച്ചറിയുന്നതിനു 0 നൽകുക)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "സ്കാനിന്റെ തെളിച്ചം"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "തെളിച്ചം -100 മുതൽ 100 വരെ ക്രമീകരിക്കുക (0 നു ഒട്ടുമില്ല)"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "സ്കാനിന്റെ കോണ്‍ട്രാസ്റ്റ്"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "കോണ്‍ട്രാസ്റ്റ് -100 മുതൽ 100 വരെ ക്രമീകരിക്കുക (0 നു ഒട്ടുമില്ല)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "ടെക്സ്റ്റ് സ്കാനിന്റെ റെസൊല്യൂഷൻ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "ടെക്സ്റ്റ് സ്കാനിന്റെ റെസൊല്യൂഷൻ ഡോട്‌സ് പെർ ഇഞ്ച് കണക്കിൽ."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for photo scans"
 msgstr "ചിത്രത്തിന്റെ സ്കാൻ റെസൊല്യൂഷൻ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning photos."
 msgstr "ചിത്രത്തിന്റെ സ്കാൻ റെസൊല്യൂഷൻ ഡോട്‌സ് പെർ ഇഞ്ച് കണക്കിൽ."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "സ്കാൻ ചെയ്യുന്ന പേജിന്റെ വശം"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "സ്കാൻ ചെയ്യുന്ന പേജിന്റെ വശം."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "ഫയൽ സൂക്ഷിക്കേണ്ട ഫോള്‍ഡര്‍"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr "ഫയൽ സൂക്ഷിക്കേണ്ട ഫോള്‍ഡര്‍ തെരഞ്ഞെടുത്തില്ലെങ്കിൽ ഡോക്യുമെന്റ്‌സ് ഫോള്‍ഡറിൽ സൂക്ഷിക്കപ്പെടും."
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid "Quality value to use for JPEG compression"
 msgstr "ജെപിഇജി ചുരുക്കുന്നതിന്റെ ഗുണമേന്മാ മൂല്യം"
 
-#: data/org.gnome.SimpleScan.gschema.xml:67
+#: data/me.tiernan8r.Receipts.gschema.xml:67
 msgid "Quality value to use for JPEG compression."
 msgstr "ജെപിഇജി ചുരുക്കുന്നതിന്റെ ഗുണമേന്മാ മൂല്യം."
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Delay in millisecond between pages"
 msgstr "പേജുകൾക്കിടയിലെ മില്ലി സെക്കന്റിന്റെ താമസം"
 
-#: data/org.gnome.SimpleScan.gschema.xml:73
+#: data/me.tiernan8r.Receipts.gschema.xml:73
 msgid "Delay in millisecond between pages."
 msgstr "പേജുകൾക്കിടയിലെ മില്ലി സെക്കന്റിന്റെ താമസം."
 
@@ -130,16 +130,16 @@ msgstr "പേജുകൾക്കിടയിലെ മില്ലി സെ�
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: src/app-window.ui:76 src/app-window.vala:1571
 msgid "Simple Scan"
 msgstr "സിംപിൾ സ്കാൻ"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:5
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:5
 msgid "Scan Documents"
 msgstr "ഡോക്യുമെന്റുകൾ സ്കാൻ ചെയ്യുക"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both documents and photos. You can crop out the "
 "bad parts of a photo and rotate it if it is the wrong way round. You can "
@@ -150,21 +150,21 @@ msgstr ""
 "വശങ്ങൾ മുറിച്ചുകളയുവാനും അതിനെ കറക്കുവാനും കഴിയും. നിങ്ങൾക്ക് സ്കാൻ പ്രിന്റ് ചെയ്യാനും പിഡിഎഫ് "
 "ആക്കുവാനും പല തരത്തിലുള്ള ഇമേജ് ഫോർമാറ്റിൽ സംരക്ഷിക്കാനും പറ്റും."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "Simple Scan uses the SANE framework to support most existing scanners."
 msgstr "നിലവിലുള്ള സ്കാനറുകളെ പിന്താങ്ങുന്നതിനായി സിംപിൾ സ്കാൻ SANE ചട്ടക്കൂട് ഉപയോഗിക്കുന്നു."
 
-#: data/simple-scan.desktop.in:4
+#: data/receipts.desktop.in:4
 msgid "Document Scanner"
 msgstr "ഡോക്യുമെന്റ്‌ സ്കാനർ"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:7
+#: data/receipts.desktop.in:7
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;scanner;flatbed;adf;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/simple-scan.desktop.in:10
+#: data/receipts.desktop.in:10
 msgid "scanner"
 msgstr "scanner"
 
@@ -453,7 +453,7 @@ msgstr "ചുരുക്കലിന്റെ തോത്:"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "\"%s\" പേരിൽ ഒരു ഫയൽ നിലവിലുണ്ട്. അത് പുനഃസ്ഥാപിക്കണോ?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:475
 msgid "_Replace"
 msgstr "പുനഃസ്ഥാപിക്കുക (_Replace)"
@@ -988,36 +988,36 @@ msgid "Error communicating with scanner"
 msgstr "സ്കാനറുമായി ബന്ധപ്പെടുന്നതിൽ പിഴവ്"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "പ്രസിദ്ധപ്പെടുത്തിയ പതിപ്പ് കാണിക്കുക"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "ഡീബഗ് സന്ദേശങ്ങൾ പ്രിന്റ് ചെയ്യുക"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of Simple Scan"
 msgstr "സിംപിൾ സ്കാനിന്റെ പഴയ പതിപ്പിൽ ഉണ്ടാക്കിയ പിഡിഎഫ് ഫയലുകൾ ശരിയാക്കുക"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:393
+#: src/receipts.vala:393
 msgid "Failed to scan"
 msgstr "സ്കാൻ ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:408
+#: src/receipts.vala:408
 msgid "Scan in progress"
 msgstr "സ്കാൻ പുരോഗമിക്കുന്നു"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:585
+#: src/receipts.vala:585
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DEVICE…] — സ്കാനിങ് ഉപകരണം"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:596
+#: src/receipts.vala:596
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr "ലഭ്യമായിട്ടുള്ള കമാൻഡ്‌ലൈൻ ഓപ്‌ഷനുകൾക്കായി \"%s --help\" പ്രവർത്തിപ്പിക്കുക."

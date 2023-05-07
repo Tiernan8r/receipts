@@ -1,17 +1,17 @@
-[+0.00s] DEBUG: simple-scan.vala:1720: Starting simple-scan 3.36.3, PID=308842
+[+0.00s] DEBUG: receipts.vala:1720: Starting receipts 3.36.3, PID=308842
 [+0.00s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
 [+0.02s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-[+0.07s] DEBUG: app-window.vala:1906: Loading state from /home/arunasr/.cache/simple-scan/state
+[+0.07s] DEBUG: app-window.vala:1906: Loading state from /home/arunasr/.cache/receipts/state
 [+0.07s] DEBUG: app-window.vala:1885: Restoring window to 2648x1604 pixels
 [+0.15s] DEBUG: scanner.vala:1539: sane_init () -> SANE_STATUS_GOOD
 [+0.15s] DEBUG: scanner.vala:1545: SANE version 1.0.29
 [+0.15s] DEBUG: scanner.vala:1606: Requesting redetection of scan devices
 [+0.15s] DEBUG: scanner.vala:828: Processing request
-[+0.57s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/simple-scan/state
+[+0.57s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/receipts/state
 [+1.08s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+1.08s] DEBUG: scanner.vala:353: Device: name="epkowa:interpreter:002:010" vendor="Epson" model="GT-1500" type="flatbed scanner"
-[+1.38s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/simple-scan/state
-[+27.76s] DEBUG: simple-scan.vala:1536: Requesting scan at 150 dpi from device 'epkowa:interpreter:002:010'
+[+1.38s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/receipts/state
+[+27.76s] DEBUG: receipts.vala:1536: Requesting scan at 150 dpi from device 'epkowa:interpreter:002:010'
 [+27.76s] DEBUG: scanner.vala:1674: Scanner.scan ("epkowa:interpreter:002:010", dpi=150, scan_mode=ScanMode.COLOR, depth=8, type=adf-front, paper_width=2100, paper_height=2970, brightness=21, contrast=32, delay=10000ms)
 [+27.76s] DEBUG: scanner.vala:828: Processing request
 [+27.77s] DEBUG: scanner.vala:889: sane_open ("epkowa:interpreter:002:010") -> SANE_STATUS_GOOD
@@ -229,10 +229,10 @@
 [+27.78s] DEBUG: scanner.vala:483: sane_control_option (7, SANE_ACTION_SET_VALUE, 21) -> (SANE_STATUS_GOOD, 21)
 [+27.78s] DEBUG: scanner.vala:418: scale_int: scaling 32 [min: -100, max: 100] to 32 [min: -100, max: 100]
 [+27.78s] DEBUG: scanner.vala:483: sane_control_option (8, SANE_ACTION_SET_VALUE, 32) -> (SANE_STATUS_GOOD, 32)
-[+28.08s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/simple-scan/state
+[+28.08s] DEBUG: app-window.vala:1981: Saving state to /home/arunasr/.cache/receipts/state
 [+31.23s] DEBUG: scanner.vala:1285: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+31.23s] DEBUG: scanner.vala:1312: sane_get_parameters () -> SANE_STATUS_GOOD
 [+31.23s] DEBUG: scanner.vala:1324: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=14880 pixels_per_line=4960 lines=7015 depth=8
-[+31.23s] DEBUG: simple-scan.vala:1431: Page is 4960 pixels wide, 7015 pixels high, 8 bits per pixel
-[+31.31s] DEBUG: simple-scan.vala:1365: Getting color profile for device epkowa:interpreter:002:010
-[+31.33s] DEBUG: simple-scan.vala:1385: Unable to find colord device epkowa:interpreter:002:010: property match 'Serial'='sane:epkowa:interpreter:002:010' does not exist
+[+31.23s] DEBUG: receipts.vala:1431: Page is 4960 pixels wide, 7015 pixels high, 8 bits per pixel
+[+31.31s] DEBUG: receipts.vala:1365: Getting color profile for device epkowa:interpreter:002:010
+[+31.33s] DEBUG: receipts.vala:1385: Unable to find colord device epkowa:interpreter:002:010: property match 'Serial'='sane:epkowa:interpreter:002:010' does not exist

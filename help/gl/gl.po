@@ -1,11 +1,11 @@
-# Copyright (C) 2018 simple-scan's COPYRIGHT HOLDER
-# This file is distributed under the same license as the simple-scan package.
+# Copyright (C) 2018 receipts's COPYRIGHT HOLDER
+# This file is distributed under the same license as the receipts package.
 # Marcos Lans <marcoslansgarza@gmail.com>, 2018.
 # Fran Dieguez <fran.dieguez@gnome.org>, 2020-2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan master\n"
+"Project-Id-Version: receipts master\n"
 "POT-Creation-Date: 2021-04-22 09:06+0000\n"
 "PO-Revision-Date: 2021-11-19 22:48+0100\n"
 "Last-Translator: Fran Dieguez <fran.dieguez@gnome.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: Gtranslator 40.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-DL-Team: gl\n"
-"X-DL-Module: simple-scan\n"
+"X-DL-Module: receipts\n"
 "X-DL-Branch: master\n"
 "X-DL-Domain: help\n"
 "X-DL-State: Translating\n"

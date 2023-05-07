@@ -24,7 +24,7 @@ for `Epson_NX300` it is `0,0`, as the descriptor is inactive and for `HP_4630` t
 
 1. Run simple scan in debug mode:
    ```
-   $ simple-scan --debug
+   $ receipts --debug
    ```
 
 1. Press scan button

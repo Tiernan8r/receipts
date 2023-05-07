@@ -49,7 +49,7 @@
     </columns>
   </object>
   <template class="PreferencesDialog" parent="AdwPreferencesWindow">
-    <property name="icon_name">org.gnome.SimpleScan</property>
+    <property name="icon_name">me.tiernan8r.Receipts</property>
     <property name="search_enabled">False</property>
     <child>
       <object class="AdwPreferencesPage">

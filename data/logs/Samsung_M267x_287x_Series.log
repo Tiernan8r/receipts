@@ -1,10 +1,10 @@
-[+0,00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.28.0, PID=14294
+[+0,00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.28.0, PID=14294
 [+0,07s] DEBUG: scanner.vala:1454: sane_init () -> SANE_STATUS_GOOD
 [+0,07s] DEBUG: scanner.vala:1460: SANE version 1.0.27
 [+0,07s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
 [+0,07s] DEBUG: scanner.vala:806: Processing request
 [+0,13s] DEBUG: autosave-manager.vala:281: Autosaving book information
-[+1,41s] DEBUG: simple-scan.vala:454: Requesting scan at 300 dpi from device '(null)'
+[+1,41s] DEBUG: receipts.vala:454: Requesting scan at 300 dpi from device '(null)'
 [+1,41s] DEBUG: scanner.vala:1569: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=10000ms)
 [+7,29s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+7,30s] DEBUG: scanner.vala:353: Device: name="xerox_mfp:tcp 192.168.45.30" vendor="Samsung" model="M267x 287x Series" type="multi-function peripheral"
@@ -53,6 +53,6 @@
 [+12,41s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+12,41s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+12,41s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7440 pixels_per_line=2480 lines=3567 depth=8
-[+12,41s] DEBUG: simple-scan.vala:349: Page is 2480 pixels wide, 3567 pixels high, 8 bits per pixel
-[+12,42s] DEBUG: simple-scan.vala:283: Getting color profile for device xerox_mfp:tcp 192.168.45.30
-[+12,42s] DEBUG: simple-scan.vala:303: Unable to find colord device xerox_mfp:tcp 192.168.45.30: property match 'Serial'='sane:xerox_mfp:tcp 192.168.45.30' does not exist
+[+12,41s] DEBUG: receipts.vala:349: Page is 2480 pixels wide, 3567 pixels high, 8 bits per pixel
+[+12,42s] DEBUG: receipts.vala:283: Getting color profile for device xerox_mfp:tcp 192.168.45.30
+[+12,42s] DEBUG: receipts.vala:303: Unable to find colord device xerox_mfp:tcp 192.168.45.30: property match 'Serial'='sane:xerox_mfp:tcp 192.168.45.30' does not exist

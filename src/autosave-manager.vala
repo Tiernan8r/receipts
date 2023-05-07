@@ -12,7 +12,7 @@
 
 public class AutosaveManager
 {
-    private static string AUTOSAVE_DIR = Path.build_filename (Environment.get_user_cache_dir (), "simple-scan", "autosaves");
+    private static string AUTOSAVE_DIR = Path.build_filename (Environment.get_user_cache_dir (), "receipts", "autosaves");
     private static string AUTOSAVE_FILENAME = "autosave.book";
     private static string AUTOSAVE_PATH = Path.build_filename (AUTOSAVE_DIR, AUTOSAVE_FILENAME);
 
@@ -83,7 +83,7 @@ public class AutosaveManager
                 warning ("Could not load autosave information; not restoring any autosaves: %s", e.message);
             return;
         }
-        var pages = get_value (file, "simple-scan", "pages");
+        var pages = get_value (file, "receipts", "pages");
         foreach (var page_name in pages.split (" "))
         {
             debug ("Loading automatically saved page %s", page_name);
@@ -341,7 +341,7 @@ public class AutosaveManager
             file.set_integer (page_name, "crop-width", page.crop_width);
             file.set_integer (page_name, "crop-height", page.crop_height);
         }
-        file.set_value ("simple-scan", "pages", page_names);
+        file.set_value ("receipts", "pages", page_names);
 
         try
         {

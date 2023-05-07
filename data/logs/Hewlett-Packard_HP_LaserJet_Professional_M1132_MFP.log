@@ -1,10 +1,10 @@
-[+0.12s] DEBUG: simple-scan.vala:674: Starting Simple Scan 3.20.0, PID=17731
+[+0.12s] DEBUG: receipts.vala:674: Starting Simple Scan 3.20.0, PID=17731
 [+2.24s] DEBUG: scanner.vala:1447: sane_init () -> SANE_STATUS_GOOD
 [+2.24s] DEBUG: scanner.vala:1453: SANE version 1.0.25
 [+2.24s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
 [+2.24s] DEBUG: scanner.vala:803: Processing request
 
-[+6.10s] DEBUG: simple-scan.vala:404: Requesting scan at 1200 dpi from device '(null)'
+[+6.10s] DEBUG: receipts.vala:404: Requesting scan at 1200 dpi from device '(null)'
 [+6.10s] DEBUG: scanner.vala:1560: Scanner.scan ("(null)", dpi=1200, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+16.19s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+16.19s] DEBUG: scanner.vala:350: Device: name="hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a" vendor="Hewlett-Packard" model="HP_LaserJet_Professional_M1132_MFP" type="all-in-one"
@@ -55,7 +55,7 @@
 [+33.62s] DEBUG: scanner.vala:1213: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+33.62s] DEBUG: scanner.vala:1230: sane_get_parameters () -> SANE_STATUS_GOOD
 [+33.62s] DEBUG: scanner.vala:1242: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=30432 pixels_per_line=10144 lines=18000 depth=8
-[+33.62s] DEBUG: simple-scan.vala:348: Page is 10144 pixels wide, 18000 pixels high, 8 bits per pixel
-[+33.79s] DEBUG: simple-scan.vala:282: Getting color profile for device hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a
-[+33.79s] DEBUG: simple-scan.vala:302: Unable to find colord device hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a: property match 'Serial'='sane:hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a' does not exist
+[+33.62s] DEBUG: receipts.vala:348: Page is 10144 pixels wide, 18000 pixels high, 8 bits per pixel
+[+33.79s] DEBUG: receipts.vala:282: Getting color profile for device hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a
+[+33.79s] DEBUG: receipts.vala:302: Unable to find colord device hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a: property match 'Serial'='sane:hpaio:/usb/HP_LaserJet_Professional_M1132_MFP?serial=000000000QHA7DPJPR1a' does not exist
 [+33.88s] DEBUG: scanner.vala:1314: sane_read (30433) -> (SANE_STATUS_GOOD, 30432)

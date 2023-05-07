@@ -1,19 +1,19 @@
-[+0.00s] DEBUG: simple-scan.vala:2014: Starting simple-scan 40.1, PID=85163
+[+0.00s] DEBUG: receipts.vala:2014: Starting receipts 40.1, PID=85163
 [+0.00s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
 [+0.05s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-[+0.09s] DEBUG: app-window.vala:2003: Loading state from /home/gregor/.cache/simple-scan/state
+[+0.09s] DEBUG: app-window.vala:2003: Loading state from /home/gregor/.cache/receipts/state
 [+0.09s] DEBUG: app-window.vala:1982: Restoring window to 1610x1208 pixels
 [+0.11s] DEBUG: scanner.vala:1590: sane_init () -> SANE_STATUS_GOOD
 [+0.11s] DEBUG: scanner.vala:1596: SANE version 1.0.32
 [+0.11s] DEBUG: scanner.vala:1657: Requesting redetection of scan devices
 [+0.11s] DEBUG: scanner.vala:844: Processing request
-[+0.58s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
+[+0.58s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
 [+1.17s] DEBUG: scanner.vala:348: sane_get_devices () -> SANE_STATUS_GOOD
 [+1.17s] DEBUG: scanner.vala:360: Device: name="airscan:e0:HP LaserJet Pro M148dw" vendor="eSCL" model="HP LaserJet Pro M148dw" type="ip=192.168.1.173"
 [+1.17s] DEBUG: scanner.vala:360: Device: name="hpaio:/net/laserjet_pro_m148-m149?ip=192.168.1.173&queue=false" vendor="Hewlett-Packard" model="laserjet_pro_m148-m149" type="all-in-one"
-[+1.49s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
-[+2.42s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
-[+2.57s] DEBUG: simple-scan.vala:1819: Requesting scan at 300 dpi from device 'airscan:e0:HP LaserJet Pro M148dw'
+[+1.49s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
+[+2.42s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
+[+2.57s] DEBUG: receipts.vala:1819: Requesting scan at 300 dpi from device 'airscan:e0:HP LaserJet Pro M148dw'
 [+2.57s] DEBUG: scanner.vala:1748: Scanner.scan ("airscan:e0:HP LaserJet Pro M148dw", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=single, side=both, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=3000ms)
 [+2.57s] DEBUG: scanner.vala:844: Processing request
 [+2.61s] DEBUG: scanner.vala:905: sane_open ("airscan:e0:HP LaserJet Pro M148dw") -> SANE_STATUS_GOOD
@@ -78,14 +78,14 @@
 [+2.61s] DEBUG: scanner.vala:535: sane_control_option (11, SANE_ACTION_SET_VALUE, brightness=0.000000) -> (SANE_STATUS_GOOD, 0.000000)
 [+2.61s] DEBUG: scanner.vala:411: scale_fixed: scaling 0 [min: -100, max: 100] to 0.000000 [min: -100.000000, max: 100.000000]
 [+2.61s] DEBUG: scanner.vala:535: sane_control_option (12, SANE_ACTION_SET_VALUE, contrast=0.000000) -> (SANE_STATUS_GOOD, 0.000000)
-[+2.69s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
-[+2.89s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
+[+2.69s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
+[+2.89s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
 [+3.42s] DEBUG: scanner.vala:1322: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+3.42s] DEBUG: scanner.vala:1359: sane_get_parameters () -> SANE_STATUS_GOOD
 [+3.42s] DEBUG: scanner.vala:1371: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7440 pixels_per_line=2480 lines=3508 depth=8
-[+3.42s] DEBUG: simple-scan.vala:1714: Page is 2480 pixels wide, 3508 pixels high, 8 bits per pixel
-[+3.48s] DEBUG: simple-scan.vala:1648: Getting color profile for device airscan:e0:HP LaserJet Pro M148dw
-[+3.49s] DEBUG: simple-scan.vala:1668: Unable to find colord device airscan:e0:HP LaserJet Pro M148dw: property match 'Serial'='sane:airscan:e0:HP LaserJet Pro M148dw' does not exist
+[+3.42s] DEBUG: receipts.vala:1714: Page is 2480 pixels wide, 3508 pixels high, 8 bits per pixel
+[+3.48s] DEBUG: receipts.vala:1648: Getting color profile for device airscan:e0:HP LaserJet Pro M148dw
+[+3.49s] DEBUG: receipts.vala:1668: Unable to find colord device airscan:e0:HP LaserJet Pro M148dw: property match 'Serial'='sane:airscan:e0:HP LaserJet Pro M148dw' does not exist
 [+10.12s] DEBUG: scanner.vala:1446: sane_read (7441) -> (SANE_STATUS_GOOD, 7441)
 [+10.12s] DEBUG: scanner.vala:1446: sane_read (14880) -> (SANE_STATUS_GOOD, 14880)
 [+10.12s] DEBUG: scanner.vala:1446: sane_read (14880) -> (SANE_STATUS_GOOD, 14880)
@@ -1843,11 +1843,11 @@
 [+10.25s] DEBUG: scanner.vala:1446: sane_read (14880) -> (SANE_STATUS_GOOD, 7439)
 [+10.25s] DEBUG: scanner.vala:1446: sane_read (14881) -> (SANE_STATUS_EOF, 0)
 [+10.25s] DEBUG: scanner.vala:1295: sane_cancel ()
-[+10.29s] DEBUG: autosave-manager.vala:355: Autosaving page pixels to /home/gregor/.cache/simple-scan/autosaves/1953980688.pixels
+[+10.29s] DEBUG: autosave-manager.vala:355: Autosaving page pixels to /home/gregor/.cache/receipts/autosaves/1953980688.pixels
 [+10.31s] DEBUG: autosave-manager.vala:287: Autosaving book information
 [+10.31s] DEBUG: autosave-manager.vala:304: Autosaving page page-0
-[+10.45s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
-[+10.62s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/simple-scan/state
+[+10.45s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
+[+10.62s] DEBUG: app-window.vala:2078: Saving state to /home/gregor/.cache/receipts/state
 [+16.07s] DEBUG: autosave-manager.vala:201: Deleting autosave records
 [+16.09s] DEBUG: scanner.vala:1778: Stopping scan thread
 [+16.09s] DEBUG: scanner.vala:844: Processing request

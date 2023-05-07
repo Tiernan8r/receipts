@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.28.0, PID=3555
+[+0.00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.28.0, PID=3555
 [+0.16s] DEBUG: scanner.vala:1454: sane_init () -> SANE_STATUS_GOOD
 [+0.16s] DEBUG: scanner.vala:1460: SANE version 1.0.27
 [+0.16s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
@@ -6,7 +6,7 @@
 [+0.16s] DEBUG: autosave-manager.vala:281: Autosaving book information
 [+6.52s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6.52s] DEBUG: scanner.vala:353: Device: name="imagescan:esci:usb:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0" vendor="EPSON" model="XP-440_Series" type=""
-[+10.94s] DEBUG: simple-scan.vala:454: Requesting scan at 300 dpi from device 'imagescan:esci:usb:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0'
+[+10.94s] DEBUG: receipts.vala:454: Requesting scan at 300 dpi from device 'imagescan:esci:usb:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0'
 [+10.94s] DEBUG: scanner.vala:1569: Scanner.scan ("imagescan:esci:usb:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=10000ms)
 [+10.94s] DEBUG: scanner.vala:806: Processing request
 [+11.21s] DEBUG: scanner.vala:867: sane_open ("imagescan:esci:usb:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0") -> SANE_STATUS_GOOD

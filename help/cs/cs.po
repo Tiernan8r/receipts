@@ -3,7 +3,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
+"Project-Id-Version: receipts\n"
 "POT-Creation-Date: 2021-03-17 15:15+0000\n"
 "PO-Revision-Date: 2021-03-24 08:32+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"

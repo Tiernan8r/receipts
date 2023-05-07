@@ -1,11 +1,11 @@
-[+0.00s] DEBUG: simple-scan.vala:638: Starting ./_install/bin/simple-scan 3.35.2, PID=8556
+[+0.00s] DEBUG: receipts.vala:638: Starting ./_install/bin/receipts 3.35.2, PID=8556
 [+0.08s] DEBUG: scanner.vala:1541: sane_init () -> SANE_STATUS_GOOD
 [+0.08s] DEBUG: scanner.vala:1547: SANE version 1.0.27
 [+0.08s] DEBUG: scanner.vala:1608: Requesting redetection of scan devices
 [+0.08s] DEBUG: scanner.vala:828: Processing request
 [+6.57s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6.57s] DEBUG: scanner.vala:353: Device: name="imagescan:esci:gt-s650:usb:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.1/1-5.1:1.0" vendor="EPSON" model="Epson_Perfection_V39" type=""
-[+9.69s] DEBUG: simple-scan.vala:455: Requesting scan at 600 dpi from device 'imagescan:esci:gt-s650:usb:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.1/1-5.1:1.0'
+[+9.69s] DEBUG: receipts.vala:455: Requesting scan at 600 dpi from device 'imagescan:esci:gt-s650:usb:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.1/1-5.1:1.0'
 [+9.69s] DEBUG: scanner.vala:1676: Scanner.scan ("imagescan:esci:gt-s650:usb:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.1/1-5.1:1.0", dpi=600, scan_mode=ScanMode.COLOR, depth=8, type=single, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=3000ms)
 [+9.69s] DEBUG: scanner.vala:828: Processing request
 [+10.44s] DEBUG: scanner.vala:889: sane_open ("imagescan:esci:gt-s650:usb:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.1/1-5.1:1.0") -> SANE_STATUS_GOOD

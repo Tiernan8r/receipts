@@ -1,4 +1,4 @@
-project ('simple-scan', ['vala', 'c'],
+project ('receipts', ['vala', 'c'],
          version: '44.0',
          license: 'GPLv3+',
          default_options: [
@@ -10,13 +10,13 @@ project ('simple-scan', ['vala', 'c'],
 gnome = import ('gnome')
 i18n = import ('i18n')
 
-app_id = 'org.gnome.SimpleScan'
+app_id = 'me.tiernan8r.Receipts'
 
 # Paths
 mandir = join_paths (get_option ('prefix'), get_option ('mandir'))
 localedir = join_paths (get_option ('prefix'), get_option ('localedir'))
 datadir = join_paths (get_option ('prefix'), get_option ('datadir'))
-icondir = join_paths (datadir, 'simple-scan', 'icons')
+icondir = join_paths (datadir, 'receipts', 'icons')
 
 # Dependencies
 glib_dep = dependency ('glib-2.0', version: '>= 2.38')

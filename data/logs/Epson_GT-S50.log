@@ -1,4 +1,4 @@
-[+0,00s] DEBUG: simple-scan.vala:638: Starting Simple Scan 3.30.2, PID=3189
+[+0,00s] DEBUG: receipts.vala:638: Starting Simple Scan 3.30.2, PID=3189
 [+0,12s] DEBUG: scanner.vala:1461: sane_init () -> SANE_STATUS_GOOD
 [+0,12s] DEBUG: scanner.vala:1467: SANE version 1.0.27
 [+0,12s] DEBUG: scanner.vala:1528: Requesting redetection of scan devices
@@ -7,7 +7,7 @@
 [+4,80s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+4,80s] DEBUG: scanner.vala:353: Device: name="epkowa:interpreter:003:003" vendor="Epson" model="GT-S50" type="flatbed scanner"
 [+4,80s] DEBUG: scanner.vala:353: Device: name="v4l:/dev/video0" vendor="Noname" model="Integrated Camera: Integrated C" type="virtual device"
-[+18,19s] DEBUG: simple-scan.vala:455: Requesting scan at 150 dpi from device 'epkowa:interpreter:003:003'
+[+18,19s] DEBUG: receipts.vala:455: Requesting scan at 150 dpi from device 'epkowa:interpreter:003:003'
 [+18,19s] DEBUG: scanner.vala:1576: Scanner.scan ("epkowa:interpreter:003:003", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.ADF_FRONT, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=10000ms)
 [+18,19s] DEBUG: scanner.vala:806: Processing request
 [+19,09s] DEBUG: scanner.vala:867: sane_open ("epkowa:interpreter:003:003") -> SANE_STATUS_GOOD
@@ -222,7 +222,7 @@
 [+21,59s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+21,59s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+21,59s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=848 pixels_per_line=848 lines=1399 depth=8
-[+21,59s] DEBUG: simple-scan.vala:350: Page is 848 pixels wide, 1399 pixels high, 2 bits per pixel
-[+21,59s] DEBUG: simple-scan.vala:284: Getting color profile for device epkowa:interpreter:003:003
-[+21,60s] DEBUG: simple-scan.vala:304: Unable to find colord device epkowa:interpreter:003:003: The name org.freedesktop.ColorManager was not provided by any .service files
+[+21,59s] DEBUG: receipts.vala:350: Page is 848 pixels wide, 1399 pixels high, 2 bits per pixel
+[+21,59s] DEBUG: receipts.vala:284: Getting color profile for device epkowa:interpreter:003:003
+[+21,60s] DEBUG: receipts.vala:304: Unable to find colord device epkowa:interpreter:003:003: The name org.freedesktop.ColorManager was not provided by any .service files
 [+23,82s] DEBUG: scanner.vala:1321: sane_read (849) -> (SANE_STATUS_GOOD, 849)

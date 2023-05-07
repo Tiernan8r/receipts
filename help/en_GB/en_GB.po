@@ -1,13 +1,13 @@
-# English (United Kingdom) translation for simple-scan
+# English (United Kingdom) translation for receipts
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # Zander Brown <zbrown@gnome.org>, 2021.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2021-02-02 17:57+0000\n"
 "PO-Revision-Date: 2021-02-18 18:20+0000\n"
 "Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"

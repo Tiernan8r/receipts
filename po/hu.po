@@ -1,14 +1,14 @@
-# Hungarian translation for simple-scan.
+# Hungarian translation for receipts.
 # Copyright (c) 2017, 2019, 2020, 2021, 2022, 2023 The Free Software Foundation, inc.
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 #
 # Gabor Kelemen <kelemeng at ubuntu dot com>, 2017, 2019.
 # Balázs Úr <ur.balazs at fsf dot hu>, 2017, 2019, 2020, 2021, 2022, 2023.
 # Balázs Meskó <mesko.balazs at fsf dot hu>, 2020, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2023-03-21 18:37+0000\n"
 "PO-Revision-Date: 2023-04-13 23:56+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
@@ -21,19 +21,19 @@ msgstr ""
 "X-Generator: Lokalize 22.08.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "A szkennelő eszköz"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "Képek beszerzése erről a SANE eszközről."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "A szkennelt dokumentum típusa"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -41,84 +41,84 @@ msgstr ""
 "A szkennelt dokumentum típusa. Ez a beállítás meghatározza a beolvasott "
 "oldal felbontását, színeit és utófeldolgozását."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Papír szélessége tizedmilliméterben"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "Papír szélessége tizedmilliméterben (0 az automatikus papírfelismeréshez)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Papír magassága tizedmilliméterben"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "Papír magassága tizedmilliméterben (0 az automatikus papírfelismeréshez)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "A beolvasás fényereje"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "A fényerő változtatása -100-tól 100-ig (0=nincs)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "A beolvasás kontrasztja"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "A kontraszt változtatása -100-tól 100-ig (0=nincs)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Szövegek szkennelésének felbontása"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "Szövegek szkennelésnél használandó DPI felbontás."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "Képek szkennelésének felbontása"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "Képek szkennelésnél használandó DPI felbontás."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Lapok szkennelendő oldala"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "A lap szkennelendő oldala."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Fájlok mentése ebbe a könyvtárba"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "A fájlok mentésének helye. Alapértelmezésben a Dokumentumok mappa, ha nincs "
 "beállítva."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "A képfájlok mentéséhez használandó fájlformátum"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -126,51 +126,51 @@ msgstr ""
 "A képfájlok mentéséhez használt MIME-típus. Példa a támogatott MIME-"
 "típusokra: image/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "A minőségi tényező megadása a JPEG tömörítéshez"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "A minőségi tényező megadása a JPEG tömörítéshez."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "A lapok közti késleltetés ezredmásodpercben"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "A lapok közti késleltetés ezredmásodpercben."
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "Az utófeldolgozás engedélyezve van-e vagy sem"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "Az utófeldolgozás engedélyezve van-e vagy sem."
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "Az útvonal az utófeldolgozó parancsfájlhoz"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "Az útvonal az utófeldolgozó parancsfájlhoz."
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "Az utófeldolgozó parancsfájl további argumentumai"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "Az utófeldolgozó parancsfájl további argumentumai."
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "Tartsa-e meg vagy sem az eredeti, feldolgozatlan fájlt"
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" "
 "filename will be added to the filename immediately before the file extension."
@@ -179,16 +179,16 @@ msgstr ""
 "hozzá lesz adva a fájlnévhez közvetlenül a fájl kiterjesztése előtt."
 
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:145 src/app-window.vala:1324
 msgid "Document Scanner"
 msgstr "Szkenner"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "Készítsen digitális másolatot a fényképeiről és dokumentumairól"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -198,18 +198,18 @@ msgstr ""
 "fölösleges részeit, és elforgathatja azokat. Kinyomtathatja, PDF-be vagy "
 "számos képformátumba is exportálhatja a szkennelt dokumentumokat."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "Ez az alkalmazás a SANE keretrendszert használja a legtöbb létező szkenner "
 "támogatása érdekében."
 
-#: data/simple-scan.appdata.xml.in:27
+#: data/receipts.appdata.xml.in:27
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "szkennelés;szkenner;beolvasó;síkágyas;adf;"
 
@@ -1072,36 +1072,36 @@ msgid "Error communicating with scanner"
 msgstr "Kommunikációs hiba a szkennerrel"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Verziószám megjelenítése"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Hibakeresési üzenetek kiírása"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "Ezen alkalmazás régebbi verzióival készült PDF fájlok javítása"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1760
+#: src/receipts.vala:1760
 msgid "Failed to scan"
 msgstr "A szkennelés meghiúsult"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1775
+#: src/receipts.vala:1775
 msgid "Scan in progress"
 msgstr "Szkennelés folyamatban"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1959
+#: src/receipts.vala:1959
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[ESZKÖZ…] – Szkennelő segédprogram"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1969
+#: src/receipts.vala:1969
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

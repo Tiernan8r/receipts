@@ -1,7 +1,7 @@
 # 'delete.page'
 # 'external.page'
 
-gnome.yelp ('simple-scan',
+gnome.yelp ('receipts',
             sources: [ 'adf.page',
                        'brightness-contrast.page',
                        'crop.page',

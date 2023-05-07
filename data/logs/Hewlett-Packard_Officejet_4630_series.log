@@ -1,10 +1,10 @@
-[+0,00s] DEBUG: simple-scan.vala:638: Starting ./install/bin/simple-scan 3.35.2, PID=2683
+[+0,00s] DEBUG: receipts.vala:638: Starting ./install/bin/receipts 3.35.2, PID=2683
 [+3,04s] DEBUG: scanner.vala:1496: sane_init () -> SANE_STATUS_GOOD
 [+3,04s] DEBUG: scanner.vala:1502: SANE version 1.0.27
 [+3,04s] DEBUG: scanner.vala:1563: Requesting redetection of scan devices
 [+3,04s] DEBUG: scanner.vala:810: Processing request
 
-[+6,15s] DEBUG: simple-scan.vala:455: Requesting scan at 75 dpi from device '(null)'
+[+6,15s] DEBUG: receipts.vala:455: Requesting scan at 75 dpi from device '(null)'
 [+6,15s] DEBUG: scanner.vala:1611: Scanner.scan ("(null)", dpi=75, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=3000ms)
 
 [+10,65s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
@@ -66,7 +66,7 @@
 [+21,79s] DEBUG: scanner.vala:1252: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+21,79s] DEBUG: scanner.vala:1269: sane_get_parameters () -> SANE_STATUS_GOOD
 [+21,79s] DEBUG: scanner.vala:1281: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=637 pixels_per_line=637 lines=877 depth=8
-[+21,79s] DEBUG: simple-scan.vala:350: Page is 637 pixels wide, 877 pixels high, 2 bits per pixel
-[+21,79s] DEBUG: simple-scan.vala:284: Getting color profile for device hpaio:/usb/Officejet_4630_series?serial=CN47U391TK05Y0
-[+21,79s] DEBUG: simple-scan.vala:304: Unable to find colord device hpaio:/usb/Officejet_4630_series?serial=CN47U391TK05Y0: property match 'Serial'='sane:hpaio:/usb/Officejet_4630_series?serial=CN47U391TK05Y0' does not exist
+[+21,79s] DEBUG: receipts.vala:350: Page is 637 pixels wide, 877 pixels high, 2 bits per pixel
+[+21,79s] DEBUG: receipts.vala:284: Getting color profile for device hpaio:/usb/Officejet_4630_series?serial=CN47U391TK05Y0
+[+21,79s] DEBUG: receipts.vala:304: Unable to find colord device hpaio:/usb/Officejet_4630_series?serial=CN47U391TK05Y0: property match 'Serial'='sane:hpaio:/usb/Officejet_4630_series?serial=CN47U391TK05Y0' does not exist
 [+21,79s] DEBUG: scanner.vala:1356: sane_read (638) -> (SANE_STATUS_GOOD, 638)

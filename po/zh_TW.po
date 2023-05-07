@@ -1,13 +1,13 @@
-# Chinese (Traditional) translation for simple-scan
+# Chinese (Traditional) translation for receipts
 # Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 # pan93412 <pan93412@gmail.com>, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2021-03-03 18:48+0000\n"
 "PO-Revision-Date: 2021-04-03 11:55+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
@@ -20,99 +20,99 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "裝置掃描來源"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "取得影像用的 SANE 裝置。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "掃描中文件的類型"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
 msgstr "掃描中文件的類型。這個設定值決定掃描的解析度、色彩、後製處理。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "以 0.1 mm 為單位的紙張寬度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr "以 0.1 mm 為單位的紙張寬度 (或 0 以作為自動紙張偵測)。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "以 0.1 mm 為單位的紙張高度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr "以 0.1 mm 為單位的紙張高度 (或 0 以作為自動紙張偵測)。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "掃描亮度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "調整亮度，由 -100 至 100 (0 代表無)。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "掃描反差"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "調整反差，由 -100 至 100 (0 代表無)。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "文字掃描的解析度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "當掃描文字時使用的解析度，單位為 dpi。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "掃描使用的解析度"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "當掃描時使用的解析度，單位為 dpi。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "要掃描的頁面"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "要掃描的頁面。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "儲存檔案的目錄"
 
 # 翻譯建議
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr "儲存檔案的目錄。預設是「文件」目錄。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "用來儲存影像檔的檔案格式"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -120,19 +120,19 @@ msgstr ""
 "用來儲存影像檔的 MIME 類型。支援的 MIME 類型範例：image/jpeg、image/png、"
 "application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "JPEG 壓縮品質"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "JPEG 壓縮品質。"
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "每頁之間的延遲毫秒"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "每頁之間的延遲毫秒數。"
 
@@ -140,18 +140,18 @@ msgstr "每頁之間的延遲毫秒數。"
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:498 src/app-window.vala:1582 src/app-window.vala:1862
 msgid "Document Scanner"
 msgstr "文件掃描"
 
 # 新增翻譯
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "為您的照片或文件建立數位複本"
 
 # 建議採用此翻譯
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -160,16 +160,16 @@ msgstr ""
 "您能輕鬆掃描文件和影像。您可以裁剪影像的不良部分，並將之旋轉至正確角度。您可"
 "以列印您的掃描檔，將掃描檔匯出為 pdf，或儲存為多種影像格式。"
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr "這個應用程式使用 SANE 框架以支援大部分現存掃描器。"
 
-#: data/simple-scan.appdata.xml.in:26
+#: data/receipts.appdata.xml.in:26
 msgid "The GNOME Project"
 msgstr "GNOME 專案"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;scanner;flatbed;adf;"
 
@@ -638,7 +638,7 @@ msgstr "完整細節"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "「%s」檔名已經存在。您是否希望取代該檔案？"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "取代(_R)"
@@ -1052,36 +1052,36 @@ msgid "Error communicating with scanner"
 msgstr "與掃描器溝通時發生錯誤"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "顯示發行版本"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "列印除錯訊息"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "修正由舊版本應用程式產生的 PDF 檔案"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1757
+#: src/receipts.vala:1757
 msgid "Failed to scan"
 msgstr "掃描失敗"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1772
+#: src/receipts.vala:1772
 msgid "Scan in progress"
 msgstr "掃描進行中"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1956
+#: src/receipts.vala:1956
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[裝置...] — 掃描公用程式"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1967
+#: src/receipts.vala:1967
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr "執行「%s --help」來查看所有命令列可用選項的完整清單。"

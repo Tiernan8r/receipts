@@ -1,11 +1,11 @@
-[+0,02s] DEBUG: simple-scan.vala:596: Starting Simple Scan 3.12.1, PID=3058
+[+0,02s] DEBUG: receipts.vala:596: Starting Simple Scan 3.12.1, PID=3058
 [+0,36s] DEBUG: scanner.vala:1443: sane_init () -> SANE_STATUS_GOOD
 [+0,36s] DEBUG: scanner.vala:1449: SANE version 1.0.23
 [+0,36s] DEBUG: scanner.vala:1510: Requesting redetection of scan devices
 [+0,36s] DEBUG: scanner.vala:802: Processing request
 [+2,97s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+2,97s] DEBUG: scanner.vala:350: Device: name="snapscan:/dev/sg0" vendor="Acer" model="FlatbedScanner_9" type="flatbed scanner"
-[+29,84s] DEBUG: simple-scan.vala:310: Requesting scan at 300 dpi from device 'snapscan:/dev/sg0'
+[+29,84s] DEBUG: receipts.vala:310: Requesting scan at 300 dpi from device 'snapscan:/dev/sg0'
 [+29,84s] DEBUG: scanner.vala:1556: Scanner.scan ("snapscan:/dev/sg0", dpi=300, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=-100, contrast=-100)
 [+29,84s] DEBUG: scanner.vala:802: Processing request
 [+29,86s] DEBUG: scanner.vala:863: sane_open ("snapscan:/dev/sg0") -> SANE_STATUS_GOOD
@@ -130,7 +130,7 @@
 [+31,68s] DEBUG: scanner.vala:1209: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+31,68s] DEBUG: scanner.vala:1226: sane_get_parameters () -> SANE_STATUS_GOOD
 [+31,68s] DEBUG: scanner.vala:1238: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=2551 pixels_per_line=2551 lines=3492 depth=8
-[+31,68s] DEBUG: simple-scan.vala:254: Page is 2551 pixels wide, 3492 pixels high, 2 bits per pixel
-[+31,69s] DEBUG: simple-scan.vala:188: Getting color profile for device snapscan:/dev/sg0
-[+31,71s] DEBUG: simple-scan.vala:208: Unable to find colord device snapscan:/dev/sg0: property match 'Serial'='sane:snapscan:/dev/sg0' does not exist
+[+31,68s] DEBUG: receipts.vala:254: Page is 2551 pixels wide, 3492 pixels high, 2 bits per pixel
+[+31,69s] DEBUG: receipts.vala:188: Getting color profile for device snapscan:/dev/sg0
+[+31,71s] DEBUG: receipts.vala:208: Unable to find colord device snapscan:/dev/sg0: property match 'Serial'='sane:snapscan:/dev/sg0' does not exist
 [+32,12s] DEBUG: scanner.vala:1310: sane_read (2552) -> (SANE_STATUS_GOOD, 2552)

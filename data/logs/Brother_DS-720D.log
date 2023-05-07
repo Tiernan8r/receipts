@@ -4,7 +4,7 @@
 [+0.09s] DEBUG: scanner.vala:828: Processing request
 [+6.52s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6.52s] DEBUG: scanner.vala:353: Device: name="dsseries:usb:0x04F9:0x60E0" vendor="BROTHER" model="DS-720D" type="sheetfed scanner"
-[+13.20s] DEBUG: simple-scan.vala:455: Requesting scan at 150 dpi from device 'dsseries:usb:0x04F9:0x60E0'
+[+13.20s] DEBUG: receipts.vala:455: Requesting scan at 150 dpi from device 'dsseries:usb:0x04F9:0x60E0'
 [+13.20s] DEBUG: scanner.vala:1668: Scanner.scan ("dsseries:usb:0x04F9:0x60E0", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=single, paper_width=2159, paper_height=2794, brightness=-23, contrast=0, delay=3000ms)
 [+13.20s] DEBUG: scanner.vala:828: Processing request
 [+13.30s] DEBUG: scanner.vala:889: sane_open ("dsseries:usb:0x04F9:0x60E0") -> SANE_STATUS_GOOD

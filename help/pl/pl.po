@@ -1,12 +1,12 @@
-# Polish translation for simple-scan help.
-# Copyright © 2017-2020 the simple-scan authors.
-# This file is distributed under the same license as the simple-scan help.
+# Polish translation for receipts help.
+# Copyright © 2017-2020 the receipts authors.
+# This file is distributed under the same license as the receipts help.
 # Piotr Drąg <piotrdrag@gmail.com>, 2017-2020.
 # Aviary.pl <community-poland@mozilla.org>, 2017-2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan-help\n"
+"Project-Id-Version: receipts-help\n"
 "POT-Creation-Date: 2021-03-17 15:15+0000\n"
 "PO-Revision-Date: 2020-08-29 13:59+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"

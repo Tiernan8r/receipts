@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:2012: Starting ./src/simple-scan 3.38.1, PID=28628
+[+0.00s] DEBUG: receipts.vala:2012: Starting ./src/receipts 3.38.1, PID=28628
 [+0.00s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
 [+0.04s] DEBUG: app-window.vala:1969: Restoring window to 923x587 pixels
 [+0.08s] DEBUG: scanner.vala:1552: sane_init () -> SANE_STATUS_GOOD
@@ -7,7 +7,7 @@
 [+0.08s] DEBUG: scanner.vala:832: Processing request
 [+5.10s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+5.10s] DEBUG: scanner.vala:353: Device: name="lexmark_nscan:libnet/123A4567890B" vendor="Lexmark" model="Lexmark MC3224adwe" type="Scanner"
-[+10.20s] DEBUG: simple-scan.vala:1817: Requesting scan at 300 dpi from device 'lexmark_nscan:libnet/123A4567890B'
+[+10.20s] DEBUG: receipts.vala:1817: Requesting scan at 300 dpi from device 'lexmark_nscan:libnet/123A4567890B'
 [+10.20s] DEBUG: scanner.vala:1687: Scanner.scan ("lexmark_nscan:libnet/123A4567890B", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=single, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=3000ms)
 [+10.20s] DEBUG: scanner.vala:832: Processing request
 [+10.61s] DEBUG: scanner.vala:893: sane_open ("lexmark_nscan:libnet/123A4567890B") -> SANE_STATUS_GOOD

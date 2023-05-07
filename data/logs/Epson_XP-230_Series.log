@@ -1,9 +1,9 @@
-[+0,00s] DEBUG: simple-scan.vala:674: Starting Simple Scan 3.20.0, PID=19999
+[+0,00s] DEBUG: receipts.vala:674: Starting Simple Scan 3.20.0, PID=19999
 [+0,55s] DEBUG: scanner.vala:1447: sane_init () -> SANE_STATUS_GOOD
 [+0,55s] DEBUG: scanner.vala:1453: SANE version 1.0.25
 [+0,55s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
 [+0,55s] DEBUG: scanner.vala:803: Processing request
-[+3,51s] DEBUG: simple-scan.vala:404: Requesting scan at 300 dpi from device '(null)'
+[+3,51s] DEBUG: receipts.vala:404: Requesting scan at 300 dpi from device '(null)'
 [+3,51s] DEBUG: scanner.vala:1560: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+7,11s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+7,11s] DEBUG: scanner.vala:350: Device: name="imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0" vendor="EPSON" model="EPSON_XP-230_Series" type=""
@@ -114,8 +114,8 @@
 [+15,52s] DEBUG: scanner.vala:1213: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+15,52s] DEBUG: scanner.vala:1230: sane_get_parameters () -> SANE_STATUS_GOOD
 [+15,52s] DEBUG: scanner.vala:1242: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7647 pixels_per_line=2549 lines=3509 depth=8
-[+15,52s] DEBUG: simple-scan.vala:348: Page is 2549 pixels wide, 3509 pixels high, 8 bits per pixel
-[+15,60s] DEBUG: simple-scan.vala:282: Getting color profile for device imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0
-[+15,61s] DEBUG: simple-scan.vala:302: Unable to find colord device imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0: property match 'Serial'='sane:imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0' does not exist
+[+15,52s] DEBUG: receipts.vala:348: Page is 2549 pixels wide, 3509 pixels high, 8 bits per pixel
+[+15,60s] DEBUG: receipts.vala:282: Getting color profile for device imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0
+[+15,61s] DEBUG: receipts.vala:302: Unable to find colord device imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0: property match 'Serial'='sane:imagescan:usb:esci:/sys/devices/pci0000:00/0000:00:1d.7/usb1/1-2/1-2:1.0' does not exist
 
 [+51,24s] DEBUG: scanner.vala:1314: sane_read (7648) -> (SANE_STATUS_GOOD, 7648)

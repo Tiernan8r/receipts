@@ -1,4 +1,4 @@
-[+0.02s] DEBUG: simple-scan.vala:594: Starting Simple Scan 3.16.0, PID=10898
+[+0.02s] DEBUG: receipts.vala:594: Starting Simple Scan 3.16.0, PID=10898
 [+0.43s] DEBUG: scanner.vala:1446: sane_init () -> SANE_STATUS_GOOD
 [+0.43s] DEBUG: scanner.vala:1452: SANE version 1.0.24
 [+0.43s] DEBUG: scanner.vala:1513: Requesting redetection of scan devices
@@ -9,7 +9,7 @@
 [+7.38s] DEBUG: autosave-manager.vala:259: Waiting to autosave...
 [+7.48s] DEBUG: autosave-manager.vala:281: Autosaving book information
 
-[+9.27s] DEBUG: simple-scan.vala:310: Requesting scan at 300 dpi from device 'hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544'
+[+9.27s] DEBUG: receipts.vala:310: Requesting scan at 300 dpi from device 'hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544'
 [+9.27s] DEBUG: scanner.vala:1559: Scanner.scan ("hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+9.27s] DEBUG: scanner.vala:802: Processing request
 [+11.31s] DEBUG: scanner.vala:863: sane_open ("hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544") -> SANE_STATUS_GOOD
@@ -76,9 +76,9 @@
 [+19.32s] DEBUG: scanner.vala:1229: sane_get_parameters () -> SANE_STATUS_GOOD
 [+19.32s] DEBUG: scanner.vala:1241: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7647 pixels_per_line=2549 lines=3506 depth=8
 [+19.32s] DEBUG: scanner.vala:1313: sane_read (7648) -> (SANE_STATUS_GOOD, 7648)
-[+19.32s] DEBUG: simple-scan.vala:254: Page is 2549 pixels wide, 3506 pixels high, 8 bits per pixel
+[+19.32s] DEBUG: receipts.vala:254: Page is 2549 pixels wide, 3506 pixels high, 8 bits per pixel
 [+19.32s] DEBUG: scanner.vala:1313: sane_read (15294) -> (SANE_STATUS_GOOD, 7646)
 [+19.32s] DEBUG: scanner.vala:1313: sane_read (15295) -> (SANE_STATUS_GOOD, 15294)
-[+19.33s] DEBUG: simple-scan.vala:188: Getting color profile for device hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544
-[+19.33s] DEBUG: simple-scan.vala:208: Unable to find colord device hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544: The name org.freedesktop.ColorManager was not provided by any .service files
+[+19.33s] DEBUG: receipts.vala:188: Getting color profile for device hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544
+[+19.33s] DEBUG: receipts.vala:208: Unable to find colord device hpaio:/usb/Photosmart_C6300_series?serial=MY93K9F0R10544: The name org.freedesktop.ColorManager was not provided by any .service files
 [+19.37s] DEBUG: scanner.vala:1313: sane_read (15295) -> (SANE_STATUS_GOOD, 15294)

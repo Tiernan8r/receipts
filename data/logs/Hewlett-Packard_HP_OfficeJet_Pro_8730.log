@@ -1,11 +1,11 @@
-[+0.00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.26.3, PID=21107
+[+0.00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.26.3, PID=21107
 [+0.10s] DEBUG: scanner.vala:1454: sane_init () -> SANE_STATUS_GOOD
 [+0.10s] DEBUG: scanner.vala:1460: SANE version 1.0.27
 [+0.10s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
 [+0.10s] DEBUG: scanner.vala:806: Processing request
 [+0.17s] DEBUG: autosave-manager.vala:281: Autosaving book information
 
-[+2.09s] DEBUG: simple-scan.vala:454: Requesting scan at 300 dpi from device '(null)'
+[+2.09s] DEBUG: receipts.vala:454: Requesting scan at 300 dpi from device '(null)'
 [+2.10s] DEBUG: scanner.vala:1569: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=15ms)
 [+6.37s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6.37s] DEBUG: scanner.vala:353: Device: name="hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51" vendor="Hewlett-Packard" model="HP_OfficeJet_Pro_8730" type="all-in-one"
@@ -63,7 +63,7 @@
 [+11.65s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+11.65s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+11.65s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7440 pixels_per_line=2480 lines=3507 depth=8
-[+11.65s] DEBUG: simple-scan.vala:349: Page is 2480 pixels wide, 3507 pixels high, 8 bits per pixel
-[+11.67s] DEBUG: simple-scan.vala:283: Getting color profile for device hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51
-[+11.67s] DEBUG: simple-scan.vala:303: Unable to find colord device hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51: property match 'Serial'='sane:hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51' does not exist
+[+11.65s] DEBUG: receipts.vala:349: Page is 2480 pixels wide, 3507 pixels high, 8 bits per pixel
+[+11.67s] DEBUG: receipts.vala:283: Getting color profile for device hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51
+[+11.67s] DEBUG: receipts.vala:303: Unable to find colord device hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51: property match 'Serial'='sane:hpaio:/net/HP_OfficeJet_Pro_8730?ip=192.168.0.51' does not exist
 [+12.83s] DEBUG: scanner.vala:1321: sane_read (7441) -> (SANE_STATUS_GOOD, 7441)

@@ -1,9 +1,9 @@
-[+0.00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.26.3, PID=14852
+[+0.00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.26.3, PID=14852
 [+0.15s] DEBUG: scanner.vala:1454: sane_init () -> SANE_STATUS_GOOD
 [+0.15s] DEBUG: scanner.vala:1460: SANE version 1.0.27
 [+0.15s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
 [+0.15s] DEBUG: scanner.vala:806: Processing request
-[+3.08s] DEBUG: simple-scan.vala:454: Requesting scan at 300 dpi from device '(null)'
+[+3.08s] DEBUG: receipts.vala:454: Requesting scan at 300 dpi from device '(null)'
 [+3.08s] DEBUG: scanner.vala:1569: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=2159, paper_height=2794, brightness=0, contrast=0, delay=15ms)
 [+6.98s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6.98s] DEBUG: scanner.vala:353: Device: name="brother4:net1;dev0" vendor="Brother" model="*mfcj985dwxl" type="MFCJ985DW"
@@ -55,6 +55,6 @@
 [+13.99s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+13.99s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+13.99s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7536 pixels_per_line=2512 lines=3298 depth=8
-[+13.99s] DEBUG: simple-scan.vala:349: Page is 2512 pixels wide, 3298 pixels high, 8 bits per pixel
-[+14.01s] DEBUG: simple-scan.vala:283: Getting color profile for device brother4:net1;dev0
-[+14.02s] DEBUG: simple-scan.vala:303: Unable to find colord device brother4:net1;dev0: property match 'Serial'='sane:brother4:net1;dev0' does not exist
+[+13.99s] DEBUG: receipts.vala:349: Page is 2512 pixels wide, 3298 pixels high, 8 bits per pixel
+[+14.01s] DEBUG: receipts.vala:283: Getting color profile for device brother4:net1;dev0
+[+14.02s] DEBUG: receipts.vala:303: Unable to find colord device brother4:net1;dev0: property match 'Serial'='sane:brother4:net1;dev0' does not exist

@@ -1,7 +1,7 @@
 [+0,08s] DEBUG: scanner.vala:1502: SANE version 1.0.27
 [+0,08s] DEBUG: scanner.vala:1563: Requesting redetection of scan devices
 [+0,08s] DEBUG: scanner.vala:810: Processing request
-[+6,51s] DEBUG: simple-scan.vala:455: Requesting scan at 75 dpi from device '(null)'
+[+6,51s] DEBUG: receipts.vala:455: Requesting scan at 75 dpi from device '(null)'
 [+6,51s] DEBUG: scanner.vala:1631: Scanner.scan ("(null)", dpi=75, scan_mode=ScanMode.GRAY, depth=2, type=single, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=3000ms)
 
 [+7,68s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
@@ -49,7 +49,7 @@
 [+8,62s] DEBUG: scanner.vala:1252: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+8,62s] DEBUG: scanner.vala:1269: sane_get_parameters () -> SANE_STATUS_GOOD
 [+8,62s] DEBUG: scanner.vala:1281: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=638 pixels_per_line=638 lines=877 depth=8
-[+8,62s] DEBUG: simple-scan.vala:350: Page is 638 pixels wide, 877 pixels high, 2 bits per pixel
-[+8,62s] DEBUG: simple-scan.vala:284: Getting color profile for device smfp:usb;03f0;f22a;CNB3M432Y5
-[+8,62s] DEBUG: simple-scan.vala:304: Unable to find colord device smfp:usb;03f0;f22a;CNB3M432Y5: property match 'Serial'='sane:smfp:usb;03f0;f22a;CNB3M432Y5' does not exist
+[+8,62s] DEBUG: receipts.vala:350: Page is 638 pixels wide, 877 pixels high, 2 bits per pixel
+[+8,62s] DEBUG: receipts.vala:284: Getting color profile for device smfp:usb;03f0;f22a;CNB3M432Y5
+[+8,62s] DEBUG: receipts.vala:304: Unable to find colord device smfp:usb;03f0;f22a;CNB3M432Y5: property match 'Serial'='sane:smfp:usb;03f0;f22a;CNB3M432Y5' does not exist
 [+9,62s] DEBUG: scanner.vala:1356: sane_read (639) -> (SANE_STATUS_GOOD, 639)

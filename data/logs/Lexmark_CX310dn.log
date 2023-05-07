@@ -1,11 +1,11 @@
-[+0,00s] DEBUG: simple-scan.vala:638: Starting ./_install/bin/simple-scan 3.36.0, PID=10542
+[+0,00s] DEBUG: receipts.vala:638: Starting ./_install/bin/receipts 3.36.0, PID=10542
 [+0,07s] DEBUG: scanner.vala:1534: SANE version 1.0.27
 [+0,07s] DEBUG: scanner.vala:1595: Requesting redetection of scan devices
 [+0,07s] DEBUG: scanner.vala:828: Processing request
 [+11,30s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+11,30s] DEBUG: scanner.vala:353: Device: name="lexmark_nscan:libusb/001/002" vendor="Lexmark" model="Lexmark CX310dn" type="Scanner"
 [+11,31s] DEBUG: scanner.vala:353: Device: name="lexmark_nscan:libnet/SPECIFY_DEVICE" vendor="Lexmark" model="Network" type="Scanner"
-[+36,77s] DEBUG: simple-scan.vala:455: Requesting scan at 150 dpi from device 'lexmark_nscan:libusb/001/002'
+[+36,77s] DEBUG: receipts.vala:455: Requesting scan at 150 dpi from device 'lexmark_nscan:libusb/001/002'
 [+36,77s] DEBUG: scanner.vala:1663: Scanner.scan ("lexmark_nscan:libusb/001/002", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=single, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=10000ms)
 [+36,77s] DEBUG: scanner.vala:828: Processing request
 [+36,99s] DEBUG: scanner.vala:889: sane_open ("lexmark_nscan:libusb/001/002") -> SANE_STATUS_GOOD
@@ -101,4 +101,4 @@
 [+37,12s] DEBUG: scanner.vala:1278: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+37,12s] DEBUG: scanner.vala:1301: sane_get_parameters () -> SANE_STATUS_GOOD
 [+37,12s] DEBUG: scanner.vala:1313: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=160 pixels_per_line=1275 lines=1650 depth=1
-[+37,12s] DEBUG: simple-scan.vala:350: Page is 1275 pixels wide, 1650 pixels high, 1 bits per pixel
+[+37,12s] DEBUG: receipts.vala:350: Page is 1275 pixels wide, 1650 pixels high, 1 bits per pixel

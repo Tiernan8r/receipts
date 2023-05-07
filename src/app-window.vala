@@ -13,7 +13,7 @@
 private const int DEFAULT_TEXT_DPI = 150;
 private const int DEFAULT_PHOTO_DPI = 300;
 
-[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/app-window.ui")]
+[GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/app-window.ui")]
 public class AppWindow : Adw.ApplicationWindow
 {
     private const GLib.ActionEntry[] action_entries =
@@ -164,7 +164,7 @@ public class AppWindow : Adw.ApplicationWindow
 
     public AppWindow ()
     {
-        settings = new Settings ("org.gnome.SimpleScan");
+        settings = new Settings ("me.tiernan8r.Receipts");
 
         var renderer = new Gtk.CellRendererText ();
         renderer.set_property ("xalign", 0.5);
@@ -1088,7 +1088,7 @@ public class AppWindow : Adw.ApplicationWindow
         File file;
         try
         {
-            var dir = DirUtils.make_tmp ("simple-scan-XXXXXX");
+            var dir = DirUtils.make_tmp ("receipts-XXXXXX");
             file = File.new_for_path (Path.build_filename (dir, "scan.png"));
             page.save_png (file);
         }
@@ -1242,7 +1242,7 @@ public class AppWindow : Adw.ApplicationWindow
     {
         try
         {
-            var dir = DirUtils.make_tmp ("simple-scan-XXXXXX");
+            var dir = DirUtils.make_tmp ("receipts-XXXXXX");
             string mime_type, filename;
             if (document_hint == "text")
             {
@@ -1302,7 +1302,7 @@ public class AppWindow : Adw.ApplicationWindow
 
     private void launch_help ()
     {
-        Gtk.show_uri (this, "help:simple-scan", Gdk.CURRENT_TIME);
+        Gtk.show_uri (this, "help:receipts", Gdk.CURRENT_TIME);
     }
 
     private void help_cb ()
@@ -1322,9 +1322,9 @@ public class AppWindow : Adw.ApplicationWindow
             copyright = "Copyright © 2009-2018 Canonical Ltd.",
             license_type = Gtk.License.GPL_3_0,
             application_name = _("Document Scanner"),
-            application_icon = "org.gnome.SimpleScan",
+            application_icon = "me.tiernan8r.Receipts",
             version = VERSION,
-            website = "https://gitlab.gnome.org/GNOME/simple-scan",
+            website = "https://gitlab.gnome.org/GNOME/receipts",
             issue_url = "https://gitlab.gnome.org/GNOME/baobab/-/issues/new",
         };
         
@@ -1420,7 +1420,7 @@ public class AppWindow : Adw.ApplicationWindow
         preferences_dialog.transient_for = this;
         preferences_dialog.modal = true;
 
-        Gtk.Window.set_default_icon_name ("org.gnome.SimpleScan");
+        Gtk.Window.set_default_icon_name ("me.tiernan8r.Receipts");
 
         var app = Application.get_default () as Gtk.Application;
 
@@ -1507,7 +1507,7 @@ public class AppWindow : Adw.ApplicationWindow
 
     private string state_filename
     {
-        owned get { return Path.build_filename (Environment.get_user_config_dir (), "simple-scan", "state"); }
+        owned get { return Path.build_filename (Environment.get_user_config_dir (), "receipts", "state"); }
     }
 
     private void load_state ()
@@ -1572,7 +1572,7 @@ public class AppWindow : Adw.ApplicationWindow
         }
     }
 
-    private static string STATE_DIR = Path.build_filename (Environment.get_user_config_dir (), "simple-scan", null);
+    private static string STATE_DIR = Path.build_filename (Environment.get_user_config_dir (), "receipts", null);
     private void save_state (bool force = false)
     {
         if (!force)

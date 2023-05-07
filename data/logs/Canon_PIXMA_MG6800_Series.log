@@ -1,10 +1,10 @@
-[+0.00s] DEBUG: simple-scan.vala:638: Starting Simple Scan 3.30.1.1, PID=10642
+[+0.00s] DEBUG: receipts.vala:638: Starting Simple Scan 3.30.1.1, PID=10642
 [+0.20s] DEBUG: scanner.vala:1461: sane_init () -> SANE_STATUS_GOOD
 [+0.20s] DEBUG: scanner.vala:1467: SANE version 1.0.27
 [+0.20s] DEBUG: scanner.vala:1528: Requesting redetection of scan devices
 [+0.20s] DEBUG: scanner.vala:806: Processing request
 [+0.20s] DEBUG: autosave-manager.vala:281: Autosaving book information
-[+2.39s] DEBUG: simple-scan.vala:455: Requesting scan at 300 dpi from device '(null)'
+[+2.39s] DEBUG: receipts.vala:455: Requesting scan at 300 dpi from device '(null)'
 [+2.39s] DEBUG: scanner.vala:1576: Scanner.scan ("(null)", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=10000ms)
 [+7.87s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+7.87s] DEBUG: scanner.vala:353: Device: name="pixma:MG6800_192.168.0.19" vendor="CANON" model="Canon PIXMA MG6800 Series" type="multi-function peripheral"
@@ -97,7 +97,7 @@
 [+8.48s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+8.48s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+8.48s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7656 pixels_per_line=2552 lines=3508 depth=8
-[+8.48s] DEBUG: simple-scan.vala:350: Page is 2552 pixels wide, 3508 pixels high, 8 bits per pixel
-[+8.51s] DEBUG: simple-scan.vala:284: Getting color profile for device pixma:MG6800_192.168.0.19
-[+8.52s] DEBUG: simple-scan.vala:304: Unable to find colord device pixma:MG6800_192.168.0.19: property match 'Serial'='sane:pixma:MG6800_192.168.0.19' does not exist
+[+8.48s] DEBUG: receipts.vala:350: Page is 2552 pixels wide, 3508 pixels high, 8 bits per pixel
+[+8.51s] DEBUG: receipts.vala:284: Getting color profile for device pixma:MG6800_192.168.0.19
+[+8.52s] DEBUG: receipts.vala:304: Unable to find colord device pixma:MG6800_192.168.0.19: property match 'Serial'='sane:pixma:MG6800_192.168.0.19' does not exist
 [+17.13s] DEBUG: scanner.vala:1321: sane_read (7657) -> (SANE_STATUS_GOOD, 7657)

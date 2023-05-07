@@ -1,11 +1,11 @@
-[+0,04s] DEBUG: simple-scan.vala:674: Starting Simple Scan 3.20.0, PID=23941
+[+0,04s] DEBUG: receipts.vala:674: Starting Simple Scan 3.20.0, PID=23941
 [+0,52s] DEBUG: scanner.vala:1447: sane_init () -> SANE_STATUS_GOOD
 [+0,52s] DEBUG: scanner.vala:1453: SANE version 1.0.25
 [+0,52s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
 [+0,52s] DEBUG: scanner.vala:803: Processing request
 [+6,20s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+6,20s] DEBUG: scanner.vala:350: Device: name="brother3:bus2;dev1" vendor="Brother" model="DCP-385C" type="USB scanner"
-[+24,91s] DEBUG: simple-scan.vala:404: Requesting scan at 150 dpi from device 'brother3:bus2;dev1'
+[+24,91s] DEBUG: receipts.vala:404: Requesting scan at 150 dpi from device 'brother3:bus2;dev1'
 [+24,91s] DEBUG: scanner.vala:1560: Scanner.scan ("brother3:bus2;dev1", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+24,91s] DEBUG: scanner.vala:803: Processing request
 [+26,03s] DEBUG: scanner.vala:864: sane_open ("brother3:bus2;dev1") -> SANE_STATUS_GOOD
@@ -54,7 +54,7 @@
 [+30,25s] DEBUG: scanner.vala:1213: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+30,25s] DEBUG: scanner.vala:1230: sane_get_parameters () -> SANE_STATUS_GOOD
 [+30,25s] DEBUG: scanner.vala:1242: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=1232 pixels_per_line=1232 lines=1736 depth=8
-[+30,25s] DEBUG: simple-scan.vala:348: Page is 1232 pixels wide, 1736 pixels high, 2 bits per pixel
-[+30,25s] DEBUG: simple-scan.vala:282: Getting color profile for device brother3:bus2;dev1
-[+30,31s] DEBUG: simple-scan.vala:302: Unable to find colord device brother3:bus2;dev1: property match 'Serial'='sane:brother3:bus2;dev1' does not exist
+[+30,25s] DEBUG: receipts.vala:348: Page is 1232 pixels wide, 1736 pixels high, 2 bits per pixel
+[+30,25s] DEBUG: receipts.vala:282: Getting color profile for device brother3:bus2;dev1
+[+30,31s] DEBUG: receipts.vala:302: Unable to find colord device brother3:bus2;dev1: property match 'Serial'='sane:brother3:bus2;dev1' does not exist
 [+30,62s] DEBUG: scanner.vala:1314: sane_read (1233) -> (SANE_STATUS_GOOD, 1233)

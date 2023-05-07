@@ -1,4 +1,4 @@
-name: simple-scan
+name: receipts
 version: git
 summary: Document Scanning Application
 description: |
@@ -10,13 +10,13 @@ base: core22
 
 slots:
   # for GtkApplication registration
-  simple-scan:
+  receipts:
     interface: dbus
     bus: session
-    name: org.gnome.SimpleScan
+    name: me.tiernan8r.Receipts
  
 apps:
-  simple-scan:
+  receipts:
     plugs:
       - network
       - network-control
@@ -27,9 +27,9 @@ apps:
       - system-observe
       - io-ports-control
       - raw-usb
-    command: usr/bin/simple-scan
+    command: usr/bin/receipts
     extensions: [ gnome ]
-    desktop: usr/share/applications/simple-scan.desktop
+    desktop: usr/share/applications/receipts.desktop
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
 
@@ -40,10 +40,10 @@ parts:
     source-tag: 1.1.1
     plugin: autotools
     autotools-configure-parameters:
-      - --prefix=/snap/simple-scan/current/usr
+      - --prefix=/snap/receipts/current/usr
       - --with-api-spec=no
     organize:
-      snap/simple-scan/current/usr: usr
+      snap/receipts/current/usr: usr
     build-packages:
       - autotools-dev
       - autoconf
@@ -63,14 +63,14 @@ parts:
       - po-debconf
       - xutils-dev
 
-  simple-scan:
+  receipts:
     after: [libsane]
     source: .
     source-type: git
     plugin: meson
     meson-parameters: [--prefix=/usr]
     organize:
-      snap/simple-scan/current/usr: usr
+      snap/receipts/current/usr: usr
     build-packages:
       - desktop-file-utils
       - gettext

@@ -1,11 +1,11 @@
-[+0.00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.26.1, PID=10425
+[+0.00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.26.1, PID=10425
 [+0.08s] DEBUG: scanner.vala:1460: SANE version 1.0.27
 [+0.08s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
 [+0.08s] DEBUG: scanner.vala:806: Processing request
 [+0.14s] DEBUG: autosave-manager.vala:281: Autosaving book information
 [+6.40s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6.40s] DEBUG: scanner.vala:353: Device: name="xerox_mfp:libusb:001:027" vendor="Samsung" model="Samsung SCX-4600 Series" type="multi-function peripheral"
-[+10.71s] DEBUG: simple-scan.vala:454: Requesting scan at 150 dpi from device 'xerox_mfp:libusb:001:027'
+[+10.71s] DEBUG: receipts.vala:454: Requesting scan at 150 dpi from device 'xerox_mfp:libusb:001:027'
 [+10.71s] DEBUG: scanner.vala:1569: Scanner.scan ("xerox_mfp:libusb:001:027", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=15ms)
 [+10.71s] DEBUG: scanner.vala:806: Processing request
 [+10.71s] DEBUG: scanner.vala:867: sane_open ("xerox_mfp:libusb:001:027") -> SANE_STATUS_GOOD

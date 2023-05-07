@@ -1,4 +1,4 @@
-[+0,00s] DEBUG: simple-scan.vala:638: Starting Simple Scan 3.30.2, PID=8419
+[+0,00s] DEBUG: receipts.vala:638: Starting Simple Scan 3.30.2, PID=8419
 [+0,03s] DEBUG: app-window.vala:1672: Restoring window to 600x400 pixels
 [+0,03s] DEBUG: autosave-manager.vala:64: Loading autosave information
 [+0,03s] DEBUG: autosave-manager.vala:259: Waiting to autosave...
@@ -8,7 +8,7 @@
 [+0,07s] DEBUG: scanner.vala:806: Processing request
 [+9,98s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+9,98s] DEBUG: scanner.vala:353: Device: name="xerox_mfp:tcp 192.168.178.36" vendor="Samsung" model="C460 Series" type="multi-function peripheral"
-[+25,67s] DEBUG: simple-scan.vala:455: Requesting scan at 300 dpi from device 'xerox_mfp:tcp 192.168.178.36'
+[+25,67s] DEBUG: receipts.vala:455: Requesting scan at 300 dpi from device 'xerox_mfp:tcp 192.168.178.36'
 [+25,67s] DEBUG: scanner.vala:1576: Scanner.scan ("xerox_mfp:tcp 192.168.178.36", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=10000ms)
 [+25,67s] DEBUG: scanner.vala:806: Processing request
 [+25,67s] DEBUG: scanner.vala:867: sane_open ("xerox_mfp:tcp 192.168.178.36") -> SANE_STATUS_GOOD
@@ -54,6 +54,6 @@
 [+30,83s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+30,83s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+30,83s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7653 pixels_per_line=2551 lines=3569 depth=8
-[+30,83s] DEBUG: simple-scan.vala:350: Page is 2551 pixels wide, 3569 pixels high, 8 bits per pixel
-[+30,84s] DEBUG: simple-scan.vala:284: Getting color profile for device xerox_mfp:tcp 192.168.178.36
-[+30,85s] DEBUG: simple-scan.vala:304: Unable to find colord device xerox_mfp:tcp 192.168.178.36: property match 'Serial'='sane:xerox_mfp:tcp 192.168.178.36' does not exist
+[+30,83s] DEBUG: receipts.vala:350: Page is 2551 pixels wide, 3569 pixels high, 8 bits per pixel
+[+30,84s] DEBUG: receipts.vala:284: Getting color profile for device xerox_mfp:tcp 192.168.178.36
+[+30,85s] DEBUG: receipts.vala:304: Unable to find colord device xerox_mfp:tcp 192.168.178.36: property match 'Serial'='sane:xerox_mfp:tcp 192.168.178.36' does not exist

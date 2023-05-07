@@ -1,4 +1,4 @@
-[+0,00s] DEBUG: simple-scan.vala:638: Starting simple-scan 3.34.2, PID=9529
+[+0,00s] DEBUG: receipts.vala:638: Starting receipts 3.34.2, PID=9529
 [+0,01s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
 [+0,04s] DEBUG: app-window.vala:1670: Restoring window to 600x400 pixels
 [+0,04s] DEBUG: app-window.vala:1674: Restoring window to maximized
@@ -12,7 +12,7 @@
 [+6,22s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6,22s] DEBUG: scanner.vala:353: Device: name="v4l:/dev/video0" vendor="Noname" model="Integrated_Webcam_HD: Integrate" type="virtual device"
 [+6,22s] DEBUG: scanner.vala:353: Device: name="hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18" vendor="Hewlett-Packard" model="HP_OfficeJet_Pro_9010_series" type="all-in-one"
-[+31,26s] DEBUG: simple-scan.vala:455: Requesting scan at 150 dpi from device 'hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18'
+[+31,26s] DEBUG: receipts.vala:455: Requesting scan at 150 dpi from device 'hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18'
 [+31,27s] DEBUG: scanner.vala:1600: Scanner.scan ("hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.ADF_BOTH, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=3000ms)
 [+31,27s] DEBUG: scanner.vala:806: Processing request
 [dll] sane_open: trying to open `hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18'
@@ -78,7 +78,7 @@
 [+40,17s] DEBUG: scanner.vala:1258: sane_get_parameters () -> SANE_STATUS_GOOD
 [+40,17s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=1240 pixels_per_line=1240 lines=1753 depth=8
 [+40,17s] DEBUG: scanner.vala:1345: sane_read (1241) -> (SANE_STATUS_GOOD, 1241)
-[+40,17s] DEBUG: simple-scan.vala:350: Page is 1240 pixels wide, 1753 pixels high, 2 bits per pixel
+[+40,17s] DEBUG: receipts.vala:350: Page is 1240 pixels wide, 1753 pixels high, 2 bits per pixel
 [+40,17s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+40,17s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+40,17s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
@@ -101,7 +101,7 @@
 [+67,40s] DEBUG: scanner.vala:1258: sane_get_parameters () -> SANE_STATUS_GOOD
 [+67,40s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=1240 pixels_per_line=1240 lines=1753 depth=8
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (1241) -> (SANE_STATUS_GOOD, 1241)
-[+67,40s] DEBUG: simple-scan.vala:350: Page is 1240 pixels wide, 1753 pixels high, 2 bits per pixel
+[+67,40s] DEBUG: receipts.vala:350: Page is 1240 pixels wide, 1753 pixels high, 2 bits per pixel
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
@@ -110,7 +110,7 @@
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
-[+67,40s] DEBUG: simple-scan.vala:284: Getting color profile for device hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18
+[+67,40s] DEBUG: receipts.vala:284: Getting color profile for device hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+67,40s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
@@ -141,13 +141,10 @@
 [+80,70s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=1240 pixels_per_line=1240 lines=1753 depth=8
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (1241) -> (SANE_STATUS_GOOD, 1241)
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
-[+80,70s] DEBUG: simple-scan.vala:350: Page is 1240 pixels wide, 1753 pixels high, 2 bits per pixel
+[+80,70s] DEBUG: receipts.vala:350: Page is 1240 pixels wide, 1753 pixels high, 2 bits per pixel
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
-[+80,70s] DEBUG: simple-scan.vala:284: Getting color profile for device hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18
-[+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
-[+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
-[+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
+[+80,70s] DEBUG: receipts.vala:284: Getting color profile for device hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
@@ -181,6 +178,9 @@
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
+[+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
+[+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
+[+80,70s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,71s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,71s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,71s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
@@ -479,7 +479,7 @@
 [+80,73s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,73s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+80,73s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
-[+80,74s] DEBUG: simple-scan.vala:304: Unable to find colord device hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18: property match 'Serial'='sane:hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18' does not exist
+[+80,74s] DEBUG: receipts.vala:304: Unable to find colord device hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18: property match 'Serial'='sane:hpaio:/net/HP_OfficeJet_Pro_9010_series?ip=192.168.1.18' does not exist
 [+92,12s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+92,12s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)
 [+92,12s] DEBUG: scanner.vala:1345: sane_read (2480) -> (SANE_STATUS_GOOD, 2480)

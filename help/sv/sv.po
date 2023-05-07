@@ -1,13 +1,13 @@
-# Swedish translation for simple-scan.
-# Copyright © 2017-2021 simple-scan's COPYRIGHT HOLDER
-# This file is distributed under the same license as the simple-scan package.
+# Swedish translation for receipts.
+# Copyright © 2017-2021 receipts's COPYRIGHT HOLDER
+# This file is distributed under the same license as the receipts package.
 # Isak Östlund <translate@catnip.nu>, 2017, 2020.
 # Sebastian Rasmussen <sebras@gmail.com>, 2019.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2019, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan master\n"
+"Project-Id-Version: receipts master\n"
 "POT-Creation-Date: 2022-07-17 17:45+0000\n"
 "PO-Revision-Date: 2022-09-18 18:13+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"

@@ -1,11 +1,11 @@
-[+0,00s] DEBUG: simple-scan.vala:674: Starting Simple Scan 3.20.0, PID=4891
+[+0,00s] DEBUG: receipts.vala:674: Starting Simple Scan 3.20.0, PID=4891
 [+0,39s] DEBUG: scanner.vala:1447: sane_init () -> SANE_STATUS_GOOD
 [+0,39s] DEBUG: scanner.vala:1453: SANE version 1.0.25
 [+0,39s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
 [+0,39s] DEBUG: scanner.vala:803: Processing request
 [+6,41s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+6,41s] DEBUG: scanner.vala:350: Device: name="genesys:libusb:002:002" vendor="Hewlett Packard" model="ScanJet 3670c" type="flatbed scanner"
-[+20,24s] DEBUG: simple-scan.vala:404: Requesting scan at 300 dpi from device 'genesys:libusb:002:002'
+[+20,24s] DEBUG: receipts.vala:404: Requesting scan at 300 dpi from device 'genesys:libusb:002:002'
 [+20,24s] DEBUG: scanner.vala:1560: Scanner.scan ("genesys:libusb:002:002", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+20,24s] DEBUG: scanner.vala:803: Processing request
 [+20,88s] DEBUG: scanner.vala:864: sane_open ("genesys:libusb:002:002") -> SANE_STATUS_GOOD
@@ -166,7 +166,7 @@
 [+37,16s] DEBUG: scanner.vala:1213: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+37,16s] DEBUG: scanner.vala:1230: sane_get_parameters () -> SANE_STATUS_GOOD
 [+37,16s] DEBUG: scanner.vala:1242: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7647 pixels_per_line=2549 lines=3543 depth=8
-[+37,16s] DEBUG: simple-scan.vala:348: Page is 2549 pixels wide, 3543 pixels high, 8 bits per pixel
-[+37,19s] DEBUG: simple-scan.vala:282: Getting color profile for device genesys:libusb:002:002
+[+37,16s] DEBUG: receipts.vala:348: Page is 2549 pixels wide, 3543 pixels high, 8 bits per pixel
+[+37,19s] DEBUG: receipts.vala:282: Getting color profile for device genesys:libusb:002:002
 
 [+37,36s] DEBUG: scanner.vala:1314: sane_read (7648) -> (SANE_STATUS_GOOD, 7648)

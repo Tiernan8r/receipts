@@ -1,13 +1,13 @@
-# Punjabi translation for simple-scan
+# Punjabi translation for receipts
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # A S Alam <aalam@users.sf.net>, 2017, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2021-02-12 14:16+0000\n"
 "PO-Revision-Date: 2021-02-13 16:40-0800\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Lokalize 20.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "ਸਕੈਨ ਕਰਨ ਲਈ ਡਿਵਾਈਸ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "ਚਿੱਤਰ ਲੈਣ ਲਈ ਸੈਨ (SANE) ਡਿਵਾਈਸ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "ਸਕੈਨ ਕੀਤੇ ਜਾਣ ਵਾਲੇ ਡੌਕੂਮੈਂਟ ਦੀ ਕਿਸਮ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -41,88 +41,88 @@ msgstr ""
 " ਸਕੈਨ ਕਰਨ ਤੋਂ ਬਾਅਦ "
 "ਦੀਆਂ ਕਾਰਵਾਈਆਂ ਤਹਿ ਕਰਦੀ ਹੈ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "ਮਿਲੀਮੀਟਰ ਦੇ ਦਸਵੇਂ ਹਿੱਸੇ 'ਚ ਪੇਪਰ ਦੀ ਚੌੜਾਈ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "ਮਿਲੀਮੀਟਰ ਦੇ ਦਸਵੇਂ ਹਿੱਸੇ ਤੱਕ ਪੇਪਰ ਦੀ ਚੌੌੜਾਈ (ਜਾਂ ਆਪਣੇ-ਆਪ ਪੇਪਰ ਨੂੰ ਖੋਜਣ ਲਈ 0)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "ਮਿਲੀਮੀਟਰ ਦੇ ਦਸਵੇਂ ਹਿੱਸੇ 'ਚ ਪੇਪਰ ਦੀ ਉਚਾਈ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr ""
 "ਮਿਲੀਮੀਟਰ ਦੇ ਦਸਵੇਂ ਹਿੱਸੇ ਤੱਕ ਪੇਪਰ ਦੀ ਉਚਾਈ (ਜਾਂ ਆਪਣੇ-ਆਪ ਪੇਪਰ ਨੂੰ ਖੋਜਣ ਲਈ 0)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "ਸਕੈਨ ਦੀ ਚਮਕ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "-100 ਤੋਂ 100 ਤੱਕ ਚਮਕ ਅਡਜੱਸਟਮੈਂਟ (0 ਭਾਵ ਕੁਝ ਨਹੀਂ)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "ਸਕੈਨ ਦਾ ਕਨਟਰਾਸਟ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "-100 ਤੋਂ 100 ਤੱਕ ਕਨਟਰਾਸਟ ਅਡਜੱਸਟਮੈਂਟ (0 ਭਾਵ ਕੁਝ ਨਹੀਂ)।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "ਲਿਖਤ ਸਕੈਨ ਕਰਨ ਲਈ ਰੈਜ਼ੋਲੂਸ਼ਨ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr ""
 "ਲਿਖਤ ਨੂੰ ਸਕੈਨ ਕਰਨ ਦੌਰਾਨ ਵਰਤਣ ਵਾਸਤੇ ਰੈਜ਼ੋਲੂਸ਼ਨ ਪ੍ਰਤੀ-ਇੰਚ-ਬਿੰਦੀਆਂ ਦੇ ਰੂਪ 'ਚ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 #| msgid "Resolution for text scans"
 msgid "Resolution for image scans"
 msgstr "ਚਿੱਤਰ ਸਕੈਨ ਕਰਨ ਲਈ ਰੈਜ਼ੋਲੂਸ਼ਨ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 #| msgid "The resolution in dots-per-inch to use when scanning text."
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr ""
 "ਚਿੱਤਰਾਂ ਨੂੰ ਸਕੈਨ ਕਰਨ ਦੌਰਾਨ ਵਰਤਣ ਵਾਸਤੇ ਰੈਜ਼ੋਲੂਸ਼ਨ ਪ੍ਰਤੀ-ਇੰਚ-ਬਿੰਦੀਆਂ ਦੇ ਰੂਪ 'ਚ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "ਸਕੈਨ ਕਰਨ ਲਈ ਸਫ਼ੇ ਦਾ ਪਾਸਾ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "ਸਕੈਨ ਕਰਨ ਲਈ ਸਫ਼ੇ ਦਾ ਪਾਸਾ ਹੈ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "ਫਾਇਲਾਂ ਸੰਭਾਲਣ ਲਈ ਡਾਇਰੈਕਟਰੀ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "ਫਾਇਲਾਂ ਸੰਭਾਲਣ ਲਈ ਡਾਇਰੈਕਟਰੀ ਹੈ। ਜੇ ਸੈੱਟ ਨਾ ਕੀਤਾ ਤਾਂ ਡਿਫਾਲਟ ਡੌਕੂਮੈਂਟ ਡਾਇਰੈਕਟਰੀ"
 " ਹੈ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "ਚਿੱਤਰ ਫਾਇਲਾਂ ਸੰਭਾਲਣ ਲਈ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਫਾਇਲ ਫਾਰਮੈਟ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -130,19 +130,19 @@ msgstr ""
 "MIME ਕਿਸਮ, ਜੋ ਕਿ ਚਿੱਤਰ ਸੰਭਾਲਣ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ। ਸਹਾਇਕ MIME ਕਿਸਮਾਂ ਦੀਆਂ"
 " ਉਦਾਹਰਨਾਂ: mage/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "JPEG ਕੰਪਰੈਸ਼ਨ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਕੁਆਲਟੀ ਮੁੱਲ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "JPEG ਕੰਪਰੈਸ਼ਨ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਕੁਆਲਟੀ ਮੁੱਲ।"
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "ਸਫ਼ਿਆਂ ਦੇ ਵਿਚਾਲੇ ਮਿਲੀਸਕਿੰਟਾਂ 'ਚ ਦੇਰੀ"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "ਸਫ਼ਿਆਂ ਦੇ ਵਿਚਾਲੇ ਮਿਲੀਸਕਿੰਟਾਂ 'ਚ ਦੇਰੀ।"
 
@@ -150,16 +150,16 @@ msgstr "ਸਫ਼ਿਆਂ ਦੇ ਵਿਚਾਲੇ ਮਿਲੀਸਕਿੰਟ
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:498 src/app-window.vala:1582 src/app-window.vala:1862
 msgid "Document Scanner"
 msgstr "ਡੌਕੂਮੈਂਟ ਸਕੈਨਰ"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "ਆਪਣੀਆਂ ਫ਼ੋਟੋ ਅਤੇ ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਡਿਜ਼ੀਟਲ ਕਾਪੀ ਬਣਾਓ"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -170,18 +170,18 @@ msgstr ""
 " ਸਕੈਨ ਨੂੰ ਛਾਪ ਸਕਦੇ ਹੋ, PDF ਵਜੋਂ ਬਰਾਮਦ ਕਰ ਸਕਦੇ ਹੋ ਜਾਂ ਕਈ ਕਿਸਮ ਦੇ ਚਿੱਤਰ ਫਾਰਮੈਟ"
 " ਵਿੱਚ ਸੰਭਾਲ ਸਕਦੇ ਹੋ।"
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 #| msgid ""
 #| "Simple Scan uses the SANE framework to support most existing scanners."
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr "ਇਹ ਸਭ ਤੋਂ ਵੱਧ ਮੌਜੂਦ ਸਕੈਨਰਾਂ ਲਈ ਸਹਿਯੋਗ ਵਾਸਤੇ SANE ਫਰੇਮਵਰਕ ਵਰਤਦਾ ਹੈ।"
 
-#: data/simple-scan.appdata.xml.in:26
+#: data/receipts.appdata.xml.in:26
 msgid "The GNOME Project"
 msgstr "ਗਨੋਮ ਪਰੋਜੈਕਟ"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "ਸਕੈਨ;ਸਕੈਨਰ;ਆਟੋਮੈਟਿਕ ਡੌਕੂਮੈਂਟ ਫੀਡਰ;ਫਲੈਟਬੈਡ;"
 
@@ -670,7 +670,7 @@ msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr ""
 "ਇੱਕ ਫਾਇਲ ਨਾਂ “%s” ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "ਬਦਲੋ(_R)"
@@ -1103,37 +1103,37 @@ msgid "Error communicating with scanner"
 msgstr "ਸਕੈਨਰ ਨਾਲ ਸੰਚਾਰ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "ਰੀਲਿਜ਼ ਵਰਜਨ ਵੇਖਾਓ"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "ਡੀਬੱਗ ਕਰਨ ਸੁਨੇਹੇ ਛਾਪੋ"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 #| msgid "Fix PDF files generated with older versions of Simple Scan"
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "ਇਸ ਐਪ ਦੇ ਪੁਰਾਣੇ ਵਰਜ਼ਨ ਨਾਲ ਤਿਆਰ ਕੀਤੀਆਂ PDF  ਫਾਇਲਾਂ ਨੂੰ ਠੀਕ ਕਰੋ"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1757
+#: src/receipts.vala:1757
 msgid "Failed to scan"
 msgstr "ਸਕੈਨ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1772
+#: src/receipts.vala:1772
 msgid "Scan in progress"
 msgstr "ਸਕੈਨ ਕਰਨਾ ਜਾਰੀ ਹੈ"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1956
+#: src/receipts.vala:1956
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DEVICE…] — ਸਕੈਨ ਕਰਨ ਦੀ ਸਹੂਲਤ"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1967
+#: src/receipts.vala:1967
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr "ਪੂਰੀਆਂ ਉਪਲੱਬਧ ਕਮਾਂਡ ਲਾਈਨ ਚੋਣਾਂ ਵੇਖਣ ਵਾਸਤੇ ”%s --help” ਚਲਾਓ।"

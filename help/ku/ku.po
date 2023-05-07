@@ -1,11 +1,11 @@
-# Kurdish translation for simple-scan
+# Kurdish translation for receipts
 # Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
+"Project-Id-Version: receipts\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-03-27 22:33+1300\n"
 "PO-Revision-Date: 2017-02-28 22:57+0000\n"

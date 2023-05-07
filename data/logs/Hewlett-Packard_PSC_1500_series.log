@@ -1,4 +1,4 @@
-[+0,00s] DEBUG: simple-scan.vala:637: Starting Simple Scan 3.28.0, PID=11070
+[+0,00s] DEBUG: receipts.vala:637: Starting Simple Scan 3.28.0, PID=11070
 [+0,03s] CRITICAL: g_action_print_detailed_name: assertion 'g_action_name_is_valid (action_name)' failed
 [+0,03s] CRITICAL: gtk_application_set_accels_for_action: assertion 'detailed_action_name != NULL' failed
 [+0,05s] DEBUG: app-window.vala:1671: Restoring window to 600x400 pixels
@@ -9,7 +9,7 @@
 [+0,10s] DEBUG: scanner.vala:1521: Requesting redetection of scan devices
 [+0,10s] DEBUG: scanner.vala:806: Processing request
 [+0,15s] DEBUG: autosave-manager.vala:281: Autosaving book information
-[+2,30s] DEBUG: simple-scan.vala:454: Requesting scan at 150 dpi from device '(null)'
+[+2,30s] DEBUG: receipts.vala:454: Requesting scan at 150 dpi from device '(null)'
 [+2,30s] DEBUG: scanner.vala:1569: Scanner.scan ("(null)", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=10000ms)
 [+6,46s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+6,46s] DEBUG: scanner.vala:353: Device: name="hpaio:/usb/PSC_1500_series?serial=MY63DCC18J04GG" vendor="Hewlett-Packard" model="PSC_1500_series" type="all-in-one"

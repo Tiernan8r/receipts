@@ -6,4 +6,4 @@ src/drivers-dialog.c
 src/page.c
 src/preferences-dialog.c
 src/scanner.c
-src/simple-scan.c
+src/receipts.c

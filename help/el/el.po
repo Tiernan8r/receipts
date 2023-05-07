@@ -1,11 +1,11 @@
-# Greek translation for simple-scan.
-# Copyright (C) 2019 simple-scan's COPYRIGHT HOLDER
-# This file is distributed under the same license as the simple-scan package.
+# Greek translation for receipts.
+# Copyright (C) 2019 receipts's COPYRIGHT HOLDER
+# This file is distributed under the same license as the receipts package.
 # Efstathios Iosifidis <iosifidis@opensuse.org>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan gnome-3-34\n"
+"Project-Id-Version: receipts gnome-3-34\n"
 "POT-Creation-Date: 2019-09-09 05:38+0000\n"
 "PO-Revision-Date: 2019-09-10 00:51+0300\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"

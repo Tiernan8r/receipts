@@ -1,10 +1,10 @@
 {
-    "app-id" : "org.gnome.SimpleScan",
-    "runtime" : "org.gnome.Platform",
+    "app-id" : "me.tiernan8r.Receipts",
+    "runtime" : "me.tiernan8r.Platform",
     "runtime-version" : "master",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "simple-scan",
-    "rename-desktop-file" : "simple-scan.desktop",
+    "sdk" : "me.tiernan8r.Sdk",
+    "command" : "receipts",
+    "rename-desktop-file" : "receipts.desktop",
     "tags" : [
         "devel"
     ],
@@ -159,13 +159,13 @@
             ]
         },
         {
-            "name" : "simple-scan",
+            "name" : "receipts",
             "buildsystem" : "meson",
             "builddir" : true,
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/simple-scan.git"
+                    "url" : "https://gitlab.gnome.org/GNOME/receipts.git"
                 }
             ]
         }

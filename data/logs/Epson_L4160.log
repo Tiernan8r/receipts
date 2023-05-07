@@ -1,10 +1,10 @@
-[+0.00s] DEBUG: simple-scan.vala:2014: Starting simple-scan 40.0, PID=2562
+[+0.00s] DEBUG: receipts.vala:2014: Starting receipts 40.0, PID=2562
 [+0.00s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
 [+0.03s] DEBUG: _g_io_module_get_default: Found default implementation gvfs (GDaemonVfs) for ‘gio-vfs’
 
-(simple-scan:2562): Gtk-WARNING **: 15:04:34.567: Theme parsing error: gtk.css:41:51: Invalid name of pseudo-class
+(receipts:2562): Gtk-WARNING **: 15:04:34.567: Theme parsing error: gtk.css:41:51: Invalid name of pseudo-class
 [+0.18s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-[+0.22s] DEBUG: app-window.vala:2005: Loading state from /home/myself/.cache/simple-scan/state
+[+0.22s] DEBUG: app-window.vala:2005: Loading state from /home/myself/.cache/receipts/state
 [+0.22s] DEBUG: app-window.vala:1984: Restoring window to 903x873 pixels
 [+0.27s] DEBUG: scanner.vala:1569: sane_init () -> SANE_STATUS_GOOD
 [+0.27s] DEBUG: scanner.vala:1575: SANE version 1.0.32
@@ -12,20 +12,20 @@
 [+0.27s] DEBUG: scanner.vala:837: Processing request
 [+0.35s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+0.35s] DEBUG: scanner.vala:353: Device: name="imagescan:esci:networkscan://192.168.1.5:1865" vendor="Epson" model="L4160" type=""
-[+0.61s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/simple-scan/state
+[+0.61s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/receipts/state
 [+5.53s] DEBUG: gdk_pixbuf_from_pixdata() called on:
 [+5.53s] DEBUG: 	Encoding raw
 [+5.53s] DEBUG: 	Dimensions: 166 x 166
 [+5.53s] DEBUG: 	Rowstride: 664, Length: 110248
 [+5.53s] DEBUG: 	Copy pixels == false
-[+5.69s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/simple-scan/state
-[+9.49s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/simple-scan/state
-[+11.68s] DEBUG: simple-scan.vala:1819: Requesting scan at 600 dpi from device 'imagescan:esci:networkscan://192.168.1.5:1865'
+[+5.69s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/receipts/state
+[+9.49s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/receipts/state
+[+11.68s] DEBUG: receipts.vala:1819: Requesting scan at 600 dpi from device 'imagescan:esci:networkscan://192.168.1.5:1865'
 [+11.68s] DEBUG: scanner.vala:1704: Scanner.scan ("imagescan:esci:networkscan://192.168.1.5:1865", dpi=600, scan_mode=ScanMode.COLOR, depth=8, type=single, paper_width=2100, paper_height=2970, brightness=30, contrast=21, delay=0ms)
 [+11.68s] DEBUG: scanner.vala:837: Processing request
 
-(simple-scan:2562): Gtk-WARNING **: 15:04:46.222: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
-[+11.95s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/simple-scan/state
+(receipts:2562): Gtk-WARNING **: 15:04:46.222: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+[+11.95s] DEBUG: app-window.vala:2080: Saving state to /home/myself/.cache/receipts/state
 [+13.16s] DEBUG: scanner.vala:898: sane_open ("imagescan:esci:networkscan://192.168.1.5:1865") -> SANE_STATUS_GOOD
 [+13.16s] DEBUG: scanner.vala:919: sane_get_option_descriptor (0)
 [+13.16s] DEBUG: scanner.vala:769: Option 0: type=int size=4 cap=soft-detect,advanced
@@ -120,6 +120,6 @@
 [+15.14s] DEBUG: scanner.vala:1301: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+15.14s] DEBUG: scanner.vala:1338: sane_get_parameters () -> SANE_STATUS_GOOD
 [+15.14s] DEBUG: scanner.vala:1350: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=1860 pixels_per_line=620 lines=876 depth=8
-[+15.14s] DEBUG: simple-scan.vala:1714: Page is 620 pixels wide, 876 pixels high, 8 bits per pixel
-[+15.14s] DEBUG: simple-scan.vala:1648: Getting color profile for device imagescan:esci:networkscan://192.168.1.5:1865
-[+15.15s] DEBUG: simple-scan.vala:1668: Unable to find colord device imagescan:esci:networkscan://192.168.1.5:1865: The name org.freedesktop.ColorManager was not provided by any .service files
+[+15.14s] DEBUG: receipts.vala:1714: Page is 620 pixels wide, 876 pixels high, 8 bits per pixel
+[+15.14s] DEBUG: receipts.vala:1648: Getting color profile for device imagescan:esci:networkscan://192.168.1.5:1865
+[+15.15s] DEBUG: receipts.vala:1668: Unable to find colord device imagescan:esci:networkscan://192.168.1.5:1865: The name org.freedesktop.ColorManager was not provided by any .service files

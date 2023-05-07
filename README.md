@@ -1,5 +1,5 @@
-[![Build Status](https://gitlab.gnome.org/GNOME/simple-scan/badges/master/build.svg)](https://gitlab.gnome.org/GNOME/simple-scan/pipelines)
-[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://gitlab.gnome.org/GNOME/simple-scan/blob/master/COPYING)
+[![Build Status](https://gitlab.gnome.org/GNOME/receipts/badges/master/build.svg)](https://gitlab.gnome.org/GNOME/receipts/pipelines)
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://gitlab.gnome.org/GNOME/receipts/blob/master/COPYING)
 
 # Introduction
 
@@ -12,8 +12,8 @@ It allows you to capture images using [image scanners](https://en.wikipedia.org/
 It is recommended to use the development flatpak for developing this application.
 That way you won't have to download all dependencies yourself and it'll be consistent between all distros.
 
-1. Download [GNOME Builder](https://flathub.org/apps/details/org.gnome.Builder)
-2. Click the `Clone Repository` button in Builder and use https://gitlab.gnome.org/GNOME/simple-scan.git as the URL.
+1. Download [GNOME Builder](https://flathub.org/apps/details/me.tiernan8r.Builder)
+2. Click the `Clone Repository` button in Builder and use https://gitlab.gnome.org/GNOME/receipts.git as the URL.
 3. Click the Run button in the headerbar
 
 Note that this flatpak requires access to all devices (--device=all), and so isn't made for general use.
@@ -43,29 +43,29 @@ sudo pacman -S meson vala gettext itstool fribidi gtk4 libadwaita gobject-intros
 
 Get the source:
 ```
-$ git clone https://gitlab.gnome.org/GNOME/simple-scan.git
-$ cd simple-scan
+$ git clone https://gitlab.gnome.org/GNOME/receipts.git
+$ cd receipts
 ```
 
 Build and run:
 ```
 $ meson --prefix $PWD/_install _build
 $ ninja -C _build all install
-$ XDG_DATA_DIRS=_install/share:$XDG_DATA_DIRS ./_install/bin/simple-scan
+$ XDG_DATA_DIRS=_install/share:$XDG_DATA_DIRS ./_install/bin/receipts
 ```
 
 # Debugging
 
 There is a `--debug` command line switch to enable more verbose logging:
 ```
-$ simple-scan --debug
+$ receipts --debug
 ```
 
-Log messages can also be found in the `$HOME/.cache/simple-scan` folder.
+Log messages can also be found in the `$HOME/.cache/receipts` folder.
 
 If you don't have a scanner ready, you can use a virtual `test` scanner:
 ```
-$ simple-scan --debug test
+$ receipts --debug test
 ```
 
 This app works by using the [SANE API](http://sane-project.org/html/) to
@@ -107,19 +107,19 @@ shared library, during loading `smfp` prioprietary backend:
 # Contributing
 
 To contribute code create merge requests on
-[gitlab.gnome.org](https://gitlab.gnome.org/GNOME/simple-scan). If you
-find issues please [report them](https://gitlab.gnome.org/GNOME/simple-scan/issues).
+[gitlab.gnome.org](https://gitlab.gnome.org/GNOME/receipts). If you
+find issues please [report them](https://gitlab.gnome.org/GNOME/receipts/issues).
 
 ## Translation
 
 A lot of information about translation process can be found at
 [GNOME TranslationProject](https://wiki.gnome.org/TranslationProject/).
 The translation files for *Document Scanner* User Interface and User Guide,
-are available [here](https://l10n.gnome.org/module/simple-scan/).
+are available [here](https://l10n.gnome.org/module/receipts/).
 
 To be able to run Document Scanner in selected language, the `LANGUAGE` could be used.
 For example to run Document Scanner in Polish language:
 
 ```
-$ LANGUAGE=pl XDG_DATA_DIRS=_install/share:$XDG_DATA_DIRS ./_install/bin/simple-scan
+$ LANGUAGE=pl XDG_DATA_DIRS=_install/share:$XDG_DATA_DIRS ./_install/bin/receipts
 ```

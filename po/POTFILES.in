@@ -1,8 +1,8 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/org.gnome.SimpleScan.gschema.xml
-data/simple-scan.appdata.xml.in
-data/simple-scan.desktop.in
+data/me.tiernan8r.Receipts.gschema.xml
+data/receipts.appdata.xml.in
+data/receipts.desktop.in
 data/ui/app-window.ui
 data/ui/authorize-dialog.ui
 data/ui/drivers-dialog.ui
@@ -15,4 +15,4 @@ src/drivers-dialog.vala
 src/page.vala
 src/preferences-dialog.vala
 src/scanner.vala
-src/simple-scan.vala
+src/receipts.vala

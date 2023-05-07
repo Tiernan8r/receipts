@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:638: Starting simple-scan 3.34.2, PID=3795008
+[+0.00s] DEBUG: receipts.vala:638: Starting receipts 3.34.2, PID=3795008
 [+0.01s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
 [+0.04s] DEBUG: app-window.vala:1670: Restoring window to 656x400 pixels
 [+0.04s] DEBUG: autosave-manager.vala:64: Loading autosave information
@@ -23,7 +23,7 @@
 [+0.14s] DEBUG: autosave-manager.vala:281: Autosaving book information
 [+0.20s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+0.20s] DEBUG: scanner.vala:353: Device: name="imagescan:esci:networkscan://192.168.151.137" vendor="Epson" model="ET-3760" type=""
-[+1.29s] DEBUG: simple-scan.vala:455: Requesting scan at 300 dpi from device 'imagescan:esci:networkscan://192.168.151.137'
+[+1.29s] DEBUG: receipts.vala:455: Requesting scan at 300 dpi from device 'imagescan:esci:networkscan://192.168.151.137'
 [+1.29s] DEBUG: scanner.vala:1600: Scanner.scan ("imagescan:esci:networkscan://192.168.151.137", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=3000ms)
 [+1.29s] DEBUG: scanner.vala:806: Processing request
 [+3.65s] DEBUG: scanner.vala:867: sane_open ("imagescan:esci:networkscan://192.168.151.137") -> SANE_STATUS_GOOD
@@ -117,9 +117,9 @@
 [+8.11s] DEBUG: scanner.vala:1241: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+8.11s] DEBUG: scanner.vala:1258: sane_get_parameters () -> SANE_STATUS_GOOD
 [+8.11s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7647 pixels_per_line=2549 lines=3509 depth=8
-[+8.11s] DEBUG: simple-scan.vala:350: Page is 2549 pixels wide, 3509 pixels high, 8 bits per pixel
-[+8.12s] DEBUG: simple-scan.vala:284: Getting color profile for device imagescan:esci:networkscan://192.168.151.137
-[+8.12s] DEBUG: simple-scan.vala:304: Unable to find colord device imagescan:esci:networkscan://192.168.151.137: property match 'Serial'='sane:imagescan:esci:networkscan://192.168.151.137' does not exist
+[+8.11s] DEBUG: receipts.vala:350: Page is 2549 pixels wide, 3509 pixels high, 8 bits per pixel
+[+8.12s] DEBUG: receipts.vala:284: Getting color profile for device imagescan:esci:networkscan://192.168.151.137
+[+8.12s] DEBUG: receipts.vala:304: Unable to find colord device imagescan:esci:networkscan://192.168.151.137: property match 'Serial'='sane:imagescan:esci:networkscan://192.168.151.137' does not exist
 [+82.83s] DEBUG: scanner.vala:1345: sane_read (7648) -> (SANE_STATUS_GOOD, 7648)
 [+82.83s] DEBUG: scanner.vala:1345: sane_read (15294) -> (SANE_STATUS_GOOD, 544)
 [+82.83s] DEBUG: scanner.vala:1345: sane_read (14750) -> (SANE_STATUS_GOOD, 8192)

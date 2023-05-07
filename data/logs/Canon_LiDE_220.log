@@ -3,7 +3,7 @@
 [+0,30s] DEBUG: scanner.vala:1514: Requesting redetection of scan devices
 [+0,30s] DEBUG: scanner.vala:803: Processing request
 [+0,36s] DEBUG: autosave-manager.vala:281: Autosaving book information
-[+3,03s] DEBUG: simple-scan.vala:404: Requesting scan at 150 dpi from device '(null)'
+[+3,03s] DEBUG: receipts.vala:404: Requesting scan at 150 dpi from device '(null)'
 [+3,03s] DEBUG: scanner.vala:1560: Scanner.scan ("(null)", dpi=150, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0)
 [+5,78s] DEBUG: scanner.vala:338: sane_get_devices () -> SANE_STATUS_GOOD
 [+5,78s] DEBUG: scanner.vala:350: Device: name="genesys:libusb:001:011" vendor="Canon" model="LiDE 220" type="flatbed scanner"

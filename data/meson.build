@@ -4,24 +4,24 @@ install_data (join_paths ('icons', 'hicolor', 'scalable', '@0@.svg'.format(app_i
 install_data (join_paths ('icons', 'hicolor', 'symbolic', '@0@-symbolic.svg'.format(app_id)),
               install_dir: join_paths (datadir, 'icons', 'hicolor', 'symbolic', 'apps'))
 
-install_data ('org.gnome.SimpleScan.gschema.xml',
+install_data ('me.tiernan8r.Receipts.gschema.xml',
               install_dir: join_paths (datadir, 'glib-2.0', 'schemas'))
 meson.add_install_script ('meson_compile_gschema.py')
 
-i18n.merge_file (input: 'simple-scan.desktop.in',
-                 output: 'simple-scan.desktop',
+i18n.merge_file (input: 'receipts.desktop.in',
+                 output: 'receipts.desktop',
                  install: true,
                  install_dir: join_paths (datadir, 'applications'),
                  po_dir: '../po',
                  type: 'desktop')
 
-i18n.merge_file (input: 'simple-scan.appdata.xml.in',
-                 output: 'simple-scan.appdata.xml',
+i18n.merge_file (input: 'receipts.appdata.xml.in',
+                 output: 'receipts.appdata.xml',
                  install: true,
                  install_dir: join_paths (datadir, 'metainfo'),
                  po_dir: '../po')
 
-install_man ('simple-scan.1')
+install_man ('receipts.1')
 
 resource_files = files([
     'icons/scalable/actions/scan-type-adf-symbolic.svg',
@@ -44,7 +44,7 @@ resource_files = files([
     'ui/reorder-pages-item.ui',
     'ui/reorder-pages-dialog.ui',
 ])
-resources = gnome.compile_resources ('resources', 'simple-scan.gresource.xml',
+resources = gnome.compile_resources ('resources', 'receipts.gresource.xml',
                                      dependencies: resource_files,
                                      source_dir: '.',
                                      c_name: 'resources')

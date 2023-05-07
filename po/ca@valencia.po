@@ -1,6 +1,6 @@
-# Catalan translation for simple-scan
+# Catalan translation for receipts
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 # Jordi Serratosa <jordis@softcatala.cat>, 2017.
 #  Adolfo Jayme https://launchpad.net/~fitojb\n"
@@ -15,9 +15,9 @@
 #  pancake https://launchpad.net/~pancake"
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
+"Project-Id-Version: receipts\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=simple-scan&keywords=I18N+L10N&component=general\n"
+"product=receipts&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2017-09-18 22:10+0000\n"
 "PO-Revision-Date: 2017-09-01 14:42+0200\n"
 "Last-Translator: Xavi Ivars <xavi.ivars@gmail.com>\n"
@@ -30,19 +30,19 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "Dispositiu d'escaneig"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "Dispositiu SANE per a l'adquisició d'imatges."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Tipus de document a escanejar"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -50,11 +50,11 @@ msgstr ""
 "El tipus de document que s'està escanejant. Este paràmetre decideix la "
 "resolució d'escaneig, els colors i el processament posterior."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Amplària del paper en dècimes de mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -62,11 +62,11 @@ msgstr ""
 "L'amplària del paper en dècimes de mm (o 0 per la detecció automàtica del "
 "paper)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Alçària del paper en dècimes parts d'un mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -74,70 +74,70 @@ msgstr ""
 "L'alçària del paper en dècimes de mm (o 0 per la detecció automàtica del "
 "paper)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Brillantor de l'escaneig"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "L'ajustament de la brillantor, de -100 a 100 (on 0 significa cap)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Contrast de l'escaneig"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "L'ajustament del contrast, de -100 a 100 (on 0 indica cap)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Resolució per l'escaneig de text"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "La resolució en punts per polzada quan s'escanegi text."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for photo scans"
 msgstr "Resolució per l'escaneig de fotos"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning photos."
 msgstr "La resolució en punts per polzada quan s'escanegin fotos."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Cara de la pàgina a escanejar"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "La cara de la pàgina a escanejar."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Directori on guardar els fitxers"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "El directori on guardar els fitxers. Per defecte serà el directori de "
 "documents si no es defineix."
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid "Quality value to use for JPEG compression"
 msgstr "Valor de la qualitat a utilitzar per la compressió JPEG"
 
-#: data/org.gnome.SimpleScan.gschema.xml:67
+#: data/me.tiernan8r.Receipts.gschema.xml:67
 msgid "Quality value to use for JPEG compression."
 msgstr "Valor de la qualitat a utilitzar per la compressió JPEG."
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Delay in millisecond between pages"
 msgstr "Retard en mil·lisegons entre pàgines"
 
-#: data/org.gnome.SimpleScan.gschema.xml:73
+#: data/me.tiernan8r.Receipts.gschema.xml:73
 msgid "Delay in millisecond between pages."
 msgstr "Retard en mil·lisegons entre pàgines."
 
@@ -145,16 +145,16 @@ msgstr "Retard en mil·lisegons entre pàgines."
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: src/app-window.ui:76 src/app-window.vala:1560
 msgid "Simple Scan"
 msgstr "Escaneig senzill"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:5
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:5
 msgid "Scan Documents"
 msgstr "Escanegeu documents"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both documents and photos. You can crop out the "
 "bad parts of a photo and rotate it if it is the wrong way round. You can "
@@ -166,23 +166,23 @@ msgstr ""
 "incorrecta.  Podeu imprimir els vostres escanejos, exportar-los a pdf, o "
 "guardar-los en diversos formats d'imatge."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "Simple Scan uses the SANE framework to support most existing scanners."
 msgstr ""
 "L'Escaneig senzill fa servir l'entorn SANE per donar suport a la major part "
 "dels escàners existents."
 
-#: data/simple-scan.desktop.in:4
+#: data/receipts.desktop.in:4
 msgid "Document Scanner"
 msgstr "Escàner de documents"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:7
+#: data/receipts.desktop.in:7
 msgid "scan;scanner;flatbed;adf;"
 msgstr "escanejar;escàner;pla;adf;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/simple-scan.desktop.in:10
+#: data/receipts.desktop.in:10
 msgid "scanner"
 msgstr "scanner"
 
@@ -462,7 +462,7 @@ msgstr "Compressió:"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "Ja existeix un fitxer amb el nom «%s». Voleu reemplaçar-lo?"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:473
 msgid "_Replace"
 msgstr "_Reemplaça"
@@ -1004,37 +1004,37 @@ msgid "Error communicating with scanner"
 msgstr "S'ha produït un error en comunicar-se amb l'escàner"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Mostra la versió de llançament"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Mostra els missatges de depuració"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of Simple Scan"
 msgstr ""
 "Arregla els fitxers PDF generats amb versions anteriors de l'Escaneig senzill"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:392
+#: src/receipts.vala:392
 msgid "Failed to scan"
 msgstr "Ha fallat l'escaneig"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:407
+#: src/receipts.vala:407
 msgid "Scan in progress"
 msgstr "S'està escanejant"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:584
+#: src/receipts.vala:584
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DISPOSITIU…] - Utilitat d'escaneig"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:595
+#: src/receipts.vala:595
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

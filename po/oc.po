@@ -1,12 +1,12 @@
-# Occitan (post 1500) translation for simple-scan
+# Occitan (post 1500) translation for receipts
 # Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 # Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2023-04-13 21:58+0000\n"
 "PO-Revision-Date: 2023-04-30 14:26+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Launchpad-Export-Date: 2017-04-25 06:10+0000\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "Numerizar de"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "Periferic SANE d'utilizar per l'aquisicion dels imatges."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "Natura del document que va èsser numerizat"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -39,11 +39,11 @@ msgstr ""
 "Tipe de document numerizat. Aqueste reglatge definís la resolucion de "
 "numerizacion, las colors e lo post-tractament."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "Largor del papièr en desens de mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -51,11 +51,11 @@ msgstr ""
 "La largor del papièr en desens de mm (o 0 per una deteccion automatica del "
 "papièr)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "Nautor del papièr en desens de mm"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
@@ -63,64 +63,64 @@ msgstr ""
 "La nautor del papièr en desens de mm (o 0 per una deteccion automatica del "
 "papièr)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "Luminositat de la numerizacion"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "Ajustament de la luminositat de -100 a 100 (0 per pas cap)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "Contraste de la numerizacion"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "Ajustament del contraste de -100 a 100 (0 per pas cap)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "Resolucion per de numerizacions de tèxtes"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "La resolucion en punts per poce d'utilizar en numerizant de tèxte."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "Resolucion per de numerizacions d'imatge"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr ""
 "La resolucion en punts per poce d'utilizar al moment de la numerizacion "
 "d'imatge."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "Fàcia(s) de la pagina de numerizar"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "Lo costat de la pagina de numerizar."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "Dorsièr ont los fichièrs son enregistrats"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "Lo dorsièr ont los fichièrs son enregistrats. S'es pas definit, lo dorsièr "
 "documents serà utilizat per defaut."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "Format de fichièr utilizats per l'enregistrament dels fichièrs imatge"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME "
 "types: image/jpeg, image/png, application/pdf"
@@ -128,51 +128,51 @@ msgstr ""
 "MIME type utilizats per l'enregistrament dels fichièrs imatge. Exemples de "
 "MIMIE types compatibles : image/jpeg, image/png, application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "Taus de qualitat d'utilizar per la compression JPEG"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "Taus de qualitat d'utilizar per la compression JPEG."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "Delai en millisegondas entre las paginas"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "Delai en millisegondas entre las paginas."
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "Indica se lo pòsttractament es activat"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "Indica se lo pòsttractament es activat."
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "Camin cap a l'escript de pòsttractament"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "Camin cap a l'escript de pòsttractament."
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "Paramètres suplementaris per l'escript de pòsttractament"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "Paramètres suplementaris per l'escript de pòsttractament."
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "Indica se cal gardar lo fichièr original, pas tractat"
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" "
 "filename will be added to the filename immediately before the file extension."
@@ -181,16 +181,16 @@ msgstr ""
 "serà apondut al nom del fichièr immediatament abans l'extension de fichièr."
 
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:145 src/app-window.vala:1324
 msgid "Document Scanner"
 msgstr "Numerizador de documents"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "Realizatz una còpia numerica de vòstras fòtos e documents"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad "
 "parts of an image and rotate it if it is the wrong way round. You can print "
@@ -201,18 +201,18 @@ msgstr ""
 "numerizacions, las exportar al format pdf o las enregistrar dins d’autres "
 "formats d’imatge."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr ""
 "Simple Scan utiliza l'estructura logiciala de SANE per prene en carga la "
 "màger part dels periferics de numerizacion existents."
 
-#: data/simple-scan.appdata.xml.in:27
+#: data/receipts.appdata.xml.in:27
 msgid "The GNOME Project"
 msgstr "Lo projècte GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "numerizar;scanner;numerizador;a plat;adf;escanner;escanèr;"
 
@@ -1053,37 +1053,37 @@ msgid "Error communicating with scanner"
 msgstr "Error de comunicacion amb lo numerizador"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "Aficha la version del logicial"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "Afichar los messatges de desbugatge"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr ""
 "Corregir los fichièrs PDF generats amb las ancianas versions de Simple Scan"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1760
+#: src/receipts.vala:1760
 msgid "Failed to scan"
 msgstr "Fracàs de la numerizacion"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1775
+#: src/receipts.vala:1775
 msgid "Scan in progress"
 msgstr "Numerizacion en cors"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1959
+#: src/receipts.vala:1959
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DEVICE…] — Aisina de numerizacion"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1969
+#: src/receipts.vala:1969
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr ""

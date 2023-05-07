@@ -1,13 +1,13 @@
-# Persian translation for simple-scan.
-# Copyright (C) 2017 simple-scan's COPYRIGHT HOLDER
-# This file is distributed under the same license as the simple-scan package.
+# Persian translation for receipts.
+# Copyright (C) 2017 receipts's COPYRIGHT HOLDER
+# This file is distributed under the same license as the receipts package.
 # Goudarz Jafari <goudarz.jafari@gmail.com>, 2017.
 # Danial Behzadi <dani.behzi@ubuntu.com>, 2018-2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan gnome-3-26\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/simple-scan/issues\n"
+"Project-Id-Version: receipts gnome-3-26\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/receipts/issues\n"
 "POT-Creation-Date: 2023-01-30 20:25+0000\n"
 "PO-Revision-Date: 2023-03-16 10:09+0330\n"
 "Last-Translator: MohammadSaleh Kamyab <mskf1383@envs.net>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-DamnedLies-Scope: partial\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "افزاره برای پویش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "دستگاه SANE برای دریافت تصاویر از طریق آن."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "گونهٔ نوشتار در حال پویش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -40,79 +40,79 @@ msgstr ""
 "گونهٔ نوشتار درحال پویش شدن. این تنظیمات روی تفکیک‌پذیری پویش، رنگ‌ها و پردازش پس "
 "از پویش اعمال می‌شود."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "پهنای کاغذ به دهم میلی‌متر"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper detection)."
 msgstr "پهنای کاغذ به دهم میلی‌متر (یا ۰ برای تشخیص خودکار کاغذ)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "بلندای کاغذ به دهم میلی‌متر"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper detection)."
 msgstr "بلندای کاغذ به دهم میلی‌متر (یا ۰ برای تشخیص خودکار کاغذ)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "روشنایی پویش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr "تنظیم روشنایی از -۱۰۰ تا ۱۰۰ (۰ هیچ است)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "سایه روشن پویش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr "تنظیم کنتراست از -۱۰۰ تا ۱۰۰ (۰ هیچ است)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "تفکیک‌پذیری برای پویش متن"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "تفکیک‌پذیری نقطه در هر اینچ برای استفاده در پویش متن."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for image scans"
 msgstr "تفکیک‌پذیری برای پویش تصویر"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning images."
 msgstr "تفکیک‌پذیری نقطه در هر اینچ برای استفاده در پویش تصویر."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "سمتِ صفحه برای پویش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "سمتِ صفحه‌ای که باید پویش شود."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "شاخه مربوط به ذخیرهٔ پرونده‌ها"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr ""
 "شاخه‌ای که پرونده‌ها در آن ذخیره می‌شوند. اگر تنظیم نشود، پیش‌فرض شاخهٔ نوشتارها."
 
-#: data/org.gnome.SimpleScan.gschema.xml:65
+#: data/me.tiernan8r.Receipts.gschema.xml:65
 msgid "File format that is used for saving image files"
 msgstr "قالب پرونده‌ای که برای ذخیرهٔ پرونده‌های تصویر استفاده می‌شود"
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid ""
 "MIME type that is used for saving image files. Examples of supported MIME types: "
 "image/jpeg, image/png, application/pdf"
@@ -120,51 +120,51 @@ msgstr ""
 "گونهٔ MIME که برای ذخیرهٔ پرونده‌های تصویر استفاده می‌شود. مثال‌هایی از گونه‌های MIME "
 "پشتیبانی‌شده: mage/jpeg، image/png، application/pdf"
 
-#: data/org.gnome.SimpleScan.gschema.xml:71
+#: data/me.tiernan8r.Receipts.gschema.xml:71
 msgid "Quality value to use for JPEG compression"
 msgstr "میزان کیفیت برای استفاده در هنگام فشرده‌سازی JPEG"
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Quality value to use for JPEG compression."
 msgstr "میزان کیفیت برای استفاده در هنگام فشرده‌سازی JPEG."
 
-#: data/org.gnome.SimpleScan.gschema.xml:77
+#: data/me.tiernan8r.Receipts.gschema.xml:77
 msgid "Delay in millisecond between pages"
 msgstr "تاخیر زمانی بین صفحات به میلی ثانیه"
 
-#: data/org.gnome.SimpleScan.gschema.xml:78
+#: data/me.tiernan8r.Receipts.gschema.xml:78
 msgid "Delay in millisecond between pages."
 msgstr "تاخیر زمانی بین صفحات به میلی ثانیه."
 
-#: data/org.gnome.SimpleScan.gschema.xml:82
+#: data/me.tiernan8r.Receipts.gschema.xml:82
 msgid "Whether or not postprocessing is enabled"
 msgstr "این که پس‌پردازش به کار افتاده یا نه"
 
-#: data/org.gnome.SimpleScan.gschema.xml:83
+#: data/me.tiernan8r.Receipts.gschema.xml:83
 msgid "Whether or not postprocessing is enabled."
 msgstr "این که پس‌پردازش به کار افتاده یا نه."
 
-#: data/org.gnome.SimpleScan.gschema.xml:87
+#: data/me.tiernan8r.Receipts.gschema.xml:87
 msgid "The path to the postprocessing script"
 msgstr "مسیر به کدنوشتهٔ پس‌پردازش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:88
+#: data/me.tiernan8r.Receipts.gschema.xml:88
 msgid "The path to the postprocessing script."
 msgstr "مسیر به کدنوشتهٔ پس‌پردازش."
 
-#: data/org.gnome.SimpleScan.gschema.xml:92
+#: data/me.tiernan8r.Receipts.gschema.xml:92
 msgid "Additional arguments for the postprocessing script"
 msgstr "آرگومان‌های اضافی برای کدنوشتهٔ پس‌پردازش"
 
-#: data/org.gnome.SimpleScan.gschema.xml:93
+#: data/me.tiernan8r.Receipts.gschema.xml:93
 msgid "Additional arguments for the postprocessing script."
 msgstr "آرگومان‌های اضافی برای کدنوشتهٔ پس‌پردازش."
 
-#: data/org.gnome.SimpleScan.gschema.xml:97
+#: data/me.tiernan8r.Receipts.gschema.xml:97
 msgid "Whether or not to keep the original, unprocessed file"
 msgstr "این که پروندهٔ اصلی پردازش‌نشده نگه داشته شود یا نه"
 
-#: data/org.gnome.SimpleScan.gschema.xml:98
+#: data/me.tiernan8r.Receipts.gschema.xml:98
 msgid ""
 "Whether or not to keep the original, unprocessed file. The \"_orig\" filename "
 "will be added to the filename immediately before the file extension."
@@ -176,16 +176,16 @@ msgstr ""
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: data/ui/app-window.ui:454 src/app-window.vala:1584 src/app-window.vala:1858
 msgid "Document Scanner"
 msgstr "پویشگر پرونده"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:4
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:4
 msgid "Make a digital copy of your photos and documents"
 msgstr "گرفتن یک رونوشت دیجیتالی از عکس‌ها و سندهایتان"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both text and images. You can crop out the bad parts "
 "of an image and rotate it if it is the wrong way round. You can print your "
@@ -195,16 +195,16 @@ msgstr ""
 "صورت اشتباه بودن جهت، آن را بچرخانید. می‌توانید پویش‌های خود را چاپ، به pdf "
 "برون‌ریزی یا در بازه‌ای در قالب‌های تصویری ذخیره کنید."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "This app uses the SANE framework to support most existing scanners."
 msgstr "این کاره از چهارچوب SANE برای پشتیبانی از پویشگرهای موجود استفاده می‌کند."
 
-#: data/simple-scan.appdata.xml.in:27
+#: data/receipts.appdata.xml.in:27
 msgid "The GNOME Project"
 msgstr "پروژهٔ گنوم"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:6
+#: data/receipts.desktop.in:6
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;scanner;flatbed;adf;پویش;پویشگر;"
 
@@ -692,7 +692,7 @@ msgstr "جزییات کامل"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "پرونده‌ای از پیش با نام «%s» ذخیره شده. می‌خواهید آن را جای‌گزین کنید؟"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:650
 msgid "_Replace"
 msgstr "_جایگزینی"
@@ -1093,36 +1093,36 @@ msgid "Error communicating with scanner"
 msgstr "خطا در هنگام بر قراری ارتباط با پویشگر"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "نمایش نگارش انتشار"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "چاپ پیام‌های اشکال‌زدایی"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of this app"
 msgstr "تعمیر پرونده‌های PDF  ساخته شده با نگارش‌های قدیمی‌تر این‌کاره"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:1758
+#: src/receipts.vala:1758
 msgid "Failed to scan"
 msgstr "شکست در پویش"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:1773
+#: src/receipts.vala:1773
 msgid "Scan in progress"
 msgstr "در حال پویش"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:1957
+#: src/receipts.vala:1957
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[DEVICE…] — ابزار پویش"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:1968
+#: src/receipts.vala:1968
 #, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr "برای مشاهده راهنمای خط فرمان (%s --help) را وارد کنید."

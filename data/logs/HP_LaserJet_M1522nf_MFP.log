@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:638: Starting simple-scan 3.34.1, PID=23475
+[+0.00s] DEBUG: receipts.vala:638: Starting receipts 3.34.1, PID=23475
 [+0.15s] DEBUG: scanner.vala:1485: sane_init () -> SANE_STATUS_GOOD
 [+0.15s] DEBUG: scanner.vala:1491: SANE version 1.0.27
 [+0.15s] DEBUG: scanner.vala:1552: Requesting redetection of scan devices
@@ -6,7 +6,7 @@
 [+1.37s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+1.37s] DEBUG: scanner.vala:353: Device: name="hpaio:/net/HP_LaserJet_3390?ip=192.168.188.24" vendor="Hewlett-Packard" model="HP_LaserJet_3390" type="all-in-one"
 [+1.37s] DEBUG: scanner.vala:353: Device: name="hpaio:/net/HP_LaserJet_M1522nf_MFP?ip=192.168.1.41" vendor="Hewlett-Packard" model="HP_LaserJet_M1522nf_MFP" type="all-in-one"
-[+17.73s] DEBUG: simple-scan.vala:455: Requesting scan at 300 dpi from device 'hpaio:/net/HP_LaserJet_M1522nf_MFP?ip=192.168.1.41'
+[+17.73s] DEBUG: receipts.vala:455: Requesting scan at 300 dpi from device 'hpaio:/net/HP_LaserJet_M1522nf_MFP?ip=192.168.1.41'
 [+17.73s] DEBUG: scanner.vala:1600: Scanner.scan ("hpaio:/net/HP_LaserJet_M1522nf_MFP?ip=192.168.1.41", dpi=300, scan_mode=ScanMode.GRAY, depth=2, type=ScanType.SINGLE, paper_width=2100, paper_height=2970, brightness=0, contrast=0, delay=15000ms)
 [+17.73s] DEBUG: scanner.vala:806: Processing request
 [+17.99s] DEBUG: scanner.vala:867: sane_open ("hpaio:/net/HP_LaserJet_M1522nf_MFP?ip=192.168.1.41") -> SANE_STATUS_GOOD
@@ -62,5 +62,5 @@
 [+18.67s] DEBUG: scanner.vala:1241: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+18.67s] DEBUG: scanner.vala:1258: sane_get_parameters () -> SANE_STATUS_GOOD
 [+18.67s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_GRAY last_frame=SANE_TRUE bytes_per_line=2480 pixels_per_line=2480 lines=3506 depth=8
-[+18.67s] DEBUG: simple-scan.vala:350: Page is 2480 pixels wide, 3506 pixels high, 2 bits per pixel
+[+18.67s] DEBUG: receipts.vala:350: Page is 2480 pixels wide, 3506 pixels high, 2 bits per pixel
 [+18.67s] DEBUG: scanner.vala:1345: sane_read (2481) -> (SANE_STATUS_GOOD, 0)

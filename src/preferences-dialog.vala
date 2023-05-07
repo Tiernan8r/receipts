@@ -10,7 +10,7 @@
  * license.
  */
 
-[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/preferences-dialog.ui")]
+[GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/preferences-dialog.ui")]
 private class PreferencesDialog : Adw.PreferencesWindow
 {
     private Settings settings;

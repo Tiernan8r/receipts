@@ -1,5 +1,5 @@
-[+0,00s] DEBUG: simple-scan.vala:638: Starting Simple Scan 3.30.1.1, PID=19843
-[+0,08s] DEBUG: app-window.vala:1715: Loading state from /home/antonella/.cache/simple-scan/state
+[+0,00s] DEBUG: receipts.vala:638: Starting Simple Scan 3.30.1.1, PID=19843
+[+0,08s] DEBUG: app-window.vala:1715: Loading state from /home/antonella/.cache/receipts/state
 [+0,08s] DEBUG: app-window.vala:1672: Restoring window to 600x400 pixels
 [+0,08s] DEBUG: app-window.vala:1676: Restoring window to maximized
 [+0,08s] DEBUG: autosave-manager.vala:64: Loading autosave information
@@ -12,7 +12,7 @@
 
 [+8,35s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+8,35s] DEBUG: scanner.vala:353: Device: name="brother4:net1;dev0" vendor="Brother" model="MFC-J4620DW" type="MFC-J4620DW"
-[+81,67s] DEBUG: simple-scan.vala:455: Requesting scan at 1200 dpi from device 'brother4:net1;dev0'
+[+81,67s] DEBUG: receipts.vala:455: Requesting scan at 1200 dpi from device 'brother4:net1;dev0'
 [+81,67s] DEBUG: scanner.vala:1576: Scanner.scan ("brother4:net1;dev0", dpi=1200, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.SINGLE, paper_width=0, paper_height=0, brightness=0, contrast=0, delay=7000ms)
 [+81,67s] DEBUG: scanner.vala:806: Processing request
 [+83,57s] DEBUG: scanner.vala:867: sane_open ("brother4:net1;dev0") -> SANE_STATUS_GOOD
@@ -61,7 +61,7 @@
 [+89,23s] DEBUG: scanner.vala:1217: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+89,23s] DEBUG: scanner.vala:1234: sane_get_parameters () -> SANE_STATUS_GOOD
 [+89,23s] DEBUG: scanner.vala:1246: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=30288 pixels_per_line=10096 lines=13937 depth=8
-[+89,23s] DEBUG: simple-scan.vala:350: Page is 10096 pixels wide, 13937 pixels high, 8 bits per pixel
-[+89,34s] DEBUG: simple-scan.vala:284: Getting color profile for device brother4:net1;dev0
-[+89,35s] DEBUG: simple-scan.vala:304: Unable to find colord device brother4:net1;dev0: property match 'Serial'='sane:brother4:net1;dev0' does not exist
+[+89,23s] DEBUG: receipts.vala:350: Page is 10096 pixels wide, 13937 pixels high, 8 bits per pixel
+[+89,34s] DEBUG: receipts.vala:284: Getting color profile for device brother4:net1;dev0
+[+89,35s] DEBUG: receipts.vala:304: Unable to find colord device brother4:net1;dev0: property match 'Serial'='sane:brother4:net1;dev0' does not exist
 [+91,51s] DEBUG: scanner.vala:1321: sane_read (30289) -> (SANE_STATUS_GOOD, 30289)

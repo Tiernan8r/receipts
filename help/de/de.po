@@ -1,6 +1,6 @@
-# German translation for simple-scan
+# German translation for receipts
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # Etienne Ruedin https://launchpad.net/~ruedin
 # Phillip Sz https://launchpad.net/~phillip-sz
 # Silke Hamann https://launchpad.net/~silkehamann
@@ -10,7 +10,7 @@
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2017, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
+"Project-Id-Version: receipts\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2021-03-17 15:15+0000\n"
 "PO-Revision-Date: 2021-03-18 22:49+0100\n"

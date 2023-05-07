@@ -1,4 +1,4 @@
-[+0.00s] DEBUG: simple-scan.vala:638: Starting simple-scan 3.34.1, PID=12484
+[+0.00s] DEBUG: receipts.vala:638: Starting receipts 3.34.1, PID=12484
 [+0.06s] DEBUG: app-window.vala:1670: Restoring window to 1705x994 pixels
 [+0.06s] DEBUG: autosave-manager.vala:64: Loading autosave information
 [+0.06s] DEBUG: autosave-manager.vala:259: Waiting to autosave...
@@ -10,7 +10,7 @@
 [+9.64s] DEBUG: scanner.vala:341: sane_get_devices () -> SANE_STATUS_GOOD
 [+9.64s] DEBUG: scanner.vala:353: Device: name="brother3:net1;dev0" vendor="Brother" model="MFC-930CDN" type="MFC-930CDN"
 [+9.64s] DEBUG: scanner.vala:353: Device: name="pixma:MF240_canon-mfc.lan" vendor="CANON" model="Canon i-SENSYS MF240 Series" type="multi-function peripheral"
-[+31.99s] DEBUG: simple-scan.vala:455: Requesting scan at 300 dpi from device 'pixma:MF240_canon-mfc.lan'
+[+31.99s] DEBUG: receipts.vala:455: Requesting scan at 300 dpi from device 'pixma:MF240_canon-mfc.lan'
 [+31.99s] DEBUG: scanner.vala:1600: Scanner.scan ("pixma:MF240_canon-mfc.lan", dpi=300, scan_mode=ScanMode.COLOR, depth=8, type=ScanType.ADF_BOTH, paper_width=2159, paper_height=2794, brightness=0, contrast=0, delay=3000ms)
 [+31.99s] DEBUG: scanner.vala:806: Processing request
 [+33.57s] DEBUG: scanner.vala:867: sane_open ("pixma:MF240_canon-mfc.lan") -> SANE_STATUS_GOOD
@@ -101,7 +101,7 @@
 [+33.57s] DEBUG: scanner.vala:1241: sane_start (page=0, pass=0) -> SANE_STATUS_GOOD
 [+33.57s] DEBUG: scanner.vala:1258: sane_get_parameters () -> SANE_STATUS_GOOD
 [+33.57s] DEBUG: scanner.vala:1270: Parameters: format=SANE_FRAME_RGB last_frame=SANE_TRUE bytes_per_line=7650 pixels_per_line=2550 lines=3300 depth=8
-[+33.58s] DEBUG: simple-scan.vala:350: Page is 2550 pixels wide, 3300 pixels high, 8 bits per pixel
-[+33.59s] DEBUG: simple-scan.vala:284: Getting color profile for device pixma:MF240_canon-mfc.lan
-[+33.60s] DEBUG: simple-scan.vala:304: Unable to find colord device pixma:MF240_canon-mfc.lan: property match 'Serial'='sane:pixma:MF240_canon-mfc.lan' does not exist
+[+33.58s] DEBUG: receipts.vala:350: Page is 2550 pixels wide, 3300 pixels high, 8 bits per pixel
+[+33.59s] DEBUG: receipts.vala:284: Getting color profile for device pixma:MF240_canon-mfc.lan
+[+33.60s] DEBUG: receipts.vala:304: Unable to find colord device pixma:MF240_canon-mfc.lan: property match 'Serial'='sane:pixma:MF240_canon-mfc.lan' does not exist
 [+39.83s] DEBUG: scanner.vala:1345: sane_read (7651) -> (SANE_STATUS_GOOD, 7651)

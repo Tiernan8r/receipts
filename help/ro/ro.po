@@ -1,11 +1,11 @@
-# Romanian translation for simple-scan.
-# Copyright (C) 2018 simple-scan's COPYRIGHT HOLDER
-# This file is distributed under the same license as the simple-scan package.
+# Romanian translation for receipts.
+# Copyright (C) 2018 receipts's COPYRIGHT HOLDER
+# This file is distributed under the same license as the receipts package.
 # Daniel Șerbănescu <daniel@serbanescu.dk>, 2018.
 # Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan master\n"
+"Project-Id-Version: receipts master\n"
 "POT-Creation-Date: 2021-04-22 09:06+0000\n"
 "PO-Revision-Date: 2021-05-04 16:21+0200\n"
 "Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"

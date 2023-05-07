@@ -1,11 +1,11 @@
-# Arabic translation for simple-scan
+# Arabic translation for receipts
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the simple-scan package.
+# This file is distributed under the same license as the receipts package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 # Khaled Hosny <khaledhosny@eglug.org>, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: simple-scan\n"
+"Project-Id-Version: receipts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-17 13:12+0200\n"
 "PO-Revision-Date: 2018-04-17 13:56+0200\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Virtaal 1.0.0-beta1\n"
 "X-Launchpad-Export-Date: 2017-04-25 06:09+0000\n"
 
-#: data/org.gnome.SimpleScan.gschema.xml:11
+#: data/me.tiernan8r.Receipts.gschema.xml:11
 msgid "Device to scan from"
 msgstr "الجهاز الذي سيمسح منه"
 
-#: data/org.gnome.SimpleScan.gschema.xml:12
+#: data/me.tiernan8r.Receipts.gschema.xml:12
 msgid "SANE device to acquire images from."
 msgstr "جهاز SANE للحصول على الصور منه."
 
-#: data/org.gnome.SimpleScan.gschema.xml:20
+#: data/me.tiernan8r.Receipts.gschema.xml:20
 msgid "Type of document being scanned"
 msgstr "نوع المستند الممسوح"
 
-#: data/org.gnome.SimpleScan.gschema.xml:21
+#: data/me.tiernan8r.Receipts.gschema.xml:21
 msgid ""
 "Type of document being scanned. This setting decides on the scan resolution, "
 "colors and post-processing."
@@ -40,88 +40,88 @@ msgstr ""
 "نوع المستند الممسوح. هذا الإعداد يتقرر على أساس ميز المسح، و الألوان، و "
 "المعالجة اللاحقة."
 
-#: data/org.gnome.SimpleScan.gschema.xml:25
+#: data/me.tiernan8r.Receipts.gschema.xml:25
 msgid "Width of paper in tenths of a mm"
 msgstr "عرض الورقة بأعشار الملم"
 
-#: data/org.gnome.SimpleScan.gschema.xml:26
+#: data/me.tiernan8r.Receipts.gschema.xml:26
 msgid ""
 "The width of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr "عرض الورقة بأعشار الملم (أو 0 لاكتشاف الورقة آليا)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:30
+#: data/me.tiernan8r.Receipts.gschema.xml:30
 msgid "Height of paper in tenths of a mm"
 msgstr "ارتفاع الورقة بأعشار الملم"
 
-#: data/org.gnome.SimpleScan.gschema.xml:31
+#: data/me.tiernan8r.Receipts.gschema.xml:31
 msgid ""
 "The height of the paper in tenths of a mm (or 0 for automatic paper "
 "detection)."
 msgstr "ارتفاع الورقة بأعشار الملم (أو 0 لاكتشاف الورقة آليا)."
 
-#: data/org.gnome.SimpleScan.gschema.xml:35
+#: data/me.tiernan8r.Receipts.gschema.xml:35
 msgid "Brightness of scan"
 msgstr "سطوع المسح"
 
-#: data/org.gnome.SimpleScan.gschema.xml:36
+#: data/me.tiernan8r.Receipts.gschema.xml:36
 msgid "The brightness adjustment from -100 to 100 (0 being none)."
 msgstr ""
 
-#: data/org.gnome.SimpleScan.gschema.xml:40
+#: data/me.tiernan8r.Receipts.gschema.xml:40
 msgid "Contrast of scan"
 msgstr "تباين المسح"
 
-#: data/org.gnome.SimpleScan.gschema.xml:41
+#: data/me.tiernan8r.Receipts.gschema.xml:41
 msgid "The contrast adjustment from -100 to 100 (0 being none)."
 msgstr ""
 
-#: data/org.gnome.SimpleScan.gschema.xml:45
+#: data/me.tiernan8r.Receipts.gschema.xml:45
 msgid "Resolution for text scans"
 msgstr "ميز مسح النصوص"
 
-#: data/org.gnome.SimpleScan.gschema.xml:46
+#: data/me.tiernan8r.Receipts.gschema.xml:46
 msgid "The resolution in dots-per-inch to use when scanning text."
 msgstr "الميز بالنقطة في البوصة الذي سيستخدم عند مسح النصوص."
 
-#: data/org.gnome.SimpleScan.gschema.xml:50
+#: data/me.tiernan8r.Receipts.gschema.xml:50
 msgid "Resolution for photo scans"
 msgstr "ميز مسح الصور"
 
-#: data/org.gnome.SimpleScan.gschema.xml:51
+#: data/me.tiernan8r.Receipts.gschema.xml:51
 msgid "The resolution in dots-per-inch to use when scanning photos."
 msgstr "الميز بالنقطة في البوصة الذي سيستخدم عند مسح الصور."
 
-#: data/org.gnome.SimpleScan.gschema.xml:55
+#: data/me.tiernan8r.Receipts.gschema.xml:55
 msgid "Page side to scan"
 msgstr "الجهة التي ستُمسح"
 
-#: data/org.gnome.SimpleScan.gschema.xml:56
+#: data/me.tiernan8r.Receipts.gschema.xml:56
 msgid "The page side to scan."
 msgstr "جهة الصفحة التي ستُمسح."
 
-#: data/org.gnome.SimpleScan.gschema.xml:60
+#: data/me.tiernan8r.Receipts.gschema.xml:60
 msgid "Directory to save files to"
 msgstr "دليل حفظ الملفات"
 
-#: data/org.gnome.SimpleScan.gschema.xml:61
+#: data/me.tiernan8r.Receipts.gschema.xml:61
 msgid ""
 "The directory to save files to. Defaults to the documents directory if unset."
 msgstr "الدليل الذي ستحفظ به الملفات. يستخدم دليل المستندات إذا لم يحدد هنا."
 
-#: data/org.gnome.SimpleScan.gschema.xml:66
+#: data/me.tiernan8r.Receipts.gschema.xml:66
 msgid "Quality value to use for JPEG compression"
 msgstr ""
 
-#: data/org.gnome.SimpleScan.gschema.xml:67
+#: data/me.tiernan8r.Receipts.gschema.xml:67
 msgid "Quality value to use for JPEG compression."
 msgstr ""
 
-#: data/org.gnome.SimpleScan.gschema.xml:72
+#: data/me.tiernan8r.Receipts.gschema.xml:72
 msgid "Delay in millisecond between pages"
 msgstr ""
 
-#: data/org.gnome.SimpleScan.gschema.xml:73
+#: data/me.tiernan8r.Receipts.gschema.xml:73
 msgid "Delay in millisecond between pages."
 msgstr ""
 
@@ -129,16 +129,16 @@ msgstr ""
 #. Set HeaderBar title here because Glade doesn't keep it translated
 #. https://bugzilla.gnome.org/show_bug.cgi?id=782753
 #. Title of scan window
-#: data/simple-scan.appdata.xml.in:6 data/simple-scan.desktop.in:3
+#: data/receipts.appdata.xml.in:6 data/receipts.desktop.in:3
 #: src/app-window.ui:76 src/app-window.vala:1560
 msgid "Simple Scan"
 msgstr "الماسح البسيط"
 
-#: data/simple-scan.appdata.xml.in:7 data/simple-scan.desktop.in:5
+#: data/receipts.appdata.xml.in:7 data/receipts.desktop.in:5
 msgid "Scan Documents"
 msgstr "مسح المستندات"
 
-#: data/simple-scan.appdata.xml.in:9
+#: data/receipts.appdata.xml.in:9
 msgid ""
 "A really easy way to scan both documents and photos. You can crop out the "
 "bad parts of a photo and rotate it if it is the wrong way round. You can "
@@ -149,21 +149,21 @@ msgstr ""
 "الصورة و تدويرها إذا لم تكن بالاتجاه الصحيح. يمكنك طبع ما تمسحه، أو تصديره "
 "إلى pdf، أو حفظه بأنساق صور مختلفه."
 
-#: data/simple-scan.appdata.xml.in:14
+#: data/receipts.appdata.xml.in:14
 msgid "Simple Scan uses the SANE framework to support most existing scanners."
 msgstr "يستخدم الماسح البسيط إطار عمل SANE لدعم أغلب الماسحات الموجودة."
 
-#: data/simple-scan.desktop.in:4
+#: data/receipts.desktop.in:4
 msgid "Document Scanner"
 msgstr "ماسح المستندات"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/simple-scan.desktop.in:7
+#: data/receipts.desktop.in:7
 msgid "scan;scanner;flatbed;adf;"
 msgstr "scan;scanner;flatbed;adf;مسح;ماسحة;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/simple-scan.desktop.in:10
+#: data/receipts.desktop.in:10
 msgid "scanner"
 msgstr "scanner"
 
@@ -441,7 +441,7 @@ msgstr "الضغط:"
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr "يوجد ملف بالاسم ”%s“.  هل تريد استبداله؟"
 
-#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows simple-scan to overwrite the file.
+#. Button in dialog that shows if saving would overwrite and existing file. Clicking the button allows receipts to overwrite the file.
 #: src/app-window.vala:473
 msgid "_Replace"
 msgstr "ا_ستبدل"
@@ -988,37 +988,37 @@ msgid "Error communicating with scanner"
 msgstr "خطأ في التواصل مع الماسحة"
 
 #. Help string for command line --version flag
-#: src/simple-scan.vala:21
+#: src/receipts.vala:21
 msgid "Show release version"
 msgstr "اعرض رقم الإصدارة"
 
 #. Help string for command line --debug flag
-#: src/simple-scan.vala:24
+#: src/receipts.vala:24
 msgid "Print debugging messages"
 msgstr "اطبع رسائل التنقيح"
 
-#: src/simple-scan.vala:26
+#: src/receipts.vala:26
 msgid "Fix PDF files generated with older versions of Simple Scan"
 msgstr "أصلح ملفات PDF المولدة باستخدام إصدارات قديمة من الماسحة الضوئية"
 
 #. Title of error dialog when scan failed
-#: src/simple-scan.vala:392
+#: src/receipts.vala:392
 msgid "Failed to scan"
 msgstr "فشل المسح"
 
 #. Attempt to inhibit the screensaver when scanning
-#: src/simple-scan.vala:407
+#: src/receipts.vala:407
 msgid "Scan in progress"
 msgstr "المسح جار"
 
 #. Arguments and description for --help text
-#: src/simple-scan.vala:584
+#: src/receipts.vala:584
 #, fuzzy
 msgid "[DEVICE…] — Scanning utility"
 msgstr "[جهاز...] - أداة مسح ضوئي"
 
 #. Text printed out when an unknown command-line argument provided
-#: src/simple-scan.vala:595
+#: src/receipts.vala:595
 #, fuzzy, c-format
 msgid "Run “%s --help” to see a full list of available command line options."
 msgstr "نفّذ '%s --help' لعرض القائمة الكاملة لخيارات سطر الأوامر المُتاحة."

@@ -10,7 +10,7 @@
  * license.
  */
 
-[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/authorize-dialog.ui")]
+[GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/authorize-dialog.ui")]
 private class AuthorizeDialog : Gtk.Window
 {
     [GtkChild]

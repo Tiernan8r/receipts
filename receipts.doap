@@ -4,14 +4,14 @@
          xmlns:gnome="http://api.gnome.org/doap-extensions#"
          xmlns="http://usefulinc.com/ns/doap#">
 
-  <name xml:lang="en">simple-scan</name>
+  <name xml:lang="en">receipts</name>
   <shortdesc xml:lang="en">Document Scanning Application</shortdesc>
   <description xml:lang="en">
    A really easy way to scan both documents and photos from a scanner (e.g. a flatbed scanner).
   </description>
-  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/simple-scan" />
-  <download-page rdf:resource="https://download.gnome.org/sources/simple-scan/" />
-  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/simple-scan/issues" />
+  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/receipts" />
+  <download-page rdf:resource="https://download.gnome.org/sources/receipts/" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/receipts/issues" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
   <programming-language>Vala</programming-language>
 
