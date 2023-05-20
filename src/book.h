@@ -19,6 +19,7 @@
 #define BOOK_H
 
 #include <list>
+#include <sigc++/sigc++.h>
 #include "page.h"
 
 public delegate void ProgressionCallback (double fraction);
@@ -39,11 +40,16 @@ class Book
     public:
         uint n_pages { get { return pages.length (); } }
 
-        signal void page_added (Page page);
-        signal void page_removed (Page page);
-        signal void reordered (void);
-        signal void cleared (void);
-        signal void changed (void);
+        using type_signal_page_added = sigc::signal<void(Page)>;
+        type_signal_page_added signal_page_added();
+        using type_signal_page_removed = sigc::signal<void(Page)>;
+        type_signal_page_removed signal_page_removed();
+        using type_signal_reordered = sigc::signal<void(void)>;
+        type_signal_reordered signal_reordered();
+        using type_signal_cleared = sigc::signal<void(void)>;
+        type_signal_cleared signal_cleared();
+        using type_signal_changed = sigc::signal<void(void)>;
+        type_signal_changed signal_changed();
 
         Book (void);
         Book (void) override;
@@ -60,6 +66,13 @@ class Book
         std::async void save_async (std::string mime_type, int quality, File file,
         bool postproc_enabled, std::string postproc_script, std::string postproc_arguments, bool postproc_keep_original,
         ProgressionCallback? progress_cb, Cancellable? cancellable = null); throws Error
+
+    protected:
+        type_signal_page_added m_signal_page_added;
+        type_signal_page_removed m_signal_page_removed;
+        type_signal_reordered m_signal_reordered;
+        type_signal_cleared m_signal_cleared;
+        type_signal_changed m_signal_changed;
 };
 
 class BookSaver

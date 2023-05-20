@@ -1,0 +1,6 @@
+[submodule "include/libadwaitamm"]
+	path = include/libadwaitamm
+	url = https://github.com/rofirrim/libadwaitamm
+[submodule "subprojects/libadwaitamm"]
+	path = subprojects/libadwaitamm
+	url = https://github.com/rofirrim/libadwaitamm

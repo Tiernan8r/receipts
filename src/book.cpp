@@ -35,22 +35,32 @@ void Book::page_changed_cb(Page page)
         get { return pages.length(); }
     }
 
-signal void Book::page_added(Page page);
-signal void Book::page_removed(Page page);
-signal void Book::reordered();
-signal void Book::cleared();
-signal void Book::changed();
+Book::type_signal_page_added Book::signal_page_added() {
+    return m_signal_page_added;
+}
 
 Book::Book()
     {
         pages = new List<Page>();
     };
+Book::type_signal_page_removed Book::signal_page_removed() {
+    return m_signal_page_removed;
+}
 
 Book::~Book(){
         foreach (Page page in pages){
             page.pixels_changed.disconnect(page_changed_cb);
     page.crop_changed.disconnect(page_changed_cb);
+Book::type_signal_reordered Book::signal_reordered() {
+    return m_signal_reordered;
 }
+
+Book::type_signal_cleared Book::signal_cleared() {
+    return m_signal_cleared;
+}
+
+Book::type_signal_changed Book::signal_changed() {
+    return m_signal_changed;
 }
 
 

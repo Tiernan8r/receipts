@@ -214,12 +214,29 @@ ScanDirection Page::scan_direction
         }
     }
 
-signal void pixels_changed();
-signal void size_changed();
-signal void scan_line_changed();
-signal void scan_direction_changed();
-signal void crop_changed();
-signal void scan_finished();
+Page::type_signal_pixels_changed Page::signal_pixels_changed() {
+    return m_signal_pixels_changed;
+}
+
+Page::type_signal_size_changed Page::signal_size_changed() {
+    return m_signal_size_changed;
+}
+
+Page::type_signal_scan_line_changed Page::signal_scan_line_changed() {
+    return m_signal_scan_line_changed;
+}
+
+Page::type_signal_scan_direction_changed Page::signal_scan_direction_changed() {
+    return m_signal_scan_direction_changed;
+}
+
+Page::type_signal_crop_changed Page::signal_crop_changed() {
+    return m_signal_crop_changed;
+}
+
+Page::type_signal_scan_finished Page::signal_scan_finished() {
+    return m_signal_scan_finished;
+}
 
 Page::Page(int width, int height, int dpi, ScanDirection scan_direction)
     {

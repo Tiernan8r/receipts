@@ -21,6 +21,7 @@
 #include <gtkmm.h>
 #include <glibmm.h>
 #include <adwaita.h>
+#include <sigc++/sigc++.h>
 #include "scanner.h"
 
 const int DEFAULT_TEXT_DPI = 150;
@@ -233,21 +234,28 @@ class AppWindow: public AdwApplicationWindow {
         set { preferences_dialog.set_page_delay (value); }
     }
 
-        signal void start_scan (std::string *device, ScanOptions options);
-        signal void stop_scan (void);
-        signal void redetect (void);
-        void AppWindow(void)
-        void AppWindow(void) override
-        void show_error_dialog(std::string error_title, std::string error_text)
-        async AuthorizeDialogResponse authorize (std::string resource)
-        void set_scan_devices (std::list<ScanDevice> devices, std::string *missing_driver)
-        void set_selected_device (std::string device)
-        void crop_set_action_cb (SimpleAction action, Variant *value)
-        void crop_rotate_action_cb (void)
-        void save_document_cb (void)
-        void size_allocate (int width, int height, int baseline) override
-        void unmap (void) override;
-        void start (void)
+    using type_signal_start_scan = sigc::signal<void(std::string*, ScanOptions)>;
+    type_signal_start_scan signal_start_scan();
+    using type_signal_stop_scan = sigc::signal<void(void)>;
+    type_signal_stop_scan signal_stop_scan();
+    using type_signal_redect = sigc::signal<void(void)>;
+    type_signal_redect signal_redetect();
+    void AppWindow(void) void AppWindow(void) override;
+    void show_error_dialog(std::string error_title, std::string error_text)
+    async AuthorizeDialogResponse authorize(std::string resource);
+    void set_scan_devices(std::list<ScanDevice> devices, std::string *missing_driver);
+    void set_selected_device(std::string device);
+    void crop_set_action_cb(SimpleAction action, Variant *value);
+    void crop_rotate_action_cb(void);
+    void save_document_cb(void);
+    void size_allocate(int width, int height, int baseline) override;
+    void unmap(void) override;
+    void start(void);
+
+protected:
+    type_signal_start_scan m_signal_start_scan;
+    type_signal_stop_scan m_signal_stop_scan;
+    type_signal_redect m_signal_redect;
 };
 
 class CancellableProgressBar : private Gtk::Box {

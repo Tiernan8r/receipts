@@ -19,6 +19,7 @@
 #define PAGE_TEXTURE_H
 
 #include <gtkmm.h>
+#include <sigc++/sigc++.h>
 
 class PageToPixbuf
 {
@@ -86,7 +87,8 @@ class PageViewTexture
     
 	public:
         Gdk::Pixbuf *pixbuf { get; private set; }
-        signal void new_buffer (void);
+        using type_signal_new_buffer = sigc::signal<void(void)>;
+        type_signal_new_buffer signal_new_buffer();
         PageViewTexture (Page page);
     /**
      * Notify that data needs updating (eg. pixels changed during scanning process)
@@ -96,7 +98,10 @@ class PageViewTexture
      * Set size of the page, ignored if size did not change.
      */
         void request_resize (int width, int height);
-        void queue_update (void); throws ThreadError
+        void queue_update (void);  // throws ThreadError
+
+    protected:
+        type_signal_new_buffer m_signal_new_buffer;
 };
 
 class PagePaintable : public Gdk::Paintable

@@ -1348,9 +1348,17 @@ int AppWindow::page_delay
     set { preferences_dialog.set_page_delay(value); }
 }
 
-signal void AppWindow::start_scan(std::string *device, ScanOptions options);
-signal void AppWindow::stop_scan(void);
-signal void AppWindow::redetect(void);
+AppWindow::type_signal_start_scan AppWindow::signal_start_scan() {
+    return m_signal_start_scan;
+}
+
+AppWindow::type_signal_stop_scan AppWindow::signal_stop_scan() {
+    return m_signal_stop_scan;
+}
+
+AppWindow::type_signal_redect AppWindow::signal_redect() {
+    return m_signal_redect;
+}
 
 AppWindow::AppWindow(void)
 {

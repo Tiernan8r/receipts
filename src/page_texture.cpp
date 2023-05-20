@@ -486,10 +486,12 @@ void PageViewTexture::new_pixbuf_cb(Gdk::Pixbuf *pixbuf)
 {
     in_progress = false;
     this.pixbuf = pixbuf;
-    new_buffer();
+    signal_new_buffer().emit();
 };
 
-signal void PageViewTexture::new_buffer(void);
+PageViewTexture::type_signal_new_buffer PageViewTexture::signal_new_buffer() {
+    return m_signal_new_buffer;
+}
 
 PageViewTexture::PageViewTexture(Page pg)
 {

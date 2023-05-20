@@ -484,9 +484,17 @@ Page* BookView::selected_page{
     }
     ;
 
-signal void BookView::page_selected (Page? page);
-signal void BookView::show_page(Page page);
-signal void BookView::show_menu(Gtk::Widget from, double x, double y);
+BookView::type_signal_page_selected BookView::signal_page_selected() {
+    return m_signal_page_selected;
+}
+
+BookView::type_signal_show_page BookView::signal_show_page() {
+    return m_signal_show_page;
+}
+
+BookView::type_signal_show_menu BookView::signal_show_menu() {
+    return m_signal_show_menu;
+}
 
 int BookView::x_offset{
                 get{

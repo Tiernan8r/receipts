@@ -25,6 +25,7 @@
 #include <queue>
 #include <map>
 #include <sane/sane.h>
+#include <sigc++/sigc++.h>
 
 class ScanDevice
 {
@@ -341,15 +342,25 @@ public:
     int first_job_id;
     int job_id;
 
-    signal void update_devices(std::list<ScanDevice> devices);
-    signal void request_authorization(std::string resource);
-    signal void expect_page(void);
-    signal void got_page_info(ScanPageInfo info);
-    signal void got_line(ScanLine line);
-    signal void scan_failed(int error_code, std::string error_string);
-    signal void page_done(void);
-    signal void document_done(void);
-    signal void scanning_changed(void);
+    using type_signal_update_devices = sigc::signal<void(std::list<ScanDevice>)>;
+    type_signal_update_devices signal_update_devices();
+    using type_signal_request_authorisation = sigc::signal<void(std::string)>;
+    type_signal_request_authorisation signal_request_authorisation();
+    using type_signal_expect_page = sigc::signal<void(void)>;
+    type_signal_expect_page signal_expect_page();
+    using type_signal_got_page_info = sigc::signal<void(ScanPageInfo)>;
+    type_signal_got_page_info signal_got_page_info();
+    using type_signal_got_line = sigc::signal<void(ScanLine)>;
+    type_signal_got_line signal_got_line();
+    using type_signal_scan_failed = sigc::signal<void(int, std::string)>;
+    type_signal_scan_failed signal_scan_failed();
+    using type_signal_page_done = sigc::signal<void(void)>;
+    type_signal_page_done signal_page_done();
+    using type_signal_document_done = sigc::signal<void(void)>;
+    type_signal_document_done signal_document_done();
+    using type_signal_scanning_changed = sigc::signal<void(void)>;
+    type_signal_scanning_changed signal_scanning_changed();
+
     static Scanner get_instance(void);
     void authorize(std::string username, std::string password);
     void start(void);
@@ -363,6 +374,17 @@ public:
     void scan(std::string device, ScanOptions options);
     void cancel(void);
     void free(void);
+
+protected:
+    type_signal_update_devices m_signal_update_devices;
+    type_signal_request_authorisation m_signal_request_authorisation;
+    type_signal_expect_page m_signal_expect_page;
+    type_signal_got_page_info m_signal_got_page_info;
+    type_signal_got_line m_signal_got_line;
+    type_signal_scan_failed m_signal_scan_failed;
+    type_signal_page_done m_signal_page_done;
+    type_signal_document_done m_signal_document_done;
+    type_signal_scanning_changed m_signal_scanning_changed;
 };
 
 #endif // SCANNER_H

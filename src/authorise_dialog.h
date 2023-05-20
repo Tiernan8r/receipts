@@ -21,6 +21,7 @@
 #include <string.h>
 #include <adwaita.h>
 #include <gtkmm.h>
+#include <sigc++/sigc++.h>
 
 
 class AuthorizeDialog : private Gtk::Window
@@ -33,7 +34,8 @@ class AuthorizeDialog : private Gtk::Window
         void cancel_button_cb (void);
 
     public:
-        signal void authorized (AuthorizeDialogResponse res);
+        using type_signal_authorised = sigc::signal<void(AuthorisedDialogResponse)>;
+        type_signal_authorised signal_authorised();
 
         void AuthorizeDialog (Gtk::Window parent, std::string title);
         std::string get_username (void);
@@ -41,6 +43,8 @@ class AuthorizeDialog : private Gtk::Window
 
     
         std::async AuthorizeDialogResponse open(void);
+    protected:
+        type_signal_authorised m_signal_authorised;
 }
 
 struct AuthorizeDialogResponse {

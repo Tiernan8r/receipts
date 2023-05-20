@@ -19,6 +19,7 @@
 #define PAGE_H
 
 #include <gtkmm.h>
+#include <sigc++/sigc++.h>
 
 enum ScanDirection
 {
@@ -183,12 +184,18 @@ class Page
     /* Height of crop in pixels*/
         int crop_height { get; private set; };
 
-        signal void pixels_changed (void);
-        signal void size_changed (void);
-        signal void scan_line_changed (void);
-        signal void scan_direction_changed (void);
-        signal void crop_changed (void);
-        signal void scan_finished (void);
+        using type_signal_pixels_changed = sigc::signal<void(void)>;
+        type_signal_pixels_changed signal_pixels_changed();
+        using type_signal_size_changed = sigc::signal<void(void)>;
+        type_signal_size_changed signal_size_changed();
+        using type_signal_scan_line_changed = sigc::signal<void(void)>;
+        type_signal_scan_line_changed signal_scan_line_changed();
+        using type_signal_scan_direction_changed = sigc::signal<void(void)>;
+        type_signal_scan_direction_changed signal_scan_direction_changed();
+        using type_signal_crop_changed = sigc::signal<void(void)>;
+        type_signal_crop_changed signal_crop_changed();
+        using type_signal_scan_finished = sigc::signal<void(void)>;
+        type_signal_scan_finished signal_scan_finished();
 
         Page (int width, int height, int dpi, ScanDirection scan_direction);
         Page.from_data (int scan_width,
@@ -223,6 +230,13 @@ class Page
         std::string? get_icc_data_encoded (void);
         void copy_to_clipboard (Gtk.Window window);
         void save_png (File file) throws Error;
+    protected:
+        type_signal_pixels_changed m_signal_pixels_changed;
+        type_signal_size_changed m_signal_size_changed;
+        type_signal_scan_line_changed m_signal_scan_line_changed;
+        type_signal_scan_direction_changed m_signal_scan_direction_changed;
+        type_signal_crop_changed m_signal_crop_changed;
+        type_signal_scan_finished m_signal_scan_finished;
 }
 
 

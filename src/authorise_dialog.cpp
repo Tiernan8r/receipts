@@ -20,9 +20,11 @@
 #include <gtkmm.h>
 
 // [GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/authorize-dialog.ui")]
-signal void AuthorizeDialog::authorized(AuthorizeDialogResponse res);
+AuthoriseDialog::type_signal_authorised AuthoriseDialog::signal_authorised() {
+    return m_signal_authorised;
+}
 
-AuthorizeDialog::AuthorizeDialog(Gtk::Window parent, std::string title)
+AuthoriseDialog::AuthoriseDialog(Gtk::Window parent, std::string title)
 {
     preferences_group.set_title(title);
     set_transient_for(parent);

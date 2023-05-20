@@ -20,6 +20,7 @@
 
 #include <cairo.h>
 #include <string>
+#include <sigc++/sigc++.h>
 
 enum CropLocation
 {
@@ -104,8 +105,10 @@ class PageView
     /* Cursor over this page */
         std::string cursor { get; private set; default = "arrow"; };
 
-        signal void size_changed ();
-        signal void changed ();
+        using type_signal_size_changed = sigc::signal<void(void)>;
+        type_signal_size_changed signal_size_changed();
+        using type_signal_changed = sigc::signal<void(void)>;
+        type_signal_changed signal_changed();
 
         void PageView (Page page);
         void PageView (void) override;
@@ -158,6 +161,9 @@ class PageView
             changed ();
         }
     };
+    protected:
+        type_signal_size_changed m_signal_size_changed;
+        type_signal_changed m_signal_changed;
 }
 
 

@@ -22,6 +22,7 @@
 #include <string>
 #include <map>
 #include <cairo.h>
+#include <sigc++/sigc++.h>
 #include "book.h"
 #include "page.h"
 #include "page_view.h"
@@ -106,9 +107,12 @@ class BookView : public Gtk::Box
     }
 
 
-    signal void page_selected (Page *page);
-    signal void show_page (Page page);
-    signal void show_menu (Gtk::Widget from, double x, double y);
+    using type_signal_page_selected = sigc::signal<void(Page*)>;
+    type_signal_page_selected signal_page_selected();
+    using type_signal_show_page = sigc::signal<void(Page)>;
+    type_signal_show_page signal_show_page();
+    using type_signal_show_menu = sigc::signal<void(Gtk::Widget, double, double)>;
+    type_signal_show_menu signal_show_menu();
 
     int x_offset
     {
@@ -129,6 +133,11 @@ class BookView : public Gtk::Box
     void redraw (void);
     void select_next_page (void);
     void select_prev_page (void);
+
+    protected:
+        type_signal_page_selected m_signal_page_selected;
+        type_signal_show_page m_signal_show_page;
+        type_signal_show_menu m_signal_show_menu;
 }
 
 

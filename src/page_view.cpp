@@ -194,8 +194,13 @@ set
 // TODO: sort
 // std::string cursor { get; private set; default = "arrow"; }
 
-signal void size_changed();
-signal void changed();
+PageView::type_signal_size_changed PageView::signal_size_changed() {
+    return m_signal_size_changed;
+}
+
+PageView::type_signal_changed PageView::signal_changed() {
+    return m_signal_changed;
+}
 
 PageView::PageView(Page page)
 {

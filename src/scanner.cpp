@@ -29,7 +29,7 @@
 
 void NotifyScanningChanged::run(Scanner scanner)
 {
-    scanner.scanning_changed(void);
+    scanner.signal_scanning_changed().emit();
 }
 
 NotifyUpdateDevices::NotifyUpdateDevices(std::list<ScanDevice> dvcs)
@@ -38,7 +38,7 @@ NotifyUpdateDevices::NotifyUpdateDevices(std::list<ScanDevice> dvcs)
 }
 void NotifyUpdateDevices::run(Scanner scanner)
 {
-    scanner.update_devices(devices);
+    scanner.signal_update_devices().emit(devices);
 }
 
 NotifyRequestAuthorization::NotifyRequestAuthorization(std::string rsc)
@@ -47,7 +47,7 @@ NotifyRequestAuthorization::NotifyRequestAuthorization(std::string rsc)
 }
 void NotifyRequestAuthorization::run(Scanner scanner)
 {
-    scanner.request_authorization(resource);
+    scanner.signal_request_authorisation().emit(resource);
 }
 
 NotifyScanFailed::NotifyScanFailed(int err_code, std::string err_string)
@@ -57,17 +57,17 @@ NotifyScanFailed::NotifyScanFailed(int err_code, std::string err_string)
 }
 void NotifyScanFailed::run(Scanner scanner)
 {
-    scanner.scan_failed(error_code, error_string);
+    scanner.signal_scan_failed().emit(error_code, error_string);
 }
 
 void NotifyDocumentDone::run(Scanner scanner)
 {
-    scanner.document_done(void);
+    scanner.signal_document_done().emit();
 }
 
 void NotifyExpectPage::run(Scanner scanner)
 {
-    scanner.expect_page(void);
+    scanner.signal_expect_page().emit();
 }
 
 NotifyGotPageInfo::NotifyGotPageInfo(int id, ScanPageInfo inf)
@@ -78,7 +78,7 @@ NotifyGotPageInfo::NotifyGotPageInfo(int id, ScanPageInfo inf)
 void NotifyGotPageInfo::run(Scanner scanner)
 {
     if (job_id >= scanner.first_job_id && job_id < scanner.job_id)
-        scanner.got_page_info(info);
+        scanner.signal_got_page_info().emit(info);
 }
 
 NotifyPageDone::NotifyPageDone(int id)
@@ -88,7 +88,7 @@ NotifyPageDone::NotifyPageDone(int id)
 void NotifyPageDone::run(Scanner scanner)
 {
     if (job_id >= scanner.first_job_id && job_id < scanner.job_id)
-        scanner.page_done(void);
+        scanner.signal_page_done().emit();
 }
 
 NotifyGotLine::NotifyGotLine(int id, ScanLine ln)
@@ -99,7 +99,7 @@ NotifyGotLine::NotifyGotLine(int id, ScanLine ln)
 void NotifyGotLine::run(Scanner scanner)
 {
     if (job_id >= scanner.first_job_id && job_id < scanner.job_id)
-        scanner.got_line(line);
+        scanner.signal_got_line().emit(line);
 }
 
 Scanner::Scanner(void)
@@ -107,6 +107,41 @@ Scanner::Scanner(void)
     request_queue = new AsyncQueue<Request>();
     notify_queue = new AsyncQueue<Notify>();
     authorize_queue = new AsyncQueue<Credentials>();
+
+Scanner::type_signal_update_devices Scanner::signal_update_devices() {
+    return m_signal_update_devices;
+}
+
+Scanner::type_signal_request_authorisation Scanner::signal_request_authorisation() {
+    return m_signal_request_authorisation;
+}
+
+Scanner::type_signal_expect_page Scanner::signal_expect_page() {
+    return m_signal_expect_page;
+}
+
+Scanner::type_signal_got_page_info Scanner::signal_got_page_info() {
+    return m_signal_got_page_info;
+}
+
+Scanner::type_signal_got_line Scanner::signal_got_line() {
+    return m_signal_got_line;
+}
+
+Scanner::type_signal_scan_failed Scanner::signal_scan_failed() {
+    return m_signal_scan_failed;
+}
+
+Scanner::type_signal_page_done Scanner::signal_page_done() {
+    return m_signal_page_done;
+}
+
+Scanner::type_signal_document_done Scanner::signal_document_done() {
+    return m_signal_document_done;
+}
+
+Scanner::type_signal_scanning_changed Scanner::signal_scanning_changed() {
+    return m_signal_scanning_changed;
 }
 
 Scanner Scanner::get_instance(void)
