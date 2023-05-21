@@ -20,6 +20,8 @@
 
 #include <gtkmm.h>
 #include <sigc++/sigc++.h>
+#include <uchar.h>
+#include "scanner.h"
 
 enum ScanDirection
 {
@@ -37,152 +39,80 @@ class Page
         int expected_rows;
 
     /* Pixel data */
-        uchar[] pixels;
+        char32_t pixels[];
     /* Rotation of scanned data */
-        ScanDirection scan_direction_ = ScanDirection.TOP_TO_BOTTOM;
+        ScanDirection _scan_direction = ScanDirection::TOP_TO_BOTTOM;
 
         void parse_line (ScanLine line, int n, bool *size_changed);
 
     // FIXME: Copied from page-view, should be shared code
-        uchar get_sample (uchar[] pixels, int offset, int x, int depth, int n_channels, int channel);
+        char32_t get_sample (char32_t pixels[], int offset, int x, int depth, int n_channels, int channel);
     // FIXME: Copied from page-view, should be shared code
-        void get_pixel (int x, int y, uchar[] pixel, int offset);
+        void get_pixel (int x, int y, char32_t pixel[], int offset);
 
     public:
     /* Width of the page in pixels after rotation applied */
-        int width
-    {
-        get
-        {
-            if (scan_direction == ScanDirection.TOP_TO_BOTTOM || scan_direction == ScanDirection.BOTTOM_TO_TOP)
-                return scan_width;
-            else
-                return scan_height;
-        }
-    };
+        int get_width(void);
 
     /* Height of the page in pixels after rotation applied */
-        int height
-    {
-        get
-        {
-            if (scan_direction == ScanDirection.TOP_TO_BOTTOM || scan_direction == ScanDirection.BOTTOM_TO_TOP)
-                return scan_height;
-            else
-                return scan_width;
-        }
-    };
+        int get_height(void);
 
     /* true if the page is landscape (wider than the height) */
-        bool is_landscape { get { return width > height; } };
+        bool is_landscape(void);
 
     /* Resolution of page */
-        int dpi { get; private set; };
+        int dpi;
 
     /* Bit depth */
-        int depth { get; private set; };
+        int depth;
 
     /* Color profile */
-        std::string *color_profile { get; set; };
+        std::string *color_profile;
 
     /* Width of raw scan data in pixels */
-        int scan_width { get; private set; };
+        int scan_width ;
 
     /* Height of raw scan data in pixels */
-        int scan_height { get; private set; };
+        int scan_height;
 
     /* Offset between rows in scan data */
-        int rowstride { get; private set; };
+        int rowstride;
 
     /* Number of color channels */
-        int n_channels { get; private set; };
+        int n_channels;
 
     /* Page is getting data */
-        bool is_scanning { get; private set; };
+        bool is_scanning;
 
     /* true if have some page data */
-        bool has_data { get; private set; };
+        bool has_data;
 
     /* Expected next scan row */
-        int scan_line { get; private set; };
+        int scan_line;
 
     /* true if scan contains color information */
-        bool is_color { get { return n_channels > 1; } };
+        bool is_color(void);
 
-        ScanDirection scan_direction
-    {
-        get { return scan_direction_; }
-
-        set
-        {
-            if (scan_direction_ == value)
-                return;
-
-            /* Work out how many times it has been rotated to the left */
-            var size_has_changed = false;
-            var left_steps = (int) (value - scan_direction_);
-            if (left_steps < 0)
-                left_steps += 4;
-            if (left_steps != 2)
-                size_has_changed = true;
-
-            /* Rotate crop */
-            if (has_crop)
-            {
-                switch (left_steps)
-                {
-                /* 90 degrees counter-clockwise */
-                case 1:
-                    var t = crop_x;
-                    crop_x = crop_y;
-                    crop_y = width - (t + crop_width);
-                    t = crop_width;
-                    crop_width = crop_height;
-                    crop_height = t;
-                    break;
-                /* 180 degrees */
-                case 2:
-                    crop_x = width - (crop_x + crop_width);
-                    crop_y = width - (crop_y + crop_height);
-                    break;
-                /* 90 degrees clockwise */
-                case 3:
-                    var t = crop_y;
-                    crop_y = crop_x;
-                    crop_x = height - (t + crop_height);
-                    t = crop_width;
-                    crop_width = crop_height;
-                    crop_height = t;
-                    break;
-                }
-            }
-
-            scan_direction_ = value;
-            if (size_has_changed)
-                size_changed (void);
-            scan_direction_changed (void);
-            if (has_crop)
-                crop_changed (void);
-        }
-    };
+        ScanDirection get_scan_direction(void);
+        void set_scan_direction(ScanDirection);
 
     /* True if the page has a crop set */
-        bool has_crop { get; private set; };
+        bool has_crop;
 
     /* Name of the crop if using a named crop */
-        std::string? crop_name { get; private set; };
+        std::string *crop_name;
 
     /* X co-ordinate of top left crop corner */
-        int crop_x { get; private set; };
+        int crop_x;
 
     /* Y co-ordinate of top left crop corner */
-        int crop_y { get; private set; };
+        int crop_y;
 
     /* Width of crop in pixels */
-        int crop_width { get; private set; };
+        int crop_width;
 
     /* Height of crop in pixels*/
-        int crop_height { get; private set; };
+        int crop_height;
 
         using type_signal_pixels_changed = sigc::signal<void(void)>;
         type_signal_pixels_changed signal_pixels_changed();
@@ -198,22 +128,22 @@ class Page
         type_signal_scan_finished signal_scan_finished();
 
         Page (int width, int height, int dpi, ScanDirection scan_direction);
-        Page.from_data (int scan_width,
+        static Page *from_data (int scan_width,
                            int scan_height,
                            int rowstride,
                            int n_channels,
                            int depth,
                            int dpi,
                            ScanDirection scan_direction,
-                           std::string? color_profile,
-                           uchar[]? pixels,
+                           std::string *color_profile,
+                           char32_t *pixels[],
                            bool has_crop,
-                           std::string? crop_name,
+                           std::string *crop_name,
                            int crop_x,
                            int crop_y,
                            int crop_width,
                            int crop_height);
-        Page copy(void);
+        Page *copy(void);
         void set_page_info (ScanPageInfo info);
         void start (void);
         void parse_scan_line (ScanLine line);
@@ -225,11 +155,12 @@ class Page
         void set_named_crop (std::string name);
         void move_crop (int x, int y);
         void rotate_crop (void);
-        unowned uchar[] get_pixels (void);
-        Gdk::Pixbuf get_image (bool apply_crop);
-        std::string? get_icc_data_encoded (void);
-        void copy_to_clipboard (Gtk.Window window);
-        void save_png (File file) throws Error;
+        char32_t[] get_pixels (void);
+        Glib::RefPtr<Gdk::Pixbuf> get_image (bool apply_crop);
+        std::string *get_icc_data_encoded (void);
+        void copy_to_clipboard (Gtk::Window window);
+        void save_png (Glib::RefPtr<Gio::File> file); // throws Error;
+
     protected:
         type_signal_pixels_changed m_signal_pixels_changed;
         type_signal_size_changed m_signal_size_changed;
