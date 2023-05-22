@@ -17,6 +17,8 @@
 */
 
 #include <string>
+#include <sigc++-3.0/sigc++/sigc++.h>
+#include <spdlog/spdlog.h>
 #include "page_view.h"
 #include "page.h"
 
@@ -24,35 +26,35 @@ void PageView::page_pixels_changed_cb(Page p)
 {
     /* Regenerate image */
     update_image = true;
-    page_texture.request_update();
-    changed();
+    page_texture->request_update();
+    signal_changed().emit();
 };
 
 void PageView::page_size_changed_cb(Page p)
 {
     /* Regenerate image */
     update_image = true;
-    size_changed();
-    changed();
+    signal_size_changed().emit();
+    signal_changed().emit();
 };
 
 void PageView::page_overlay_changed_cb(Page p)
 {
-    changed();
+    signal_changed().emit();
 };
 
 void PageView::scan_direction_changed_cb(Page p)
 {
     /* Regenerate image */
     update_image = true;
-    page_texture.request_update();
-    size_changed();
-    changed();
+    page_texture->request_update();
+    signal_size_changed().emit();
+    signal_changed().emit();
 };
 
 void PageView::new_buffer_cb(void)
 {
-    changed();
+    signal_changed().emit();
 };
 
 int PageView::get_preview_width(void)
@@ -67,22 +69,22 @@ int PageView::get_preview_height(void)
 
 int PageView::page_to_screen_x(int x)
 {
-    return (int)((double)x * get_preview_width() / page.width + 0.5);
+    return (int)((double)x * get_preview_width() / page.get_width() + 0.5);
 };
 
 int PageView::page_to_screen_y(int y)
 {
-    return (int)((double)y * get_preview_height() / page.height + 0.5);
+    return (int)((double)y * get_preview_height() / page.get_height() + 0.5);
 };
 
 int PageView::screen_to_page_x(int x)
 {
-    return (int)((double)x * page.width / get_preview_width() + 0.5);
+    return (int)((double)x * page.get_width() / get_preview_width() + 0.5);
 };
 
 int PageView::screen_to_page_y(int y)
 {
-    return (int)((double)y * page.height / get_preview_height() + 0.5);
+    return (int)((double)y * page.get_height() / get_preview_height() + 0.5);
 };
 
 CropLocation PageView::get_crop_location(int x, int y)
@@ -105,7 +107,7 @@ CropLocation PageView::get_crop_location(int x, int y)
         return CropLocation::NONE;
 
     /* Can't resize named crops */
-    std::string name = page.crop_name;
+    std::string *name = page.crop_name;
     if (name != NULL)
         return CropLocation::MIDDLE;
 
@@ -149,7 +151,7 @@ CropLocation PageView::get_crop_location(int x, int y)
 bool PageView::animation_cb(void)
 {
     animate_segment = (animate_segment + 1) % animate_n_segments;
-    changed();
+    signal_changed().emit();
     return true;
 };
 
@@ -166,64 +168,68 @@ void PageView::update_animation(void)
     {
         animate_segment = 0;
         if (animate_timeout == 0)
-            animate_timeout = Timeout.add(150, animation_cb);
+        {
+            auto timeout_source = Glib::TimeoutSource::create(150);
+            animation_timeout_connection = timeout_source->connect(sigc::bind(sigc::mem_fun(*this, &PageView::animation_cb)));
+        }
     }
     else
     {
         if (animate_timeout != 0)
-            Source.remove(animate_timeout);
+        {
+            animation_timeout_connection.disconnect();
+        }
         animate_timeout = 0;
     }
 };
 
-// TODO: sort
-bool selected{
-    get{return selected_;
-}
-set
+bool PageView::get_selected(void)
 {
-    if ((this.selected && selected) || (!this.selected && !selected))
+    return _selected;
+}
+
+void PageView::set_selected(bool selected)
+{
+
+    if ((_selected && selected) || (!_selected && !selected))
+    {
         return;
-    this.selected = selected;
-    changed();
+    }
+    _selected = selected;
+    signal_changed().emit();
 }
-}
-;
 
-/* Cursor over this page */
-// TODO: sort
-// std::string cursor { get; private set; default = "arrow"; }
-
-PageView::type_signal_size_changed PageView::signal_size_changed() {
+PageView::type_signal_size_changed PageView::signal_size_changed()
+{
     return m_signal_size_changed;
 }
 
-PageView::type_signal_changed PageView::signal_changed() {
+PageView::type_signal_changed PageView::signal_changed()
+{
     return m_signal_changed;
 }
 
-PageView::PageView(Page page)
+PageView::PageView(Page page) : page(page)
 {
-    this->page = page;
-    page.pixels_changed.connect(page_pixels_changed_cb);
-    page.size_changed.connect(page_size_changed_cb);
-    page.crop_changed.connect(page_overlay_changed_cb);
-    page.scan_line_changed.connect(page_overlay_changed_cb);
-    page.scan_direction_changed.connect(scan_direction_changed_cb);
+    connection_signal_page_pixels_changed = page.signal_pixels_changed().connect(sigc::bind(sigc::mem_fun(*this, &PageView::page_pixels_changed_cb)));
+    connection_signal_page_size_changed = page.signal_size_changed().connect(sigc::bind(sigc::mem_fun(*this, &PageView::page_size_changed_cb)));
+    connection_signal_page_crop_changed = page.signal_crop_changed().connect(sigc::bind(sigc::mem_fun(*this, &PageView::page_overlay_changed_cb)));
+    connection_signal_page_line_changed = page.signal_scan_line_changed().connect(sigc::bind(sigc::mem_fun(*this, &PageView::page_overlay_changed_cb)));
+    connection_signal_page_scan_direction_changed = page.signal_scan_direction_changed().connect(sigc::bind(sigc::mem_fun(*this, &PageView::scan_direction_changed_cb)));
 
     page_texture = new PageViewTexture(page);
-    page_texture.new_buffer.connect(new_buffer_cb);
+    connection_signal_page_new_buffer = page_texture->signal_new_buffer().connect(sigc::bind(sigc::mem_fun(*this, &PageView::new_buffer_cb)));
 };
 
-~PageView::PageView()
+PageView::~PageView()
 {
-    page.pixels_changed.disconnect(page_pixels_changed_cb);
-    page.size_changed.disconnect(page_size_changed_cb);
-    page.crop_changed.disconnect(page_overlay_changed_cb);
-    page.scan_line_changed.disconnect(page_overlay_changed_cb);
-    page.scan_direction_changed.disconnect(scan_direction_changed_cb);
+    connection_signal_page_pixels_changed.disconnect();
+    connection_signal_page_size_changed.disconnect();
+    connection_signal_page_crop_changed.disconnect();
+    connection_signal_page_line_changed.disconnect();
+    connection_signal_page_scan_direction_changed.disconnect();
 
-    page_texture.new_buffer.disconnect(new_buffer_cb);
+    connection_signal_page_new_buffer.disconnect();
 };
 
 void PageView::button_press(int x, int y)
@@ -246,50 +252,50 @@ void PageView::motion(int x, int y)
 {
     CropLocation location = get_crop_location(x, y);
 
-    std::string cursor;
+    std::string crsr;
     switch (location)
     {
     case CropLocation::MIDDLE:
-        cursor = "hand1";
+        crsr = "hand1";
         break;
     case CropLocation::TOP:
-        cursor = "top_side";
+        crsr = "top_side";
         break;
     case CropLocation::BOTTOM:
-        cursor = "bottom_side";
+        crsr = "bottom_side";
         break;
     case CropLocation::LEFT:
-        cursor = "left_side";
+        crsr = "left_side";
         break;
     case CropLocation::RIGHT:
-        cursor = "right_side";
+        crsr = "right_side";
         break;
     case CropLocation::TOP_LEFT:
-        cursor = "top_left_corner";
+        crsr = "top_left_corner";
         break;
     case CropLocation::TOP_RIGHT:
-        cursor = "top_right_corner";
+        crsr = "top_right_corner";
         break;
     case CropLocation::BOTTOM_LEFT:
-        cursor = "bottom_left_corner";
+        crsr = "bottom_left_corner";
         break;
     case CropLocation::BOTTOM_RIGHT:
-        cursor = "bottom_right_corner";
+        crsr = "bottom_right_corner";
         break;
     default:
-        cursor = "arrow";
+        crsr = "arrow";
         break;
     }
 
     if (crop_location == CropLocation::NONE)
     {
-        this.cursor = cursor;
+        cursor = crsr;
         return;
     }
 
     /* Move the crop */
-    int pw = page.width;
-    int ph = page.height;
+    int pw = page.get_width();
+    int ph = page.get_height();
     int cw = page.crop_width;
     int ch = page.crop_height;
 
@@ -393,126 +399,126 @@ void PageView::button_release(int x, int y)
 {
     /* Complete crop */
     crop_location = CropLocation::NONE;
-    changed();
+    signal_changed().emit();
 };
 
 /* It is necessary to ask the ruler color since it is themed with the GTK */
 /* theme foreground color, and this class doesn't have any GTK widget     */
 /* available to lookup the color. */
-void PageView::render(Cairo::Context context, Gdk::RGBA ruler_color)
+void PageView::render(Cairo::RefPtr<Cairo::Context> context, Gdk::RGBA ruler_color)
 {
     update_animation();
 
-    page_texture.request_resize(get_preview_width(), get_preview_height());
+    page_texture->request_resize(get_preview_width(), get_preview_height());
 
     try
     {
-        page_texture.queue_update();
+        page_texture->queue_update();
     }
-    catch (Error e)
+    catch (const std::exception &e)
     {
-        spdlog::warn("Failed to queue_update of the texture: %s", e.message);
+        spdlog::warn("Failed to queue_update of the texture: {}", e);
         // Ask for another redraw
-        changed();
+        signal_changed().emit();
     }
 
     int w = get_preview_width();
     int h = get_preview_height();
 
-    context.set_line_width(1);
-    context.translate(x_offset, y_offset);
+    context->set_line_width(1);
+    context->translate(x_offset, y_offset);
 
     /* Draw image */
-    context.translate(border_width + ruler_width, border_width + ruler_width);
+    context->translate(border_width + ruler_width, border_width + ruler_width);
 
-    if (page_texture.pixbuf != NULL)
+    if (page_texture->pixbuf != NULL)
     {
-        float x_scale = (float)w / (float)page_texture.pixbuf.width;
-        float y_scale = (float)h / (float)page_texture.pixbuf.height;
+        float x_scale = (float)w / (float)page_texture->pixbuf->get_width();
+        float y_scale = (float)h / (float)page_texture->pixbuf->get_height();
 
-        context.save();
-        context.scale(x_scale, y_scale);
+        context->save();
+        context->scale(x_scale, y_scale);
 
-        //  context.rectangle (0, 0.0, w, h);
-        Gdk::cairo_set_source_pixbuf(context, page_texture.pixbuf, 0, 0);
-        context.paint();
-        context.restore();
+        //  context->rectangle (0, 0.0, w, h);
+        Gdk::Cairo::set_source_pixbuf(context, page_texture->pixbuf, 0, 0);
+        context->paint();
+        context->restore();
     }
     else
     {
-        Gdk::cairo_set_source_rgba(context, {1.0f, 1.0f, 1.0f, 1.0f});
-        context.rectangle(0, 0.0, w, h);
-        context.fill();
+        Gdk::Cairo::set_source_rgba(context, {1.0f, 1.0f, 1.0f, 1.0f});
+        context->rectangle(0, 0.0, w, h);
+        context->fill();
     }
 
     /* Draw page border */
-    Gdk::cairo_set_source_rgba(context, ruler_color);
-    context.set_line_width(border_width);
+    Gdk::Cairo::set_source_rgba(context, ruler_color);
+    context->set_line_width(border_width);
 
-    context.rectangle(0,
-                      0.0,
-                      w,
-                      h);
-    context.stroke();
+    context->rectangle(0,
+                       0.0,
+                       w,
+                       h);
+    context->stroke();
 
     /* Draw horizontal ruler */
-    context.set_line_width(1);
+    context->set_line_width(1);
     int ruler_tick = 0;
     double line = 0.0;
     int big_ruler_tick = 5;
 
-    while (ruler_tick <= page.width)
+    while (ruler_tick <= page.get_width())
     {
         line = page_to_screen_x(ruler_tick) + 0.5;
         if (big_ruler_tick == 5)
         {
-            context.move_to(line, 0);
-            context.line_to(line, -ruler_width);
-            context.move_to(line, h);
-            context.line_to(line, h + ruler_width);
+            context->move_to(line, 0);
+            context->line_to(line, -ruler_width);
+            context->move_to(line, h);
+            context->line_to(line, h + ruler_width);
             big_ruler_tick = 0;
         }
         else
         {
-            context.move_to(line, -2);
-            context.line_to(line, -5);
-            context.move_to(line, h + 2);
-            context.line_to(line, h + 5);
+            context->move_to(line, -2);
+            context->line_to(line, -5);
+            context->move_to(line, h + 2);
+            context->line_to(line, h + 5);
         }
         ruler_tick = ruler_tick + page.dpi / 5;
         big_ruler_tick = big_ruler_tick + 1;
     }
-    context.stroke();
+    context->stroke();
 
     /* Draw vertical ruler */
     ruler_tick = 0;
     line = 0.0;
     big_ruler_tick = 5;
-    while (ruler_tick <= page.height)
+    while (ruler_tick <= page.get_height())
     {
         line = page_to_screen_y(ruler_tick) + 0.5;
 
         if (big_ruler_tick == 5)
         {
-            context.move_to(0, line);
-            context.line_to(-ruler_width, line);
+            context->move_to(0, line);
+            context->line_to(-ruler_width, line);
 
-            context.move_to(w, line);
-            context.line_to(w + ruler_width, line);
+            context->move_to(w, line);
+            context->line_to(w + ruler_width, line);
             big_ruler_tick = 0;
         }
         else
         {
-            context.move_to(-2, line);
-            context.line_to(-5, line);
+            context->move_to(-2, line);
+            context->line_to(-5, line);
 
-            context.move_to(w + 2, line);
-            context.line_to(w + 5, line);
+            context->move_to(w + 2, line);
+            context->line_to(w + 5, line);
         }
         ruler_tick = ruler_tick + page.dpi / 5;
         big_ruler_tick = big_ruler_tick + 1;
     }
-    context.stroke();
+    context->stroke();
 
     /* Draw scan line */
     if (page.is_scanning && page.scan_line > 0)
@@ -521,7 +527,7 @@ void PageView::render(Cairo::Context context, Gdk::RGBA ruler_color)
 
         double s;
         double x1, y1, x2, y2;
-        switch (page.scan_direction)
+        switch (page.get_scan_direction())
         {
         case ScanDirection::TOP_TO_BOTTOM:
             s = page_to_screen_y(scan_line);
@@ -556,60 +562,62 @@ void PageView::render(Cairo::Context context, Gdk::RGBA ruler_color)
             break;
         }
 
-        context.move_to(x1, y1);
-        context.line_to(x2, y2);
-        context.set_source_rgb(1.0, 0.0, 0.0);
-        context.stroke();
+        context->move_to(x1, y1);
+        context->line_to(x2, y2);
+        context->set_source_rgb(1.0, 0.0, 0.0);
+        context->stroke();
     };
 
     /* Draw crop */
     if (page.has_crop)
     {
-        var x = page.crop_x;
-        var y = page.crop_y;
-        var crop_width = page.crop_width;
-        var crop_height = page.crop_height;
+        int x = page.crop_x;
+        int y = page.crop_y;
+        int crop_width = page.crop_width;
+        int crop_height = page.crop_height;
 
-        var dx = page_to_screen_x(x);
-        var dy = page_to_screen_y(y);
-        var dw = page_to_screen_x(crop_width);
-        var dh = page_to_screen_y(crop_height);
+        int dx = page_to_screen_x(x);
+        int dy = page_to_screen_y(y);
+        int dw = page_to_screen_x(crop_width);
+        int dh = page_to_screen_y(crop_height);
 
         /* Shade out cropped area */
-        context.rectangle(0, 0, w, h);
-        context.new_sub_path();
-        context.rectangle(dx, dy, dw, dh);
-        context.set_fill_rule(Cairo::FillRule.EVEN_ODD);
-        context.set_source_rgba(0.25, 0.25, 0.25, 0.2);
-        context.fill();
+        context->rectangle(0, 0, w, h);
+        context->begin_new_sub_path();
+        context->rectangle(dx, dy, dw, dh);
+        context->set_fill_rule(Cairo::Context::FillRule::EVEN_ODD);
+        context->set_source_rgba(0.25, 0.25, 0.25, 0.2);
+        context->fill();
 
         /* Show new edge */
-        context.set_source_rgb(1.0, 1.0, 1.0);
-        context.move_to(-border_width, dy - 1.5);
-        context.line_to(border_width + w, dy - 1.5);
-        context.move_to(-border_width, dy + dh + 1.5);
-        context.line_to(border_width + w, dy + dh + 1.5);
-        context.stroke();
+        context->set_source_rgb(1.0, 1.0, 1.0);
+        context->move_to(-border_width, dy - 1.5);
+        context->line_to(border_width + w, dy - 1.5);
+        context->move_to(-border_width, dy + dh + 1.5);
+        context->line_to(border_width + w, dy + dh + 1.5);
+        context->stroke();
 
-        context.move_to(dx - 1.5, -border_width);
-        context.line_to(dx - 1.5, border_width + h);
-        context.move_to(dx + dw + 1.5, -border_width);
-        context.line_to(dx + dw + 1.5, border_width + h);
-        context.stroke();
+        context->move_to(dx - 1.5, -border_width);
+        context->line_to(dx - 1.5, border_width + h);
+        context->move_to(dx + dw + 1.5, -border_width);
+        context->line_to(dx + dw + 1.5, border_width + h);
+        context->stroke();
 
-        context.rectangle(dx - 0.5, dy - 0.5, dw + 1, dh + 1);
-        context.set_source_rgb(0.0, 0.0, 0.0);
-        context.stroke();
+        context->rectangle(dx - 0.5, dy - 0.5, dw + 1, dh + 1);
+        context->set_source_rgb(0.0, 0.0, 0.0);
+        context->stroke();
     }
 }
 
-int width{
-    get{return width_;
+int PageView::get_width(void)
+{
+    return width_;
 }
-set
+
+void PageView::set_width(int value)
 {
     // FIXME: Automatically update when get updated image
-    int h = (int)((double)value * page.height / page.width);
+    int h = (int)((double)value * page.get_height() / page.get_width());
     if (width_ == value && height_ == h)
         return;
 
@@ -619,19 +627,19 @@ set
     /* Regenerate image */
     update_image = true;
 
-    size_changed();
-    changed();
+    signal_size_changed().emit();
+    signal_changed().emit();
 }
-}
-;
 
-int height{
-    get{return height_;
+int PageView::get_height(void)
+{
+    return height_;
 }
-set
+
+void PageView::set_height(int value)
 {
     // FIXME: Automatically update when get updated image
-    int w = (int)((double)value * page.width / page.height);
+    int w = (int)((double)value * page.get_width() / page.get_height());
     if (width_ == w && height_ == value)
         return;
 
@@ -641,8 +649,6 @@ set
     /* Regenerate image */
     update_image = true;
 
-    size_changed();
-    changed();
+    signal_size_changed().emit();
+    signal_changed().emit();
 }
-}
-;

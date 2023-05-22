@@ -18,9 +18,9 @@
 #ifndef PAGE_VIEW_H
 #define PAGE_VIEW_H
 
-#include <cairo.h>
 #include <string>
-#include <sigc++/sigc++.h>
+#include <sigc++-3.0/sigc++/sigc++.h>
+#include "page_texture.h"
 
 enum CropLocation
 {
@@ -41,7 +41,7 @@ class PageView
 
     /* Image to render at current resolution */
     private:
-        PageViewTexture page_texture;
+        PageViewTexture *page_texture;
 
         int ruler_width = 8;
 
@@ -83,35 +83,26 @@ class PageView
 
     public:
     /* Page being rendered */
-        Page page { get; private set; }
+        Page page;
 
     /* Border around image */
-        bool selected_ = false;
-        bool selected
-    {
-        get { return selected_; }
-        set
-        {
-            if ((this.selected && selected) || (!this.selected && !selected))
-                return;
-            this.selected = selected;
-            changed ();
-        }
-    };
+        bool _selected = false;
+        bool get_selected(void);
+        void set_selected(bool);
     /* Location to place this page */
-        int x_offset { get; set; };
-        int y_offset { get; set; };
+        int x_offset;
+        int y_offset;
 
     /* Cursor over this page */
-        std::string cursor { get; private set; default = "arrow"; };
+        std::string cursor = "arrow";
 
         using type_signal_size_changed = sigc::signal<void(void)>;
         type_signal_size_changed signal_size_changed();
         using type_signal_changed = sigc::signal<void(void)>;
         type_signal_changed signal_changed();
 
-        void PageView (Page page);
-        void PageView (void) override;
+        PageView (Page page);
+        ~PageView();
         CropLocation get_crop_location (int x, int y);
         void button_press (int x, int y);
         void motion (int x, int y);
@@ -119,52 +110,27 @@ class PageView
     /* It is necessary to ask the ruler color since it is themed with the GTK */
     /* theme foreground color, and this class doesn't have any GTK widget     */
     /* available to lookup the color. */
-        void render (Cairo::Context context, Gdk.RGBA ruler_color);
-        int width
-    {
-        get { return width_; }
-        set
-        {
-            // FIXME: Automatically update when get updated image
-            var h = (int) ((double) value * page.height / page.width);
-            if (width_ == value && height_ == h)
-                return;
+        void render (Cairo::RefPtr<Cairo::Context> context, Gdk::RGBA ruler_color);
 
-            width_ = value;
-            height_ = h;
+        int get_width(void);
+        void set_width(int);
 
-            /* Regenerate image */
-            update_image = true;
+        int get_height(void);
+        void set_height(int);
 
-            size_changed ();
-            changed ();
-        }
-    }
-
-        int height
-    {
-        get { return height_; }
-        set
-        {
-            // FIXME: Automatically update when get updated image
-            var w = (int) ((double) value * page.width / page.height);
-            if (width_ == w && height_ == value)
-                return;
-
-            width_ = w;
-            height_ = value;
-
-            /* Regenerate image */
-            update_image = true;
-
-            size_changed ();
-            changed ();
-        }
-    };
     protected:
         type_signal_size_changed m_signal_size_changed;
         type_signal_changed m_signal_changed;
-}
+
+        sigc::connection connection_signal_page_pixels_changed;
+        sigc::connection connection_signal_page_size_changed;
+        sigc::connection connection_signal_page_crop_changed;
+        sigc::connection connection_signal_page_line_changed;
+        sigc::connection connection_signal_page_scan_direction_changed;
+        sigc::connection connection_signal_page_new_buffer;
+
+        sigc::connection animation_timeout_connection;
+};
 
 
 #endif //PAGE_VIEW_H
