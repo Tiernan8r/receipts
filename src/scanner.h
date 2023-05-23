@@ -24,8 +24,9 @@
 #include <thread>
 #include <queue>
 #include <map>
+#include <vector>
 #include <sane/sane.h>
-#include <sigc++/sigc++.h>
+#include <sigc++-3.0/sigc++/sigc++.h>
 
 class ScanDevice
 {
@@ -45,7 +46,7 @@ public:
     /* Number of colour channels */
     int n_channels;
     /* Resolution */
-    int resolution;
+    double dpi;
     /* The device this page came from */
     std::string device;
 };
@@ -63,7 +64,7 @@ public:
     /* Channel for this line or -1 for all channels */
     int channel;
     /* Raw line data */
-    char data[];
+    std::vector<SANE_Byte> data;
     int data_length;
 };
 
@@ -108,8 +109,8 @@ class ScanJob
 {
 public:
     int id;
-    std::string device;
-    int dpi;
+    std::string *device;
+    double dpi;
     ScanMode scan_mode;
     int depth;
     ScanType type;
@@ -119,29 +120,54 @@ public:
     int brightness;
     int contrast;
     int page_delay;
+
+    ScanJob(int id, std::string *device, double dpi, ScanMode scan_mode, int depth, ScanType type, ScanSide side, int page_width, int page_height, int brightness, int contrast, int page_delay) : id(id), device(device), dpi(dpi), scan_mode(scan_mode), depth(depth), type(type), side(side), page_width(page_width), page_height(page_height), brightness(brightness), contrast(contrast), page_delay(page_delay){};
 };
 
-// private:
+enum RequestType
+{
+    BASE,
+    REDECT,
+    CANCEL,
+    START,
+    QUIT,
+};
+
 class Request
 {
+public:
+    RequestType type = RequestType::BASE;
+
+    Request() : type(RequestType::BASE){};
+    Request(RequestType type) : type(type){};
+    virtual ScanJob content(void);
 };
 
-class RequestRedirect : private Request
+class RequestRedetect : public Request
 {
+public:
+    RequestRedetect() : Request(RequestType::REDECT){};
 };
 
-class RequestCancel : private Request
+class RequestCancel : public Request
 {
+public:
+    RequestCancel() : Request(RequestType::CANCEL){};
 };
 
-class RequestStartScan : private Request
+class RequestStartScan : public Request
 {
 public:
     ScanJob job;
+
+    RequestStartScan(ScanJob job) : Request(RequestType::START), job(job){};
+    ScanJob content(void) override;
 };
 
-class RequestQuit : private Request
+class RequestQuit : public Request
 {
+public:
+    RequestQuit() : Request(RequestType::QUIT){};
 };
 
 class Credentials
@@ -165,84 +191,84 @@ enum ScanState
 class Notify
 {
 public:
-    virtual void run(Scanner scanner);
+    virtual void run(Scanner *scanner);
 };
 
-class NotifyScanningChanged : private Notify
+class NotifyScanningChanged : public Notify
 {
 public:
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 };
 
-class NotifyUpdateDevices : private Notify
+class NotifyUpdateDevices : public Notify
 {
 public:
     NotifyUpdateDevices(std::list<ScanDevice> devices);
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 
 private:
     std::list<ScanDevice> devices;
 };
 
-class NotifyRequestAuthorization : private Notify
+class NotifyRequestAuthorisation : public Notify
 {
 public:
-    NotifyRequestAuthorization(std::string resource);
-    void run(Scanner scanner) override;
+    NotifyRequestAuthorisation(std::string resource);
+    void run(Scanner *scanner) override;
 
 private:
     std::string resource;
 };
 
-class NotifyScanFailed : private Notify
+class NotifyScanFailed : public Notify
 {
 public:
     NotifyScanFailed(int error_code, std::string error_string);
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 
 private:
     int error_code;
     std::string error_string;
 };
 
-class NotifyDocumentDone : private Notify
+class NotifyDocumentDone : public Notify
 {
 public:
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 };
 
-class NotifyExpectPage : private Notify
+class NotifyExpectPage : public Notify
 {
 public:
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 };
 
-class NotifyGotPageInfo : private Notify
+class NotifyGotPageInfo : public Notify
 {
 public:
     NotifyGotPageInfo(int job_id, ScanPageInfo info);
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 
 private:
     int job_id;
     ScanPageInfo info;
 };
 
-class NotifyPageDone : private Notify
+class NotifyPageDone : public Notify
 {
 public:
     NotifyPageDone(int job_id);
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 
 private:
     int job_id;
 };
 
-class NotifyGotLine : private Notify
+class NotifyGotLine : public Notify
 {
 public:
     NotifyGotLine(int job_id, ScanLine line);
-    void run(Scanner scanner) override;
+    void run(Scanner *scanner) override;
 
 private:
     int job_id;
@@ -253,10 +279,10 @@ class Scanner
 {
 private:
     /* Singleton object */
-    static Scanner scanner_object = NULL;
+    static Scanner *scanner_object_ptr;
 
     /* Thread communicating with SANE */
-    std::thread thread;
+    std::thread *thread;
 
     /* Queue of requests from main thread */
     // AsyncQueue<Request> request_queue;
@@ -266,21 +292,21 @@ private:
     // AsyncQueue<Notify> notify_queue;
     std::queue<Notify> notify_queue;
 
-    /* Queue of responses to authorization requests */
-    // AsyncQueue<Credentials> authorize_queue;
-    std::queue<Credentials> authorize_queue;
+    /* Queue of responses to authorisation requests */
+    // AsyncQueue<Credentials> authorise_queue;
+    std::queue<Credentials> authorise_queue;
 
-    std::string default_device;
+    std::string *default_device;
 
     ScanState state;
     bool need_redetect;
 
-    std::list<ScanJob> job_queue;
+    std::vector<ScanJob> job_queue;
 
     /* Handle to SANE device */
     SANE_Handle handle;
     bool have_handle;
-    std::string current_device;
+    std::string *current_device;
 
     SANE_Parameters parameters;
 
@@ -288,10 +314,10 @@ private:
     SANE_Int option_index;
 
     /* Table of options */
-    std::map<std::string, int> options;
+    std::map<std::string, SANE_Int> options;
 
     /* Buffer for received line */
-    unsigned char buffer[];
+    std::vector<SANE_Byte> buffer;
     int n_used;
 
     //  int bytes_remaining;
@@ -320,7 +346,7 @@ private:
     bool set_string_option(SANE_Handle handle, SANE_Option_Descriptor option, SANE_Int option_index, std::string value, std::string *result);
     bool set_constrained_string_option(SANE_Handle handle, SANE_Option_Descriptor option, SANE_Int option_index, std::string values[], std::string *result);
     void log_option(SANE_Int index, SANE_Option_Descriptor option);
-    static void authorization_cb(std::string resource, char username[], char password[]);
+    static void authorisation_cb(SANE_String_Const resource, SANE_Char username[], SANE_Char password[]);
     void close_device(void);
     void fail_scan(int error_code, std::string error_string);
     bool handle_requests(void);
@@ -328,7 +354,7 @@ private:
     void set_adf(ScanJob job, SANE_Option_Descriptor option, SANE_Int index);
     void do_get_option(void);
     double convert_page_size(SANE_Option_Descriptor option, double size, double dpi);
-    SANE_Option_Descriptor ? get_option_by_name(SANE_Handle handle, std::string name, int *index);
+    const SANE_Option_Descriptor *get_option_by_name(SANE_Handle handle, std::string name, int *index);
     void do_complete_document(void);
     void do_start(void);
     void do_get_parameters(void);
@@ -361,8 +387,8 @@ public:
     using type_signal_scanning_changed = sigc::signal<void(void)>;
     type_signal_scanning_changed signal_scanning_changed();
 
-    static Scanner get_instance(void);
-    void authorize(std::string username, std::string password);
+    static Scanner *get_instance(void);
+    void authorise(std::string username, std::string password);
     void start(void);
     void redetect(void);
     bool is_scanning(void);
@@ -371,7 +397,7 @@ public:
     static ScanType type_from_string(std::string type);
     static std::string side_to_string(ScanSide side);
     static ScanSide side_from_string(std::string side);
-    void scan(std::string device, ScanOptions options);
+    void scan(std::string *device, ScanOptions options);
     void cancel(void);
     void free(void);
 
