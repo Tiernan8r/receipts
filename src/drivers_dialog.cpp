@@ -16,13 +16,13 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <gtkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
 #include "drivers_dialog.h"
 
 // [GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/drivers-dialog.ui")]
-DriversDialog::DriversDialog (Gtk::Window parent, std::string *missing_driver)
+DriversDialog::DriversDialog (Gtk::Window parent, std::string *missing_drivers)
     {
-        this.missing_driver = missing_driver;
+        missing_driver = missing_drivers;
         set_transient_for (parent);
     };
     
@@ -44,7 +44,7 @@ void DriversDialog::pulse_stop (void)
         Source.remove (pulse_timer);
     };
     
-async void DriversDialog::open (void)
+void DriversDialog::open_async (void)
     {
         std::string message = "", instructions = "";
         std::string packages_to_install[] = {};
@@ -162,7 +162,7 @@ async void DriversDialog::open (void)
     }
 
 #if HAVE_PACKAGEKIT
-async Pk::Results* DriversDialog::install_packages (std::string packages[], Pk::ProgressCallback progress_callback) // throws GLib::Error
+Pk::Results* DriversDialog::install_packages_async (std::string packages[], Pk::ProgressCallback progress_callback) // throws GLib::Error
     {
         Pk::Task task = new Pk::Task ();
         Pk::results results;

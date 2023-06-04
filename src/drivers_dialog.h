@@ -18,7 +18,10 @@
 #ifndef DRIVERS_DIALOG_H
 #define DRIVERS_DIALOG_H
 
-#include <gtkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
+#if HAVE_PACKAGEKIT
+#include <packagekit-glib2/packagekit.h>
+#endif 
 
 class DriversDialog : private Gtk::Window
 {
@@ -34,18 +37,18 @@ class DriversDialog : private Gtk::Window
         Gtk::Stack stack;
     
         uint pulse_timer;
-        std::string? missing_driver;
+        std::string *missing_driver;
     
         void pulse_start ();
         void pulse_stop ();
 #if HAVE_PACKAGEKIT
-        std::async Pk.Results? install_packages (std::string[] packages, Pk.ProgressCallback progress_callback); throws GLib.Error
+        Pk::Results *install_packages_async (std::string[] packages, Pk::ProgressCallback progress_callback); // throws GLib.Error
 #endif
 
     public:
         DriversDialog (Gtk::Window parent, std::string *missing_driver);
-        DriversDialog () override;
-        std::async void open ();
+        ~DriversDialog () override;
+        void open_async ();
 };
 
 #endif //DRIVERS_DIALOG_H
