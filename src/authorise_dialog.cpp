@@ -17,7 +17,7 @@
 */
 
 #include "authorise_dialog.h"
-#include <gtkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
 
 // [GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/authorize-dialog.ui")]
 AuthoriseDialog::type_signal_authorised AuthoriseDialog::signal_authorised() {
@@ -30,21 +30,21 @@ AuthoriseDialog::AuthoriseDialog(Gtk::Window parent, std::string title)
     set_transient_for(parent);
 };
 
-std::string AuthorizeDialog::get_username(void)
+std::string AuthoriseDialog::get_username(void)
 {
     return username_entry.text;
 };
 
-std::string AuthorizeDialog::get_password(void)
+std::string AuthoriseDialog::get_password(void)
 {
     return password_entry.text;
 };
 
-async AuthorizeDialogResponse AuthorizeDialog::open(void)
+async AuthoriseDialogResponse AuthoriseDialog::open(void)
 {
     SourceFunc callback = open.callback;
 
-    AuthorizeDialogResponse response = {};
+    AuthoriseDialogResponse response = {};
 
     authorized.connect((res) = >
                                {
@@ -60,27 +60,27 @@ async AuthorizeDialogResponse AuthorizeDialog::open(void)
 };
 
 // [GtkCallback]
-void AuthorizeDialog::authorize_button_cb(void)
+void AuthoriseDialog::authorize_button_cb(void)
 {
-    authorized(AuthorizeDialogResponse.new_authorized(get_username(), get_password()));
+    authorized(AuthoriseDialogResponse.new_authorized(get_username(), get_password()));
 };
 
 // [GtkCallback]
-void AuthorizeDialog::cancel_button_cb(void)
+void AuthoriseDialog::cancel_button_cb(void)
 {
-    authorized(AuthorizeDialogResponse.new_canceled());
+    authorized(AuthoriseDialogResponse.new_canceled());
 };
 
-AuthorizeDialogResponse AuthorizeDialogResponse::new_canceled(void)
+AuthoriseDialogResponse AuthoriseDialogResponse::new_canceled(void)
 {
-    return AuthorizeDialogResponse(){
+    return AuthoriseDialogResponse(){
         success = false,
     };
 };
 
-AuthorizeDialogResponse AuthorizeDialogResponse::new_authorized(std::string username, std::string password)
+AuthoriseDialogResponse AuthoriseDialogResponse::new_authorized(std::string username, std::string password)
 {
-    return AuthorizeDialogResponse(){
+    return AuthoriseDialogResponse(){
         username = username,
         password = password,
         success = true,

@@ -18,18 +18,18 @@
 #ifndef AUTHORISE_DIALOG_H
 #define AUTHORISE_DIALOG_H
 
-#include <string.h>
-#include <adwaita.h>
-#include <gtkmm.h>
-#include <sigc++/sigc++.h>
+#include <string>
+#include <gtkmm-4.0/gtkmm.h>
+#include <libadwaitamm.h>
+#include <sigc++-3.0/sigc++/sigc++.h>
 
 
-class AuthorizeDialog : private Gtk::Window
+class AuthoriseDialog : private Gtk::Window
 {
     private:
-        AdwPreferencesGroup preferences_group;
-        AdwEntryRow username_entry;
-        AdwPasswordEntryRow password_entry;
+        Adw::PreferencesGroup preferences_group;
+        Adw::EntryRow username_entry;
+        Adw::PasswordEntryRow password_entry;
         void authorize_button_cb (void);
         void cancel_button_cb (void);
 
@@ -37,23 +37,22 @@ class AuthorizeDialog : private Gtk::Window
         using type_signal_authorised = sigc::signal<void(AuthorisedDialogResponse)>;
         type_signal_authorised signal_authorised();
 
-        void AuthorizeDialog (Gtk::Window parent, std::string title);
+        AuthoriseDialog (Gtk::Window parent, std::string title);
         std::string get_username (void);
         std::string get_password (void);
-
     
-        std::async AuthorizeDialogResponse open(void);
+        std::async AuthoriseDialogResponse open(void);
     protected:
         type_signal_authorised m_signal_authorised;
 }
 
-struct AuthorizeDialogResponse {
+struct AuthoriseDialogResponse {
     std::string username;
     std::string password;
     bool success;
     
-    static AuthorizeDialogResponse new_canceled (void);
-    static AuthorizeDialogResponse new_authorized (std::string username, std::string password);
+    static AuthoriseDialogResponse new_canceled (void);
+    static AuthoriseDialogResponse new_authorized (std::string username, std::string password);
 }
 
 #endif //AUTHORISE_DIALOG_H
