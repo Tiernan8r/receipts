@@ -16,18 +16,18 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <gtkmm.h>
-#include <gdkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
+#include <gtkmm-4.0/gdkmm.h>
 #include "page_texture.h"
 #include "page.h"
 
-uchar PageToPixbuf::get_sample(uchar pixels[], int offset, int x, int depth, int sample)
+char32_t PageToPixbuf::get_sample(char32_t pixels[], int offset, int x, int depth, int sample)
 {
     // FIXME
     return 0xFF;
 };
 
-void PageToPixbuf::get_pixel(Page page, int x, int y, uchar pixel[])
+void PageToPixbuf::get_pixel(Page page, int x, int y, char32_t pixel[])
 {
     switch (page.scan_direction)
     {
@@ -51,7 +51,7 @@ void PageToPixbuf::get_pixel(Page page, int x, int y, uchar pixel[])
 
     int depth = page.depth;
     int n_channels = page.n_channels;
-    uchar pixels[] = page.get_pixels();
+    char32_t pixels[] = page.get_pixels();
     int offset = page.rowstride * y;
 
     /* Optimise for 8 bit images */
@@ -86,7 +86,7 @@ void PageToPixbuf::get_pixel(Page page, int x, int y, uchar pixel[])
         int sample = (pixels[o] >> block_shift[x % 4]) & 0x3;
         sample = sample * 255 / 3;
 
-        pixel[0] = pixel[1] = pixel[2] = (uchar)sample;
+        pixel[0] = pixel[1] = pixel[2] = (char32_t)sample;
         return;
     }
 
@@ -96,7 +96,7 @@ void PageToPixbuf::get_pixel(Page page, int x, int y, uchar pixel[])
     pixel[2] = get_sample(pixels, offset, x, depth, x * n_channels + 2);
 };
 
-void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, uchar output[], int offset)
+void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, char32_t output[], int offset)
 {
     /* Decimation:
      *
@@ -169,7 +169,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
         /* Inside */
         if ((int)l == (int)r || (int)t == (int)b)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, (int)l, (int)t, p);
             output[offset] = p[0];
             output[offset + 1] = p[1];
@@ -180,7 +180,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
         /* Stradling horizontal edge */
         if (L > R)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, R, T - 1, p);
             red += p[0] * (r - l) * (T - t);
             green += p[1] * (r - l) * (T - t);
@@ -200,7 +200,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
         /* Stradling vertical edge */
         else
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, L - 1, B, p);
             red += p[0] * (b - t) * (L - l);
             green += p[1] * (b - t) * (L - l);
@@ -219,9 +219,9 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
         }
 
         double scale = 1.0 / ((r - l) * (b - t));
-        output[offset] = (uchar)(red * scale + 0.5);
-        output[offset + 1] = (uchar)(green * scale + 0.5);
-        output[offset + 2] = (uchar)(blue * scale + 0.5);
+        output[offset] = (char32_t)(red * scale + 0.5);
+        output[offset + 1] = (char32_t)(green * scale + 0.5);
+        output[offset + 2] = (char32_t)(blue * scale + 0.5);
         return;
     }
 
@@ -230,7 +230,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     {
         for (int y = T; y < B; y++)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, x, y, p);
             red += p[0];
             green += p[1];
@@ -243,7 +243,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     {
         if (t != T)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, x, T - 1, p);
             red += p[0] * (T - t);
             green += p[1] * (T - t);
@@ -252,7 +252,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
 
         if (b != B)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, x, B, p);
             red += p[0] * (b - B);
             green += p[1] * (b - B);
@@ -265,7 +265,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     {
         if (l != L)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, L - 1, y, p);
             red += p[0] * (L - l);
             green += p[1] * (L - l);
@@ -274,7 +274,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
 
         if (r != R)
         {
-            uchar p[3];
+            char32_t p[3];
             get_pixel(page, R, y, p);
             red += p[0] * (r - R);
             green += p[1] * (r - R);
@@ -285,7 +285,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     /* Add the corner pixels */
     if (l != L && t != T)
     {
-        uchar p[3];
+        char32_t p[3];
         get_pixel(page, L - 1, T - 1, p);
         red += p[0] * (L - l) * (T - t);
         green += p[1] * (L - l) * (T - t);
@@ -293,7 +293,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     }
     if (r != R && t != T)
     {
-        uchar p[3];
+        char32_t p[3];
         get_pixel(page, R, T - 1, p);
         red += p[0] * (r - R) * (T - t);
         green += p[1] * (r - R) * (T - t);
@@ -301,7 +301,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     }
     if (r != R && b != B)
     {
-        uchar p[3];
+        char32_t p[3];
         get_pixel(page, R, B, p);
         red += p[0] * (r - R) * (b - B);
         green += p[1] * (r - R) * (b - B);
@@ -309,7 +309,7 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
     }
     if (l != L && b != B)
     {
-        uchar p[3];
+        char32_t p[3];
         get_pixel(page, L - 1, B, p);
         red += p[0] * (L - l) * (b - B);
         green += p[1] * (L - l) * (b - B);
@@ -318,9 +318,9 @@ void PageToPixbuf::set_pixel(Page page, double l, double r, double t, double b, 
 
     /* Scale pixel values and clamp in range [0, 255] */
     double scale = 1.0 / ((r - l) * (b - t));
-    output[offset] = (uchar)(red * scale + 0.5);
-    output[offset + 1] = (uchar)(green * scale + 0.5);
-    output[offset + 2] = (uchar)(blue * scale + 0.5);
+    output[offset] = (char32_t)(red * scale + 0.5);
+    output[offset + 1] = (char32_t)(green * scale + 0.5);
+    output[offset + 2] = (char32_t)(blue * scale + 0.5);
 };
 
 /* Image to render at current resolution */
@@ -400,7 +400,7 @@ void PageToPixbuf::update_preview(Page page, Gdk::Pixbuf *output_image, int outp
     return_if_fail(B < output_height);
     return_if_fail(output_image != NULL);
 
-    uchar output[] = output_image.get_pixels();
+    char32_t output[] = output_image.get_pixels();
     int output_rowstride = output_image.rowstride;
     int output_n_channels = output_image.n_channels;
 
