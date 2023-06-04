@@ -19,29 +19,35 @@
 #include "postprocessor.h"
 #include <string>
 #include <spdlog/spdlog.h>
+#include <stdio.h>
+#include <iostream>
+#include <glibmm-2.68/glibmm.h>
 
-PostProcessor::Postprocessor() {
+extern char **environ;
+
+Postprocessor::Postprocessor(){
 
 };
 
-int PostProcessor::process(std::string script, std::string mime_type, bool keep_original, std::string source_file, std::string arguments)
+int Postprocessor::process(std::string script, std::string mime_type, bool keep_original, std::string source_file, std::string arguments)
 { // throws Error {
     // Code copied and adapted from https://valadoc.org/glib-2.0/GLib.Process.spawn_sync.html
-    std::string spawn_args[] = {script, mime_type, keep_original ? "true" : "false", source_file, arguments};
-    std::string spawn_env[] = Environ::get();
+    auto spawn_args = new std::vector<std::string>{ script, mime_type, keep_original ? "true" : "false", source_file, arguments};
+    auto spawn_env = new std::vector<std::string>(**environ);
+    // std::string spawn_env[] = Environ::get();
     std::string process_stdout;
     std::string process_stderr;
     int process_status;
 
-    print("Executing script%s\n", script);
-    Process.spawn_sync(NULL, // inherit parent's working dir
-                       spawn_args,
-                       spawn_env,
-                       SpawnFlags.SEARCH_PATH,
-                       NULL,
-                       &process_stdout,
-                       &process_stderr,
-                       &process_status);
+    std::cout << "Executing script" << script << "\n";
+    Glib::spawn_sync(NULL, // inherit parent's working dir
+                     spawn_args,
+                     spawn_env,
+                     Glib::SpawnFlags::SEARCH_PATH,
+                     NULL,
+                     &process_stdout,
+                     &process_stderr,
+                     &process_status);
     spdlog::debug("status: %d\n", process_status);
     spdlog::debug("STDOUT: \n");
     spdlog::debug("process_stdout");
