@@ -18,13 +18,13 @@
 #ifndef PREFERENCES_DIALOG_H
 #define PREFERENCES_DIALOG_H
 
-#include <adwaita.h>
-#include <gtkmm.h>
+#include <libadwaitamm.h>
+#include <gtkmm-4.0/gtkmm.h>
 
 class PreferencesDialog : private Adw::PreferencesWindow
 {
     private:
-        Settings settings;
+        Gtk::Settings settings;
 
         Gtk::ComboBox text_dpi_combo;
         Gtk::ComboBox photo_dpi_combo;
