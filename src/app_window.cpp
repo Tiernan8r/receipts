@@ -19,7 +19,7 @@
 #include "app_window.h"
 #include "page.h"
 #include "book_view.h"
-#include <gtkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
 #include <list>
 #include <libadwaitamm.h>
 
@@ -77,8 +77,8 @@ async bool AppWindow::prompt_to_load_autosaved_book(void)
     dialog.add_response("no", _("_No"));
     dialog.add_response("yes", _("_Yes"));
 
-    dialog.set_response_appearance("no", Adw.ResponseAppearance.DESTRUCTIVE);
-    dialog.set_response_appearance("yes", Adw.ResponseAppearance.SUGGESTED);
+    dialog.set_response_appearance("no", Adw::ResponseAppearance::DESTRUCTIVE);
+    dialog.set_response_appearance("yes", Adw::ResponseAppearance::SUGGESTED);
 
     dialog.set_default_response("yes");
     dialog.show();
@@ -331,7 +331,7 @@ async bool AppWindow::check_overwrite(Gtk::Window parent, std::list<File> files)
         dialog.add_response("cancel", _("_Cancel"));
         dialog.add_response("replace", _("_Replace"));
 
-        dialog.set_response_appearance("replace", Adw.ResponseAppearance.DESTRUCTIVE);
+        dialog.set_response_appearance("replace", Adw::ResponseAppearance::DESTRUCTIVE);
 
         SourceFunc callback = check_overwrite.callback;
         std::string response = "cancel";
@@ -474,8 +474,8 @@ async bool AppWindow::prompt_to_save_async(std::string title, std::string discar
     dialog.add_response("cancel", _("_Cancel"));
     dialog.add_response("save", _("_Save"));
 
-    dialog.set_response_appearance("discard", Adw.ResponseAppearance.DESTRUCTIVE);
-    dialog.set_response_appearance("save", Adw.ResponseAppearance.SUGGESTED);
+    dialog.set_response_appearance("discard", Adw::ResponseAppearance::DESTRUCTIVE);
+    dialog.set_response_appearance("save", Adw::ResponseAppearance::SUGGESTED);
 
     dialog.show();
 
@@ -1200,9 +1200,9 @@ void AppWindow::load(void)
     }
 };
 
-std::string AppWindow::state_filename
+std::string AppWindow::state_filename()
 {
-    owned get { return Path.build_filename(Environment.get_user_config_dir(), "receipts", "state"); }
+    return Path.build_filename(Environment.get_user_config_dir(), "receipts", "state");
 }
 
 void AppWindow::load_state(void)
@@ -1304,59 +1304,81 @@ void AppWindow::save_state(bool force = false)
     }
 };
 
-Page AppWindow::selected_page
+Book AppWindow::book(void)
 {
-    get
-    {
-        return book_view.selected_page;
-    }
-    set
-    {
-        book_view.selected_page = value;
-    }
+    return _book;
 }
 
-bool AppWindow::scanning
+Page AppWindow::get_selected_page()
 {
-    get { return scanning_; }
-    set
-    {
-        scanning_ = value;
-        stack.set_visible_child_name("document");
-
-        delete_page_action.set_enabled(!value);
-        scan_button.visible = !value;
-        stop_button.visible = value;
-    }
+    return book_view.selected_page;
 }
 
-int AppWindow::brightness
+void AppWindow::set_selected_page(Page page)
 {
-    get { return preferences_dialog.get_brightness(); }
-    set { preferences_dialog.set_brightness(value); }
+    book_view.selected_page = page;
 }
 
-int AppWindow::contrast
+bool AppWindows::get_scanning()
 {
-    get { return preferences_dialog.get_contrast(); }
-    set { preferences_dialog.set_contrast(value); }
+    return _scanning;
 }
 
-int AppWindow::page_delay
+bool AppWindow::get_scanning(void)
 {
-    get { return preferences_dialog.get_page_delay(); }
-    set { preferences_dialog.set_page_delay(value); }
+    return _scanning;
 }
 
-AppWindow::type_signal_start_scan AppWindow::signal_start_scan() {
+void AppWindow::set_scanning(bool value)
+{
+    _scanning = value;
+    stack.set_visible_child_name("document");
+
+    delete_page_action.set_enabled(!value);
+    scan_button.visible = !value;
+    stop_button.visible = value;
+}
+
+int AppWindow::get_brightness(void)
+{
+    return preferences_dialog.get_brightness();
+}
+
+void AppWindow::set_brightness(int value)
+{
+    preferences_dialog.set_brightness(value);
+}
+
+int AppWindow::get_contrast(void)
+{
+    return preferences_dialog.get_contrast();
+}
+void AppWindow::set_contrast(int value)
+{
+    preferences_dialog.set_contrast(value);
+}
+
+int AppWindow::get_page_delay(void)
+{
+    return preferences_dialog.get_page_delay();
+}
+void AppWindow::set_page_delay(int value)
+{
+    preferences_dialog.set_page_delay(value);
+}
+
+AppWindow::type_signal_start_scan AppWindow::signal_start_scan()
+{
     return m_signal_start_scan;
 }
 
-AppWindow::type_signal_stop_scan AppWindow::signal_stop_scan() {
+AppWindow::type_signal_stop_scan AppWindow::signal_stop_scan()
+{
     return m_signal_stop_scan;
 }
 
-AppWindow::type_signal_redect AppWindow::signal_redect() {
+AppWindow::type_signal_redect AppWindow::signal_redect()
+{
     return m_signal_redect;
 }
 
@@ -1393,11 +1415,11 @@ void AppWindow::show_error_dialog(std::string error_title, std::string error_tex
                                                        error_title,
                                                        error_text);
     dialog.add_response("close", _("_Close"));
-    dialog.set_response_appearance("close", Adw.ResponseAppearance.SUGGESTED);
+    dialog.set_response_appearance("close", Adw::ResponseAppearance::SUGGESTED);
     dialog.show();
 }
 
-async AuthorizeDialogResponse AppWindow::authorize(std::string resource)
+AuthoriseDialogResponse AppWindow::authorize_async(std::string resource)
 {
     /* Label in authorization dialog.  “%s” is replaced with the name of the resource requesting authorization */
     std::string description = _("Username and password required to access “%s”").printf(resource);
