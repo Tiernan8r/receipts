@@ -17,9 +17,11 @@
 */
 
 #include "screensaver.h"
+#include <glibmm-2.68/glibmm.h>
+#include <giomm-2.68/giomm/dbusproxy.h>
 
 // [DBus (name = "org.freedesktop.ScreenSaver")]
-IFreedesktopScreensaver IFreeDesktopScreensaver::get_proxy(void) // throws IOError
+IFreedesktopScreensaver IFreedesktopScreensaver::get_proxy(void) // throws IOError
 {
-    return Bus.get_proxy_sync(BusType.SESSION, "org.freedesktop.ScreenSaver", "/org/freedesktop/ScreenSaver");
+    return Gio::DBus::Proxy::create_for_bus(Gio::DBus::BusType::SESSION, "", "org.freedesktop.ScreenSaver", "/org/freedesktop/ScreenSaver", NULL);
 };

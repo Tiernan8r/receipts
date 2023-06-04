@@ -28,9 +28,9 @@ class IFreedesktopScreensaver
         static IFreedesktopScreensaver get_proxy (void); // throws IOError;
 
     // [DBus (name = "Inhibit")]
-        virtual uint32 inhibit (std::string application_name, std::string reason_for_inhibit); // throws Error;
+        virtual uint32_t inhibit (std::string application_name, std::string reason_for_inhibit); // throws Error;
     // [DBus (name = "UnInhibit")]
-        virtual void uninhibit (uint32 cookie); // throws Error;
+        virtual void uninhibit (uint32_t cookie); // throws Error;
 };
 
 
