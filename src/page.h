@@ -18,8 +18,8 @@
 #ifndef PAGE_H
 #define PAGE_H
 
-#include <gtkmm.h>
-#include <sigc++/sigc++.h>
+#include <sigc++-3.0/sigc++/sigc++.h>
+#include <gtkmm-4.0/gtkmm.h>
 #include <uchar.h>
 #include "scanner.h"
 
@@ -39,16 +39,16 @@ class Page
         int expected_rows;
 
     /* Pixel data */
-        char32_t pixels[];
+        std::vector<unsigned char> pixels;
     /* Rotation of scanned data */
         ScanDirection _scan_direction = ScanDirection::TOP_TO_BOTTOM;
 
         void parse_line (ScanLine line, int n, bool *size_changed);
 
     // FIXME: Copied from page-view, should be shared code
-        char32_t get_sample (char32_t pixels[], int offset, int x, int depth, int n_channels, int channel);
+        unsigned char get_sample (std::vector<unsigned char> pixels, int offset, int x, int depth, int n_channels, int channel);
     // FIXME: Copied from page-view, should be shared code
-        void get_pixel (int x, int y, char32_t pixel[], int offset);
+        void get_pixel (int x, int y, guint8* pixel, int offset);
 
     public:
     /* Width of the page in pixels after rotation applied */
@@ -136,7 +136,7 @@ class Page
                            int dpi,
                            ScanDirection scan_direction,
                            std::string *color_profile,
-                           char32_t *pixels[],
+                           std::vector<unsigned char> *pixels,
                            bool has_crop,
                            std::string *crop_name,
                            int crop_x,
@@ -155,7 +155,7 @@ class Page
         void set_named_crop (std::string name);
         void move_crop (int x, int y);
         void rotate_crop (void);
-        char32_t[] get_pixels (void);
+        std::vector<unsigned char> get_pixels (void);
         Glib::RefPtr<Gdk::Pixbuf> get_image (bool apply_crop);
         std::string *get_icc_data_encoded (void);
         void copy_to_clipboard (Gtk::Window window);
@@ -168,7 +168,6 @@ class Page
         type_signal_scan_direction_changed m_signal_scan_direction_changed;
         type_signal_crop_changed m_signal_crop_changed;
         type_signal_scan_finished m_signal_scan_finished;
-}
-
+};
 
 #endif //PAGE_H

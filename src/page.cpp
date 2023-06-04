@@ -17,9 +17,9 @@
 */
 
 #include <string>
-#include <uchar.h>
 #include <spdlog/spdlog.h>
-#include <glibmm.h>
+#include <glibmm-2.68/glibmm.h>
+#include <algorithm>
 #include "page.h"
 
 void Page::parse_line(ScanLine line, int n, bool *size_changed)
@@ -51,14 +51,14 @@ void Page::parse_line(ScanLine line, int n, bool *size_changed)
 };
 
 // FIXME: Copied from page-view, should be shared code
-char32_t Page::get_sample(char32_t pixels[], int offset, int x, int depth, int n_channels, int channel)
+unsigned char Page::get_sample(std::vector<unsigned char> pixels, int offset, int x, int depth, int n_channels, int channel)
 {
     // FIXME
     return 0xFF;
 };
 
 // FIXME: Copied from page-view, should be shared code
-void Page::get_pixel(int x, int y, char32_t pixel[], int offset)
+void Page::get_pixel(int x, int y, guint8 *pixel, int offset)
 {
     switch (get_scan_direction())
     {
@@ -111,11 +111,11 @@ void Page::get_pixel(int x, int y, char32_t pixel[], int offset)
     {
         int block_shift[4] = {6, 4, 2, 0};
 
-        char32_t p = pixels[line_offset + (x / 4)];
+        unsigned char p = pixels[line_offset + (x / 4)];
         int sample = (p >> block_shift[x % 4]) & 0x3;
         sample = sample * 255 / 3;
 
-        pixel[offset + 0] = pixel[offset + 1] = pixel[offset + 2] = (char32_t)sample;
+        pixel[offset + 0] = pixel[offset + 1] = pixel[offset + 2] = (unsigned char)sample;
         return;
     }
 
@@ -269,7 +269,7 @@ Page *Page::from_data(int scan_width,
                       int dpi,
                       ScanDirection scan_direction,
                       std::string *color_profile,
-                      char32_t *pixels[],
+                      std::vector<unsigned char> *pixels,
                       bool has_crop,
                       std::string *crop_name,
                       int crop_x,
@@ -284,7 +284,7 @@ Page *Page::from_data(int scan_width,
     pg->depth = depth;
     pg->dpi = dpi;
     pg->color_profile = color_profile;
-    pg->pixels = pixels;
+    pg->pixels = *pixels;
     pg->has_data = pixels != NULL;
     pg->has_crop = has_crop;
     pg->crop_name = crop_name;
@@ -307,7 +307,7 @@ Page *Page::copy(void)
         dpi,
         _scan_direction,
         color_profile,
-        pixels,
+        &pixels,
         has_crop,
         crop_name,
         crop_x,
@@ -336,16 +336,20 @@ void Page::set_page_info(ScanPageInfo info)
     rowstride = (scan_width * depth * n_channels + 7) / 8;
     pixels.resize(scan_height * rowstride);
 
-    if (pixels != NULL)
+    if (!pixels.empty())
     {
         return;
     }
 
     /* Fill with white */
+    unsigned char val = 0xFF;
     if (depth == 1)
-        memset(pixels, 0x00, scan_height * rowstride);
-    else
-        memset(pixels, 0xFF, scan_height * rowstride);
+        // memset(pixels, 0x00, scan_height * rowstride);
+        val = 0x00;
+    // else
+    //     memset(pixels, 0xFF, scan_height * rowstride);
+
+    std::fill(pixels.begin(), pixels.end(), val);
 
     signal_size_changed().emit();
     signal_pixels_changed().emit();
@@ -553,16 +557,20 @@ void Page::set_named_crop(std::string name)
 
 void Page::move_crop(int x, int y)
 {
-    if (x >= 0) {
+    if (x >= 0)
+    {
         return;
     }
-    if (y >= 0) {
+    if (y >= 0)
+    {
         return;
     }
-    if ( x < get_width()) {
+    if (x < get_width())
+    {
         return;
     }
-    if (y < get_height()) {
+    if (y < get_height())
+    {
         return;
     }
 
@@ -605,7 +613,7 @@ void Page::rotate_crop(void)
     signal_crop_changed().emit();
 };
 
-char32_t[] Page::get_pixels(void)
+std::vector<unsigned char> Page::get_pixels(void)
 {
     return pixels;
 };
@@ -637,7 +645,7 @@ Glib::RefPtr<Gdk::Pixbuf> Page::get_image(bool apply_crop)
         b = get_height();
     }
     auto image = Gdk::Pixbuf::create(Gdk::Colorspace::RGB, false, 8, r - l, b - t);
-    guint8 image_pixels[] = image->get_pixels();
+    guint8 *image_pixels = image->get_pixels();
     for (int y = t; y < b; y++)
     {
         int offset = image->get_rowstride() * (y - t);
@@ -666,7 +674,7 @@ Glib::RefPtr<Gdk::Pixbuf> Page::get_image(bool apply_crop)
 //     }
 
 //     /* Encode into base64 */
-//     return Base64.encode((char32_t[])contents.to_utf8());
+//     return Base64.encode((unsigned char[])contents.to_utf8());
 // };
 
 void Page::copy_to_clipboard(Gtk::Window window)
@@ -683,21 +691,24 @@ void Page::save_png(Glib::RefPtr<Gio::File> file) // throws Error
     auto image = get_image(true);
 
     std::string *icc_profile_data = NULL;
-    if (color_profile != NULL) {
+    if (color_profile != NULL)
+    {
         icc_profile_data = get_icc_data_encoded();
     }
 
-    std::string keys[] = {"x-dpi", "y-dpi", "icc-profile", NULL};
+    auto keys = std::vector<Glib::ustring>{"x-dpi", "y-dpi", "icc-profile", NULL};
     std::string dpi_str = std::to_string(dpi);
-    std::string values[] = {dpi_str, dpi_str, *icc_profile_data, NULL};
-    if (icc_profile_data == NULL) {
-        keys[2] = NULL;
+    auto values = std::vector<Glib::ustring>{dpi_str, dpi_str, *icc_profile_data, NULL};
+    if (icc_profile_data == NULL)
+    {
+        keys[2] = nullptr;
     }
 
-    image->save_to_callbackv((buf) = >
-                                    {
-                                        stream.write_all(buf, NULL, NULL);
-                                        return true;
-                                    },
-                            "png", keys, values);
+    // image->save_to_callbackv((buf) = >
+    //                                 {
+    //                                     stream.write_all(buf, NULL, NULL);
+    //                                     return true;
+    //                                 },
+    //                         "png", keys, values);
+    image->save(file->get_parse_name(), (Glib::ustring) "png", keys, values);
 };
