@@ -19,9 +19,9 @@
 #include "receipts.h"
 #include <libadwaitamm.h>
 #include <string>
-#include <gusb>
+#include <gusb-1/gusb.h>
 
-Receipts::Receipts(ScanDevice *device = NULL)
+Receipts::Receipts(ScanDevice *device = NULL) : register_session(true), default_device(device)
 {
     /* The inhibit () method use this */
     Object(application_id
@@ -37,30 +37,30 @@ void Receipts::startup(void) override
 
     app = new AppWindow();
     book = app.book;
-    app.start_scan.connect(scan_cb);
-    app.stop_scan.connect(cancel_cb);
-    app.redetect.connect(redetect_cb);
+    app.signal_start_scan().connect(scan_cb);
+    app.signal_stop_scan().connect(cancel_cb);
+    app.signal_redetect().connect(redetect_cb);
 
     scanner = Scanner.get_instance();
-    scanner.update_devices.connect(update_scan_devices_cb);
-    scanner.request_authorization.connect(authorize_cb);
-    scanner.expect_page.connect(scanner_new_page_cb);
-    scanner.got_page_info.connect(scanner_page_info_cb);
-    scanner.got_line.connect(scanner_line_cb);
-    scanner.page_done.connect(scanner_page_done_cb);
-    scanner.document_done.connect(scanner_document_done_cb);
-    scanner.scan_failed.connect(scanner_failed_cb);
-    scanner.scanning_changed.connect(scanner_scanning_changed_cb);
+    scanner.signal_update_devices().connect(update_scan_devices_cb);
+    scanner.signal_request_authorization().connect(authorize_cb);
+    scanner.signal_expect_page().connect(scanner_new_page_cb);
+    scanner.signal_got_page_info().connect(scanner_page_info_cb);
+    scanner.signal_got_line().connect(scanner_line_cb);
+    scanner.signal_page_done().connect(scanner_page_done_cb);
+    scanner.signal_document_done().connect(scanner_document_done_cb);
+    scanner.signal_scan_failed().connect(scanner_failed_cb);
+    scanner.signal_scanning_changed().connect(scanner_scanning_changed_cb);
 
     try
     {
         usb_context = new GUsb::Context();
-        usb_context.device_added.connect(() = > { scanner.redetect(); });
-        usb_context.device_removed.connect(() = > { scanner.redetect(); });
+        usb_context.signal_device_added().connect(() = > { scanner.redetect(); });
+        usb_context.signal_device_removed().connect(() = > { scanner.redetect(); });
     }
-    catch (Error e)
+    catch (std::exception e)
     {
-        warning("Failed to create USB context: %s\n", e.message);
+        spdlog::warn("Failed to create USB context: {}\n", e);
     }
 
     if (default_device != NULL)
@@ -92,13 +92,13 @@ void Receipts::shutdown(void) override
 void Receipts::update_scan_devices_cb(Scanner scanner, std::list<ScanDevice> devices)
 {
     // TODO
-    var devices_copy = devices.copy_deep((CopyFunc)Object.ref);
+    auto devices_copy = devices.copy_deep((CopyFunc)Object.ref);
 
     /* If the default device is not detected add it to the list */
     if (default_device != NULL)
     {
         bool default_in_list = false;
-        foreach (var device in devices_copy)
+        for (auto device : devices_copy)
         {
             if (device.name == default_device.name)
             {
@@ -115,16 +115,18 @@ void Receipts::update_scan_devices_cb(Scanner scanner, std::list<ScanDevice> dev
 
     /* If SANE doesn't see anything, see if we recognise any of the USB devices */
     std::string *missing_driver = NULL;
-    if (!have_devices)
+    if (!have_devices) {
         missing_driver = suggest_driver();
+    }
 
     app.set_scan_devices(devices_copy, missing_driver);
 };
 
 void Receipts::add_devices(std::map<uint32, std::string> map, uint32 devices[], std::string driver)
 {
-    for (int i = 0; i < devices.length; i++)
+    for (int i = 0; i < devices.length; i++) {
         map.insert(devices[i], driver);
+    }
 }
 
 void Receipts::authorize_cb(Scanner scanner, std::string resource)
@@ -152,7 +154,7 @@ Page Receipts::append_page(int width = 100, int height = 100, int dpi = 100)
     }
 
     /* Copy info from previous page */
-    var scan_direction = ScanDirection::TOP_TO_BOTTOM;
+    ScanDirection scan_direction = ScanDirection::TOP_TO_BOTTOM;
     bool do_crop = false;
     std::string named_crop = NULL;
     int cx = 0, cy = 0, cw = 0, ch = 0;
@@ -208,9 +210,9 @@ std::string *Receipts::get_profile_for_device(std::string device_name)
     {
         client.connect_sync();
     }
-    catch (Error e)
+    catch (std::exception e)
     {
-        spdlog::debug("Failed to connect to colord: %s", e.message);
+        spdlog::debug("Failed to connect to colord: {}", e);
         return NULL;
     }
 
@@ -219,9 +221,9 @@ std::string *Receipts::get_profile_for_device(std::string device_name)
     {
         device = client.find_device_by_property_sync(Cd::DEVICE_PROPERTY_SERIAL, device_id);
     }
-    catch (Error e)
+    catch (std::exception e)
     {
-        spdlog::debug("Unable to find colord device %s: %s", device_name, e.message);
+        spdlog::debug("Unable to find colord device {}: {}", device_name, e);
         return NULL;
     }
 
@@ -229,16 +231,16 @@ std::string *Receipts::get_profile_for_device(std::string device_name)
     {
         device.connect_sync();
     }
-    catch (Error e)
+    catch (std::exception e)
     {
-        spdlog::debug("Failed to get properties from the device %s: %s", device_name, e.message);
+        spdlog::debug("Failed to get properties from the device {}: {}", device_name, e.message);
         return NULL;
     }
 
-    var profile = device.get_default_profile();
+    std::string *profile = device.get_default_profile();
     if (profile == NULL)
     {
-        spdlog::debug("No default color profile for device: %s", device_name);
+        spdlog::debug("No default color profile for device: {}", device_name);
         return NULL;
     }
 
@@ -246,19 +248,19 @@ std::string *Receipts::get_profile_for_device(std::string device_name)
     {
         profile.connect_sync();
     }
-    catch (Error e)
+    catch (std::exception e)
     {
-        spdlog::debug("Failed to get properties from the profile %s: %s", device_name, e.message);
+        spdlog::debug("Failed to get properties from the profile {}: {}", device_name, e);
         return NULL;
     }
 
     if (profile.filename == NULL)
     {
-        spdlog::debug("No icc color profile for the device %s", device_name);
+        spdlog::debug("No icc color profile for the device {}", device_name);
         return NULL;
     }
 
-    spdlog::debug("Using color profile %s for device %s", profile.filename, device_name);
+    spdlog::debug("Using color profile {} for device {}", profile.filename, device_name);
     return profile.filename;
 #else
     return NULL;
@@ -267,11 +269,11 @@ std::string *Receipts::get_profile_for_device(std::string device_name)
 
 void Receipts::scanner_page_info_cb(Scanner scanner, ScanPageInfo info)
 {
-    spdlog::debug("Page is %d pixels wide, %d pixels high, %d bits per pixel",
+    spdlog::debug("Page is {d} pixels wide, {d} pixels high, {d} bits per pixel",
                   info.width, info.height, info.depth);
 
     /* Add a new page */
-    scanned_page = append_page();
+    scanned_page = this.append_page();
     scanned_page.set_page_info(info);
 
     /* Get ICC color profile */
