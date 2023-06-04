@@ -89,7 +89,7 @@ namespace WebP
         //   WEBP_MUX_MEMORY_ERROR - on memory allocation error.
         //   WEBP_MUX_OK - on success.
         [CCode (cname = "WebPMuxSetChunk")]
-        private MuxError _set_chunk ([CCode (array_length = false)] uchar[] fourcc,
+        private MuxError _set_chunk ([CCode (array_length = false)] char32_t[] fourcc,
                                      Data chunk_data,
                                      bool copy_data);
         [CCode (cname = "vala_set_chunk")]
@@ -97,7 +97,7 @@ namespace WebP
         requires (fourcc.length == 4)
         {
             Data data = { chunk_data ,chunk_data.length };
-            return _set_chunk ((uchar[]) fourcc, data, copy_data);
+            return _set_chunk ((char32_t[]) fourcc, data, copy_data);
         }
 
         // Assembles all chunks in WebP RIFF format and returns in 'assembled_data'.
