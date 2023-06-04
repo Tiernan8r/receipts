@@ -18,11 +18,10 @@
 #ifndef BOOK_VIEW_H
 #define BOOK_VIEW_H
 
-#include <gtkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
 #include <string>
 #include <map>
-#include <cairo.h>
-#include <sigc++/sigc++.h>
+#include <sigc++-3.0/sigc++/sigc++.h>
 #include "book.h"
 #include "page.h"
 #include "page_view.h"
