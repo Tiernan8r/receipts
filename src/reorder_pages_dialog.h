@@ -18,7 +18,7 @@
 #ifndef REORDER_PAGES_DIALOG
 #define REORDER_PAGES_DIALOG
 
-#include <gtkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
 #include <string>
 
 class ReorderPagesItem : private Gtk::Button
@@ -29,23 +29,14 @@ class ReorderPagesItem : private Gtk::Button
         Gtk::Image after_image;
 
     public:
-        std::string label
-    {
-        get { return title.label; }
-        set { title.label = value; }
-    };
+        std::string get_label(void);
+        void set_label(std::string);
 
-        std::string before
-    {
-        get { return before_image.get_icon_name (); }
-        set { before_image.icon_name = value; }
-    };
+        std::string get_before(void);
+        void set_before(std::string);
 
-        std::string after
-    {
-        get { return after_image.get_icon_name (); }
-        set { after_image.icon_name = value; }
-    };
+        std::string get_after(void);
+        void set_after(std::string);
 };
 
 
@@ -58,7 +49,7 @@ class ReorderPagesDialog : private Gtk::Window
         ReorderPagesItem flip_even;
         ReorderPagesItem reverse;
     
-        void ReorderPagesDialog (void);
+        ReorderPagesDialog (void);
 };
 
 

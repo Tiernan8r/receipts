@@ -17,39 +17,44 @@
 */
 
 #include "reorder_pages_dialog.h"
-#include <gtkmm.h>
-#include <gdkmm.h>
+#include <gtkmm-4.0/gtkmm.h>
+#include <gtkmm-4.0/gtkmm/shortcut.h>
 
 // [GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/reorder-pages-item.ui")]
-class ReorderPagesItem : private Gtk::Button
+std::string ReorderPagesItem::get_label(void)
 {
-public:
-    std::string label{
-        get{return title.label;
-} set { title.label = value; }
+    return title.get_label();
 }
-;
 
-public:
-std::string before{
-    get{return before_image.get_icon_name();
+void ReorderPagesItem::set_label(std::string l)
+{
+    title.set_label(l);
 }
-set { before_image.icon_name = value; }
-}
-;
 
-public:
-std::string after{
-    get{return after_image.get_icon_name();
+std::string ReorderPagesItem::get_before(void)
+{
+    return before_image.get_icon_name();
 }
-set { after_image.icon_name = value; }
+
+void ReorderPagesItem::set_before(std::string b)
+{
+    before_image.icon_name = b;
 }
-;
+
+std::string ReorderPagesItem::get_after(void)
+{
+    return after_image.get_icon_name();
 }
-;
+
+void ReorderPagesItem::set_after(std::string after)
+{
+    after_image.set_from_icon_name(after);
+}
 
 // [GtkTemplate (ui = "/me/tiernan8r/Receipts/ui/reorder-pages-dialog.ui")]
 ReorderPagesDialog::ReorderPagesDialog()
 {
-    add_binding_action(Gdk::Key::Escape, 0, "window.close", NULL);
+    Gtk::Shortcut::create();
+    Gtk::ShortcutController::add_shortcut(shortcut);
+    // add_binding_action(Gdk::Key::Escape, 0, "window.close", NULL);
 };
